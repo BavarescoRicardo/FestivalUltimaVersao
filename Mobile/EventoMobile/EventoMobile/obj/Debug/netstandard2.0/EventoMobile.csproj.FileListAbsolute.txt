@@ -187,11 +187,11 @@ D:\Festival\Mobile\EventoMobile\EventoMobile\bin\Debug\netstandard2.0\ru\DevExpr
 D:\Festival\Mobile\EventoMobile\EventoMobile\obj\Debug\netstandard2.0\EventoMobile.csprojAssemblyReference.cache
 D:\Festival\Mobile\EventoMobile\EventoMobile\obj\Debug\netstandard2.0\App.xaml.g.cs
 D:\Festival\Mobile\EventoMobile\EventoMobile\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
-D:\Festival\Mobile\EventoMobile\EventoMobile\obj\Debug\netstandard2.0\EventoMobile.csproj.CoreCompileInputs.cache
 D:\Festival\Mobile\EventoMobile\EventoMobile\obj\Debug\netstandard2.0\EventoMobile.AssemblyInfoInputs.cache
 D:\Festival\Mobile\EventoMobile\EventoMobile\obj\Debug\netstandard2.0\EventoMobile.AssemblyInfo.cs
-D:\Festival\Mobile\EventoMobile\EventoMobile\obj\Debug\netstandard2.0\XamlC.stamp
 D:\Festival\Mobile\EventoMobile\EventoMobile\obj\Debug\netstandard2.0\EventoMobile.csproj.CopyComplete
 D:\Festival\Mobile\EventoMobile\EventoMobile\obj\Debug\netstandard2.0\EventoMobile.dll
 D:\Festival\Mobile\EventoMobile\EventoMobile\obj\Debug\netstandard2.0\ref\EventoMobile.dll
 D:\Festival\Mobile\EventoMobile\EventoMobile\obj\Debug\netstandard2.0\EventoMobile.pdb
+D:\Festival\Mobile\EventoMobile\EventoMobile\obj\Debug\netstandard2.0\EventoMobile.csproj.CoreCompileInputs.cache
+D:\Festival\Mobile\EventoMobile\EventoMobile\obj\Debug\netstandard2.0\XamlC.stamp

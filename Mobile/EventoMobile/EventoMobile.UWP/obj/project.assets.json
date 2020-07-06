@@ -382,7 +382,7 @@
         "dependencies": {
           "Festival": "1.0.0",
           "Newtonsoft.Json": "12.0.3",
-          "Xamarin.Essentials": "1.3.1",
+          "Xamarin.Essentials": "1.5.3.2",
           "Xamarin.Forms": "4.3.0.908675"
         },
         "compile": {
@@ -947,7 +947,7 @@
         "dependencies": {
           "Festival": "1.0.0",
           "Newtonsoft.Json": "12.0.3",
-          "Xamarin.Essentials": "1.3.1",
+          "Xamarin.Essentials": "1.5.3.2",
           "Xamarin.Forms": "4.3.0.908675"
         },
         "compile": {
@@ -1513,7 +1513,7 @@
         "dependencies": {
           "Festival": "1.0.0",
           "Newtonsoft.Json": "12.0.3",
-          "Xamarin.Essentials": "1.3.1",
+          "Xamarin.Essentials": "1.5.3.2",
           "Xamarin.Forms": "4.3.0.908675"
         },
         "compile": {
@@ -1900,7 +1900,7 @@
         "dependencies": {
           "Festival": "1.0.0",
           "Newtonsoft.Json": "12.0.3",
-          "Xamarin.Essentials": "1.3.1",
+          "Xamarin.Essentials": "1.5.3.2",
           "Xamarin.Forms": "4.3.0.908675"
         },
         "compile": {
@@ -2465,7 +2465,7 @@
         "dependencies": {
           "Festival": "1.0.0",
           "Newtonsoft.Json": "12.0.3",
-          "Xamarin.Essentials": "1.3.1",
+          "Xamarin.Essentials": "1.5.3.2",
           "Xamarin.Forms": "4.3.0.908675"
         },
         "compile": {
@@ -3031,7 +3031,7 @@
         "dependencies": {
           "Festival": "1.0.0",
           "Newtonsoft.Json": "12.0.3",
-          "Xamarin.Essentials": "1.3.1",
+          "Xamarin.Essentials": "1.5.3.2",
           "Xamarin.Forms": "4.3.0.908675"
         },
         "compile": {
@@ -3596,7 +3596,7 @@
         "dependencies": {
           "Festival": "1.0.0",
           "Newtonsoft.Json": "12.0.3",
-          "Xamarin.Essentials": "1.3.1",
+          "Xamarin.Essentials": "1.5.3.2",
           "Xamarin.Forms": "4.3.0.908675"
         },
         "compile": {
@@ -4162,7 +4162,7 @@
         "dependencies": {
           "Festival": "1.0.0",
           "Newtonsoft.Json": "12.0.3",
-          "Xamarin.Essentials": "1.3.1",
+          "Xamarin.Essentials": "1.5.3.2",
           "Xamarin.Forms": "4.3.0.908675"
         },
         "compile": {
@@ -8424,5 +8424,24 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Essentials from 1.5.3.2 to 1.3.1. Reference the package directly from the project to select a different version. \r\n EventoMobile.UWP -> EventoMobile -> Xamarin.Essentials (>= 1.5.3.2) \r\n EventoMobile.UWP -> Xamarin.Essentials (>= 1.3.1)",
+      "libraryId": "Xamarin.Essentials",
+      "targetGraphs": [
+        "UAP,Version=v10.0.16299",
+        "UAP,Version=v10.0.16299/win10-arm",
+        "UAP,Version=v10.0.16299/win10-arm-aot",
+        "UAP,Version=v10.0.16299/win10-arm64-aot",
+        "UAP,Version=v10.0.16299/win10-x64",
+        "UAP,Version=v10.0.16299/win10-x64-aot",
+        "UAP,Version=v10.0.16299/win10-x86",
+        "UAP,Version=v10.0.16299/win10-x86-aot"
+      ]
+    }
+  ]
 }

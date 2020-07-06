@@ -17,7 +17,7 @@ namespace Servidor.Controllers
         private static List<Jurado> juri = new List<Jurado>();
 
         [HttpGet]
-        public List<Jurado> Get()
+        public async Task<List<Jurado>> Get()
         {
             JuradoBo bo = new JuradoBo();
             IList<Festival.or.Jurado> lista = bo.Listar();

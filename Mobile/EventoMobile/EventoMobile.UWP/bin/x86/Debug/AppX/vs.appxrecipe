@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\Festival\Mobile\EventoMobile\EventoMobile.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-07-05T22:33:42.142</Modified>
+      <Modified>2020-07-06T02:28:21.393</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Festival\Mobile\EventoMobile\EventoMobile.UWP\bin\x86\Debug\EventoMobile.UWP.exe">
       <PackagePath>entrypoint\EventoMobile.UWP.exe</PackagePath>
-      <Modified>2020-07-05T22:33:40.766</Modified>
+      <Modified>2020-07-06T02:28:16.452</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ninguem\.nuget\packages\newtonsoft.json\12.0.3\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -724,7 +724,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Festival\Mobile\EventoMobile\EventoMobile\bin\Debug\netstandard2.0\EventoMobile.dll">
       <PackagePath>EventoMobile.dll</PackagePath>
-      <Modified>2020-07-05T22:33:07.641</Modified>
+      <Modified>2020-07-06T02:28:11.117</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Microsoft\Xamarin\NuGet\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -883,15 +883,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Festival\Mobile\EventoMobile\EventoMobile.UWP\bin\x86\Debug\Microsoft.UI.Xaml\DensityStyles\Compact.xbf">
       <PackagePath>Microsoft.UI.Xaml\DensityStyles\Compact.xbf</PackagePath>
-      <Modified>2020-07-05T22:33:40.662</Modified>
+      <Modified>2020-07-06T02:28:16.342</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Festival\Mobile\EventoMobile\EventoMobile.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-07-05T22:33:40.662</Modified>
+      <Modified>2020-07-06T02:28:16.342</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Festival\Mobile\EventoMobile\EventoMobile.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-07-05T22:33:40.662</Modified>
+      <Modified>2020-07-06T02:28:16.342</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.18362.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -907,11 +907,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Festival\Mobile\EventoMobile\EventoMobile.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-07-05T22:33:41.585</Modified>
+      <Modified>2020-07-06T02:28:20.010</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Festival\Mobile\EventoMobile\EventoMobile.UWP\bin\x86\Debug\Core\EventoMobile.UWP.exe">
       <PackagePath>EventoMobile.UWP.exe</PackagePath>
-      <Modified>2020-07-05T22:33:42.131</Modified>
+      <Modified>2020-07-06T02:28:21.383</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

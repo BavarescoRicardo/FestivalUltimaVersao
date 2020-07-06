@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Threading;
 using System.Net.Http.Headers;
 using Newtonsoft.Json;
+using System.Runtime.ExceptionServices;
+using Newtonsoft.Json.Linq;
 
 namespace EventoMobile.Rest_Servidor_Client
 {
@@ -31,7 +33,7 @@ namespace EventoMobile.Rest_Servidor_Client
                 webRequest.Method = WebRequestMethods.Http.Get;
                 //webRequest.Credentials = new NetworkCredential("", "");
                 webRequest.ContentType = "application/json";
-                using (HttpWebResponse response = webRequest.GetResponse() as HttpWebResponse)
+                using (HttpWebResponse response = await webRequest.GetResponseAsync().ConfigureAwait(false) as HttpWebResponse)
                 {
                     if (response.StatusCode == HttpStatusCode.OK)
                     {
@@ -61,6 +63,39 @@ namespace EventoMobile.Rest_Servidor_Client
             response = await client.PostAsync(url, content);
             
         }
+
+        public async Task<string> readResponseAsync(string inputAddress)
+        {
+            HttpWebRequest request = HttpWebRequest.Create(inputAddress) as HttpWebRequest;
+            request.Method = WebRequestMethods.Http.Get;
+            request.ContentType = "application/json";
+            HttpWebResponse response;
+            try
+            {
+                response = (HttpWebResponse)(await request.GetResponseAsync().ConfigureAwait(false));
+            }
+            catch (WebException we)
+            {
+                response = (HttpWebResponse)we.Response;
+            }
+
+            string responseJson;
+            using (var responseStream = new StreamReader(response.GetResponseStream()))
+            {
+                var responseStr = await responseStream.ReadToEndAsync().ConfigureAwait(false);
+                responseJson = responseStr.ToString(); // I'm fine throwing a parse error here.
+            }
+
+            if (response.StatusCode == HttpStatusCode.OK) // Could probably relax this to "non-failing" codes.
+            {
+                return responseJson.ToString();
+            }
+            else
+            {
+                throw new Exception("Erro leitura do json web metodo async");
+            }
+        }
+
     }
 }
 

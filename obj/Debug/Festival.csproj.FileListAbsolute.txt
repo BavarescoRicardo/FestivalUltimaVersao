@@ -394,7 +394,6 @@ D:\Festival\bin\Debug\de\DevExpress.Office.v19.2.Core.resources.dll
 D:\Festival\bin\Debug\es\DevExpress.Office.v19.2.Core.resources.dll
 D:\Festival\bin\Debug\ja\DevExpress.Office.v19.2.Core.resources.dll
 D:\Festival\bin\Debug\ru\DevExpress.Office.v19.2.Core.resources.dll
-D:\Festival\obj\Debug\Festival.csprojAssemblyReference.cache
 D:\Festival\obj\Debug\Festival.desktop.CantorFrm.resources
 D:\Festival\obj\Debug\Festival.desktop.CategoriaFrm.resources
 D:\Festival\obj\Debug\Festival.EventoFrm.resources

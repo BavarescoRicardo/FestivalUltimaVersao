@@ -18,9 +18,10 @@ namespace EventoMobile
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
-        private static readonly string URL_GET = "http://localhost:50030/api/juri";
-        private static readonly string URL_POST = "http://localhost:50030/api/juri?id=";// 
+        private static readonly string URL_GET = "http://192.168.0.103:3000/api/juri";
+        private static readonly string URL_POST = "http://192.168.0.103:3000/api/juri?id=";// 
         private static readonly string erroDefaul = "Algo errado";
+        // antigo link https://localhost:44302/api/juri
         private List<xJurado> juri = new List<xJurado>();
         Label lblWelcomes = new Label();
         ClienteRest cliente = new ClienteRest();
@@ -83,7 +84,7 @@ namespace EventoMobile
             string resultado = string.Empty;
             try
             {
-                resultado = cliente.obterDados(URL_GET).Result;
+                resultado =  cliente.readResponseAsync(URL_GET).Result;
                 
             }
             catch (Exception ex)

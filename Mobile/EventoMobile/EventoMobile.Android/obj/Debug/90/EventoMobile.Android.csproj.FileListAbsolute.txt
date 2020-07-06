@@ -451,7 +451,6 @@ D:\FestivalMobile\XamarinFestival\com.companyname.eventomobile-Signed.apk
 D:\Festival\Mobile\EventoMobile\EventoMobile.Android\obj\Debug\90\MonoAndroid,Version=v9.0.AssemblyAttributes.cs
 D:\Festival\Mobile\EventoMobile\EventoMobile.Android\obj\Debug\90\build.props
 D:\Festival\Mobile\EventoMobile\EventoMobile.Android\obj\Debug\90\adb.props
-D:\Festival\Mobile\EventoMobile\EventoMobile.Android\obj\Debug\90\EventoMobile.Android.csprojAssemblyReference.cache
 D:\Festival\Mobile\EventoMobile\EventoMobile.Android\obj\Debug\90\_VerifyXamarinAndroidSupportVersions.stamp
 D:\Festival\Mobile\EventoMobile\EventoMobile.Android\obj\Debug\90\stamp\_BuildLibraryImportsCache.stamp
 D:\Festival\Mobile\EventoMobile\EventoMobile.Android\obj\Debug\90\res.flag
@@ -932,3 +931,4 @@ D:\Festival\Mobile\EventoMobile\EventoMobile.Android\obj\Debug\90\stamp\_Convert
 D:\Festival\Mobile\EventoMobile\EventoMobile.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 D:\Festival\Mobile\EventoMobile\EventoMobile.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 D:\Festival\Mobile\EventoMobile\EventoMobile.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+D:\Festival\Mobile\EventoMobile\EventoMobile.Android\obj\Debug\90\EventoMobile.Android.csprojAssemblyReference.cache
