@@ -1,0 +1,732 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.0/",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.0": {},
+    ".NETStandard,Version=v2.0/": {
+      "EventoMobile/1.0.0": {
+        "dependencies": {
+          "Festival": "1.0.0",
+          "NETStandard.Library": "2.0.3",
+          "Newtonsoft.Json": "12.0.3",
+          "Xamarin.Essentials": "1.3.1",
+          "Xamarin.Forms": "4.3.0.908675"
+        },
+        "runtime": {
+          "EventoMobile.dll": {}
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {},
+      "NETStandard.Library/2.0.3": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
+          }
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.Numerics.Vectors.dll": {
+            "assemblyVersion": "4.1.4.0",
+            "fileVersion": "4.6.26515.6"
+          }
+        }
+      },
+      "Xamarin.Essentials/1.3.1": {
+        "dependencies": {
+          "System.Numerics.Vectors": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Essentials.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Xamarin.Forms/4.3.0.908675": {
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "4.3.0.336"
+          },
+          "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "4.3.0.336"
+          },
+          "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "4.3.0.336"
+          }
+        }
+      },
+      "Festival/1.0.0": {
+        "runtime": {
+          "Festival.exe": {}
+        },
+        "resources": {
+          "de/DevExpress.XtraLayout.v19.2.resources.dll": {
+            "locale": "de"
+          },
+          "es/DevExpress.XtraLayout.v19.2.resources.dll": {
+            "locale": "es"
+          },
+          "ja/DevExpress.XtraLayout.v19.2.resources.dll": {
+            "locale": "ja"
+          },
+          "ru/DevExpress.XtraLayout.v19.2.resources.dll": {
+            "locale": "ru"
+          },
+          "de/DevExpress.XtraEditors.v19.2.resources.dll": {
+            "locale": "de"
+          },
+          "es/DevExpress.XtraEditors.v19.2.resources.dll": {
+            "locale": "es"
+          },
+          "ja/DevExpress.XtraEditors.v19.2.resources.dll": {
+            "locale": "ja"
+          },
+          "ru/DevExpress.XtraEditors.v19.2.resources.dll": {
+            "locale": "ru"
+          },
+          "de/DevExpress.XtraGrid.v19.2.resources.dll": {
+            "locale": "de"
+          },
+          "es/DevExpress.XtraGrid.v19.2.resources.dll": {
+            "locale": "es"
+          },
+          "ja/DevExpress.XtraGrid.v19.2.resources.dll": {
+            "locale": "ja"
+          },
+          "ru/DevExpress.XtraGrid.v19.2.resources.dll": {
+            "locale": "ru"
+          },
+          "de/DevExpress.Data.v19.2.resources.dll": {
+            "locale": "de"
+          },
+          "es/DevExpress.Data.v19.2.resources.dll": {
+            "locale": "es"
+          },
+          "ja/DevExpress.Data.v19.2.resources.dll": {
+            "locale": "ja"
+          },
+          "ru/DevExpress.Data.v19.2.resources.dll": {
+            "locale": "ru"
+          },
+          "de/DevExpress.Utils.v19.2.resources.dll": {
+            "locale": "de"
+          },
+          "es/DevExpress.Utils.v19.2.resources.dll": {
+            "locale": "es"
+          },
+          "ja/DevExpress.Utils.v19.2.resources.dll": {
+            "locale": "ja"
+          },
+          "ru/DevExpress.Utils.v19.2.resources.dll": {
+            "locale": "ru"
+          },
+          "de/DevExpress.Printing.v19.2.Core.resources.dll": {
+            "locale": "de"
+          },
+          "es/DevExpress.Printing.v19.2.Core.resources.dll": {
+            "locale": "es"
+          },
+          "ja/DevExpress.Printing.v19.2.Core.resources.dll": {
+            "locale": "ja"
+          },
+          "ru/DevExpress.Printing.v19.2.Core.resources.dll": {
+            "locale": "ru"
+          },
+          "de/DevExpress.Sparkline.v19.2.Core.resources.dll": {
+            "locale": "de"
+          },
+          "es/DevExpress.Sparkline.v19.2.Core.resources.dll": {
+            "locale": "es"
+          },
+          "ja/DevExpress.Sparkline.v19.2.Core.resources.dll": {
+            "locale": "ja"
+          },
+          "ru/DevExpress.Sparkline.v19.2.Core.resources.dll": {
+            "locale": "ru"
+          },
+          "de/DevExpress.XtraPrinting.v19.2.resources.dll": {
+            "locale": "de"
+          },
+          "es/DevExpress.XtraPrinting.v19.2.resources.dll": {
+            "locale": "es"
+          },
+          "ja/DevExpress.XtraPrinting.v19.2.resources.dll": {
+            "locale": "ja"
+          },
+          "ru/DevExpress.XtraPrinting.v19.2.resources.dll": {
+            "locale": "ru"
+          },
+          "de/DevExpress.Pdf.v19.2.Core.resources.dll": {
+            "locale": "de"
+          },
+          "es/DevExpress.Pdf.v19.2.Core.resources.dll": {
+            "locale": "es"
+          },
+          "ja/DevExpress.Pdf.v19.2.Core.resources.dll": {
+            "locale": "ja"
+          },
+          "ru/DevExpress.Pdf.v19.2.Core.resources.dll": {
+            "locale": "ru"
+          },
+          "de/DevExpress.XtraBars.v19.2.resources.dll": {
+            "locale": "de"
+          },
+          "es/DevExpress.XtraBars.v19.2.resources.dll": {
+            "locale": "es"
+          },
+          "ja/DevExpress.XtraBars.v19.2.resources.dll": {
+            "locale": "ja"
+          },
+          "ru/DevExpress.XtraBars.v19.2.resources.dll": {
+            "locale": "ru"
+          },
+          "de/DevExpress.RichEdit.v19.2.Core.resources.dll": {
+            "locale": "de"
+          },
+          "es/DevExpress.RichEdit.v19.2.Core.resources.dll": {
+            "locale": "es"
+          },
+          "ja/DevExpress.RichEdit.v19.2.Core.resources.dll": {
+            "locale": "ja"
+          },
+          "ru/DevExpress.RichEdit.v19.2.Core.resources.dll": {
+            "locale": "ru"
+          },
+          "de/DevExpress.XtraTreeList.v19.2.resources.dll": {
+            "locale": "de"
+          },
+          "es/DevExpress.XtraTreeList.v19.2.resources.dll": {
+            "locale": "es"
+          },
+          "ja/DevExpress.XtraTreeList.v19.2.resources.dll": {
+            "locale": "ja"
+          },
+          "ru/DevExpress.XtraTreeList.v19.2.resources.dll": {
+            "locale": "ru"
+          },
+          "de/DevExpress.Office.v19.2.Core.resources.dll": {
+            "locale": "de"
+          },
+          "es/DevExpress.Office.v19.2.Core.resources.dll": {
+            "locale": "es"
+          },
+          "ja/DevExpress.Office.v19.2.Core.resources.dll": {
+            "locale": "ja"
+          },
+          "ru/DevExpress.Office.v19.2.Core.resources.dll": {
+            "locale": "ru"
+          }
+        }
+      },
+      "DevExpress.XtraLayout.v19.2/19.2.5.0": {
+        "runtime": {
+          "DevExpress.XtraLayout.v19.2.dll": {
+            "assemblyVersion": "19.2.5.0",
+            "fileVersion": "19.2.5.20006"
+          }
+        },
+        "resources": {
+          "de/DevExpress.XtraLayout.v19.2.resources.dll": {
+            "locale": "de"
+          },
+          "es/DevExpress.XtraLayout.v19.2.resources.dll": {
+            "locale": "es"
+          },
+          "ja/DevExpress.XtraLayout.v19.2.resources.dll": {
+            "locale": "ja"
+          },
+          "ru/DevExpress.XtraLayout.v19.2.resources.dll": {
+            "locale": "ru"
+          }
+        }
+      },
+      "DevExpress.XtraEditors.v19.2/19.2.5.0": {
+        "runtime": {
+          "DevExpress.XtraEditors.v19.2.dll": {
+            "assemblyVersion": "19.2.5.0",
+            "fileVersion": "19.2.5.20006"
+          }
+        },
+        "resources": {
+          "de/DevExpress.XtraEditors.v19.2.resources.dll": {
+            "locale": "de"
+          },
+          "es/DevExpress.XtraEditors.v19.2.resources.dll": {
+            "locale": "es"
+          },
+          "ja/DevExpress.XtraEditors.v19.2.resources.dll": {
+            "locale": "ja"
+          },
+          "ru/DevExpress.XtraEditors.v19.2.resources.dll": {
+            "locale": "ru"
+          }
+        }
+      },
+      "NHibernate/5.1.0.0": {
+        "runtime": {
+          "NHibernate.dll": {
+            "assemblyVersion": "5.1.0.0",
+            "fileVersion": "5.1.1.0"
+          }
+        }
+      },
+      "FluentNHibernate/2.1.2.0": {
+        "runtime": {
+          "FluentNHibernate.dll": {
+            "assemblyVersion": "2.1.2.0",
+            "fileVersion": "2.1.2.0"
+          }
+        }
+      },
+      "DevExpress.XtraGrid.v19.2/19.2.5.0": {
+        "runtime": {
+          "DevExpress.XtraGrid.v19.2.dll": {
+            "assemblyVersion": "19.2.5.0",
+            "fileVersion": "19.2.5.20006"
+          }
+        },
+        "resources": {
+          "de/DevExpress.XtraGrid.v19.2.resources.dll": {
+            "locale": "de"
+          },
+          "es/DevExpress.XtraGrid.v19.2.resources.dll": {
+            "locale": "es"
+          },
+          "ja/DevExpress.XtraGrid.v19.2.resources.dll": {
+            "locale": "ja"
+          },
+          "ru/DevExpress.XtraGrid.v19.2.resources.dll": {
+            "locale": "ru"
+          }
+        }
+      },
+      "DevExpress.Data.v19.2/19.2.5.0": {
+        "runtime": {
+          "DevExpress.Data.v19.2.dll": {
+            "assemblyVersion": "19.2.5.0",
+            "fileVersion": "19.2.5.20006"
+          }
+        },
+        "resources": {
+          "de/DevExpress.Data.v19.2.resources.dll": {
+            "locale": "de"
+          },
+          "es/DevExpress.Data.v19.2.resources.dll": {
+            "locale": "es"
+          },
+          "ja/DevExpress.Data.v19.2.resources.dll": {
+            "locale": "ja"
+          },
+          "ru/DevExpress.Data.v19.2.resources.dll": {
+            "locale": "ru"
+          }
+        }
+      },
+      "DevExpress.Utils.v19.2/19.2.5.0": {
+        "runtime": {
+          "DevExpress.Utils.v19.2.dll": {
+            "assemblyVersion": "19.2.5.0",
+            "fileVersion": "19.2.5.20006"
+          }
+        },
+        "resources": {
+          "de/DevExpress.Utils.v19.2.resources.dll": {
+            "locale": "de"
+          },
+          "es/DevExpress.Utils.v19.2.resources.dll": {
+            "locale": "es"
+          },
+          "ja/DevExpress.Utils.v19.2.resources.dll": {
+            "locale": "ja"
+          },
+          "ru/DevExpress.Utils.v19.2.resources.dll": {
+            "locale": "ru"
+          }
+        }
+      },
+      "DevExpress.Printing.v19.2.Core/19.2.5.0": {
+        "runtime": {
+          "DevExpress.Printing.v19.2.Core.dll": {
+            "assemblyVersion": "19.2.5.0",
+            "fileVersion": "19.2.5.20006"
+          }
+        },
+        "resources": {
+          "de/DevExpress.Printing.v19.2.Core.resources.dll": {
+            "locale": "de"
+          },
+          "es/DevExpress.Printing.v19.2.Core.resources.dll": {
+            "locale": "es"
+          },
+          "ja/DevExpress.Printing.v19.2.Core.resources.dll": {
+            "locale": "ja"
+          },
+          "ru/DevExpress.Printing.v19.2.Core.resources.dll": {
+            "locale": "ru"
+          }
+        }
+      },
+      "DevExpress.Sparkline.v19.2.Core/19.2.5.0": {
+        "runtime": {
+          "DevExpress.Sparkline.v19.2.Core.dll": {
+            "assemblyVersion": "19.2.5.0",
+            "fileVersion": "19.2.5.20006"
+          }
+        },
+        "resources": {
+          "de/DevExpress.Sparkline.v19.2.Core.resources.dll": {
+            "locale": "de"
+          },
+          "es/DevExpress.Sparkline.v19.2.Core.resources.dll": {
+            "locale": "es"
+          },
+          "ja/DevExpress.Sparkline.v19.2.Core.resources.dll": {
+            "locale": "ja"
+          },
+          "ru/DevExpress.Sparkline.v19.2.Core.resources.dll": {
+            "locale": "ru"
+          }
+        }
+      },
+      "Remotion.Linq/2.1.0.0": {
+        "runtime": {
+          "Remotion.Linq.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.2.30000"
+          }
+        }
+      },
+      "Remotion.Linq.EagerFetching/2.1.0.0": {
+        "runtime": {
+          "Remotion.Linq.EagerFetching.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.0.30000"
+          }
+        }
+      },
+      "Antlr3.Runtime/3.5.0.2": {
+        "runtime": {
+          "Antlr3.Runtime.dll": {
+            "assemblyVersion": "3.5.0.2",
+            "fileVersion": "3.5.1.0"
+          }
+        }
+      },
+      "Iesi.Collections/4.0.0.4000": {
+        "runtime": {
+          "Iesi.Collections.dll": {
+            "assemblyVersion": "4.0.0.4000",
+            "fileVersion": "4.0.4.0"
+          }
+        }
+      },
+      "DevExpress.XtraPrinting.v19.2/19.2.5.0": {
+        "runtime": {
+          "DevExpress.XtraPrinting.v19.2.dll": {
+            "assemblyVersion": "19.2.5.0",
+            "fileVersion": "19.2.5.20006"
+          }
+        },
+        "resources": {
+          "de/DevExpress.XtraPrinting.v19.2.resources.dll": {
+            "locale": "de"
+          },
+          "es/DevExpress.XtraPrinting.v19.2.resources.dll": {
+            "locale": "es"
+          },
+          "ja/DevExpress.XtraPrinting.v19.2.resources.dll": {
+            "locale": "ja"
+          },
+          "ru/DevExpress.XtraPrinting.v19.2.resources.dll": {
+            "locale": "ru"
+          }
+        }
+      },
+      "DevExpress.Pdf.v19.2.Core/19.2.5.0": {
+        "runtime": {
+          "DevExpress.Pdf.v19.2.Core.dll": {
+            "assemblyVersion": "19.2.5.0",
+            "fileVersion": "19.2.5.20006"
+          }
+        },
+        "resources": {
+          "de/DevExpress.Pdf.v19.2.Core.resources.dll": {
+            "locale": "de"
+          },
+          "es/DevExpress.Pdf.v19.2.Core.resources.dll": {
+            "locale": "es"
+          },
+          "ja/DevExpress.Pdf.v19.2.Core.resources.dll": {
+            "locale": "ja"
+          },
+          "ru/DevExpress.Pdf.v19.2.Core.resources.dll": {
+            "locale": "ru"
+          }
+        }
+      },
+      "DevExpress.XtraBars.v19.2/19.2.5.0": {
+        "runtime": {
+          "DevExpress.XtraBars.v19.2.dll": {
+            "assemblyVersion": "19.2.5.0",
+            "fileVersion": "19.2.5.20006"
+          }
+        },
+        "resources": {
+          "de/DevExpress.XtraBars.v19.2.resources.dll": {
+            "locale": "de"
+          },
+          "es/DevExpress.XtraBars.v19.2.resources.dll": {
+            "locale": "es"
+          },
+          "ja/DevExpress.XtraBars.v19.2.resources.dll": {
+            "locale": "ja"
+          },
+          "ru/DevExpress.XtraBars.v19.2.resources.dll": {
+            "locale": "ru"
+          }
+        }
+      },
+      "DevExpress.RichEdit.v19.2.Core/19.2.5.0": {
+        "runtime": {
+          "DevExpress.RichEdit.v19.2.Core.dll": {
+            "assemblyVersion": "19.2.5.0",
+            "fileVersion": "19.2.5.20006"
+          }
+        },
+        "resources": {
+          "de/DevExpress.RichEdit.v19.2.Core.resources.dll": {
+            "locale": "de"
+          },
+          "es/DevExpress.RichEdit.v19.2.Core.resources.dll": {
+            "locale": "es"
+          },
+          "ja/DevExpress.RichEdit.v19.2.Core.resources.dll": {
+            "locale": "ja"
+          },
+          "ru/DevExpress.RichEdit.v19.2.Core.resources.dll": {
+            "locale": "ru"
+          }
+        }
+      },
+      "DevExpress.XtraTreeList.v19.2/19.2.5.0": {
+        "runtime": {
+          "DevExpress.XtraTreeList.v19.2.dll": {
+            "assemblyVersion": "19.2.5.0",
+            "fileVersion": "19.2.5.20006"
+          }
+        },
+        "resources": {
+          "de/DevExpress.XtraTreeList.v19.2.resources.dll": {
+            "locale": "de"
+          },
+          "es/DevExpress.XtraTreeList.v19.2.resources.dll": {
+            "locale": "es"
+          },
+          "ja/DevExpress.XtraTreeList.v19.2.resources.dll": {
+            "locale": "ja"
+          },
+          "ru/DevExpress.XtraTreeList.v19.2.resources.dll": {
+            "locale": "ru"
+          }
+        }
+      },
+      "DevExpress.Office.v19.2.Core/19.2.5.0": {
+        "runtime": {
+          "DevExpress.Office.v19.2.Core.dll": {
+            "assemblyVersion": "19.2.5.0",
+            "fileVersion": "19.2.5.20006"
+          }
+        },
+        "resources": {
+          "de/DevExpress.Office.v19.2.Core.resources.dll": {
+            "locale": "de"
+          },
+          "es/DevExpress.Office.v19.2.Core.resources.dll": {
+            "locale": "es"
+          },
+          "ja/DevExpress.Office.v19.2.Core.resources.dll": {
+            "locale": "ja"
+          },
+          "ru/DevExpress.Office.v19.2.Core.resources.dll": {
+            "locale": "ru"
+          }
+        }
+      },
+      "DevExpress.Images.v19.2/19.2.5.0": {
+        "runtime": {
+          "DevExpress.Images.v19.2.dll": {
+            "assemblyVersion": "19.2.5.0",
+            "fileVersion": "19.2.5.20006"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EventoMobile/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "path": "netstandard.library/2.0.3",
+      "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
+    },
+    "System.Numerics.Vectors/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "path": "system.numerics.vectors/4.5.0",
+      "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
+    },
+    "Xamarin.Essentials/1.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+51728AdZ/qtABGvcIaNXgEoL2jAtxAXLHS8PvGCP0pb6n7twBqYpfgkmwHYVgu+U99szgtL+Jot8L+OXorPcA==",
+      "path": "xamarin.essentials/1.3.1",
+      "hashPath": "xamarin.essentials.1.3.1.nupkg.sha512"
+    },
+    "Xamarin.Forms/4.3.0.908675": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kXrbXKJvXYF4cKjs1Jsb+pQFEnFGl0AONYSeABjgOJqN/o5Y4zC0XXQ68xiUI81PKQTuRB5F3oDom2t5ccJDZw==",
+      "path": "xamarin.forms/4.3.0.908675",
+      "hashPath": "xamarin.forms.4.3.0.908675.nupkg.sha512"
+    },
+    "Festival/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevExpress.XtraLayout.v19.2/19.2.5.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevExpress.XtraEditors.v19.2/19.2.5.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NHibernate/5.1.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FluentNHibernate/2.1.2.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevExpress.XtraGrid.v19.2/19.2.5.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevExpress.Data.v19.2/19.2.5.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevExpress.Utils.v19.2/19.2.5.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevExpress.Printing.v19.2.Core/19.2.5.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevExpress.Sparkline.v19.2.Core/19.2.5.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Remotion.Linq/2.1.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Remotion.Linq.EagerFetching/2.1.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Antlr3.Runtime/3.5.0.2": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Iesi.Collections/4.0.0.4000": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevExpress.XtraPrinting.v19.2/19.2.5.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevExpress.Pdf.v19.2.Core/19.2.5.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevExpress.XtraBars.v19.2/19.2.5.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevExpress.RichEdit.v19.2.Core/19.2.5.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevExpress.XtraTreeList.v19.2/19.2.5.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevExpress.Office.v19.2.Core/19.2.5.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevExpress.Images.v19.2/19.2.5.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

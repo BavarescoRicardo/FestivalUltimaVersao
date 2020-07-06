@@ -1,0 +1,1 @@
+C:\Users\Ninguem\Documents\Repositorios\Festival\Mobile\EventoMobile\EventoMobile.UWP\EventoMobile.UWP.csproj;x86

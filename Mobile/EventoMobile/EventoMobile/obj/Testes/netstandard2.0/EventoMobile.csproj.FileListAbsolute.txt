@@ -1,0 +1,13 @@
+C:\Users\Ninguem\Documents\Repositorios\Festival\Mobile\EventoMobile\EventoMobile\bin\Testes\netstandard2.0\EventoMobile.deps.json
+C:\Users\Ninguem\Documents\Repositorios\Festival\Mobile\EventoMobile\EventoMobile\bin\Testes\netstandard2.0\EventoMobile.dll
+C:\Users\Ninguem\Documents\Repositorios\Festival\Mobile\EventoMobile\EventoMobile\bin\Testes\netstandard2.0\ref\EventoMobile.dll
+C:\Users\Ninguem\Documents\Repositorios\Festival\Mobile\EventoMobile\EventoMobile\bin\Testes\netstandard2.0\EventoMobile.pdb
+C:\Users\Ninguem\Documents\Repositorios\Festival\Mobile\EventoMobile\EventoMobile\obj\Testes\netstandard2.0\EventoMobile.csprojAssemblyReference.cache
+C:\Users\Ninguem\Documents\Repositorios\Festival\Mobile\EventoMobile\EventoMobile\obj\Testes\netstandard2.0\App.xaml.g.cs
+C:\Users\Ninguem\Documents\Repositorios\Festival\Mobile\EventoMobile\EventoMobile\obj\Testes\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Ninguem\Documents\Repositorios\Festival\Mobile\EventoMobile\EventoMobile\obj\Testes\netstandard2.0\EventoMobile.AssemblyInfoInputs.cache
+C:\Users\Ninguem\Documents\Repositorios\Festival\Mobile\EventoMobile\EventoMobile\obj\Testes\netstandard2.0\EventoMobile.AssemblyInfo.cs
+C:\Users\Ninguem\Documents\Repositorios\Festival\Mobile\EventoMobile\EventoMobile\obj\Testes\netstandard2.0\XamlC.stamp
+C:\Users\Ninguem\Documents\Repositorios\Festival\Mobile\EventoMobile\EventoMobile\obj\Testes\netstandard2.0\EventoMobile.dll
+C:\Users\Ninguem\Documents\Repositorios\Festival\Mobile\EventoMobile\EventoMobile\obj\Testes\netstandard2.0\ref\EventoMobile.dll
+C:\Users\Ninguem\Documents\Repositorios\Festival\Mobile\EventoMobile\EventoMobile\obj\Testes\netstandard2.0\EventoMobile.pdb

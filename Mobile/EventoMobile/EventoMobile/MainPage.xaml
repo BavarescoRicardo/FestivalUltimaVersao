@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             mc:Ignorable="d"
+             x:Class="EventoMobile.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+
+        <Picker x:Name="cmbJuri" HorizontalOptions="FillAndExpand" Title="Selecione o Jurado:">
+            <Picker.Items>
+                <x:String>Escolha</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Label x:Name="lblWelcome" Text="Welcome to Xamarin.Forms!" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+        <Button x:Name="btnPostar" Text="Envia selecionado para o servidor" />
+        <Button x:Name="btnSincro" Text="Sincronizar" />
+
+        <Picker x:Name="cmbJurados" HorizontalOptions="FillAndExpand" Title="Selecione o Jurado Sinc">
+            <Picker.Items>
+                <x:String>Jurado 1</x:String>
+                <x:String>Jurado</x:String>
+            </Picker.Items>
+        </Picker>
+
+
+    </StackLayout>
+
+</ContentPage>
