@@ -181,6 +181,7 @@
     <Compile Include="desktop\listagens\ListaPrincipal.Designer.cs">
       <DependentUpon>ListaPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="mapeamento\ApresentacaoMap.cs" />
     <Compile Include="mapeamento\CantorMap.cs" />
     <Compile Include="mapeamento\CategoriaMap.cs" />
     <Compile Include="mapeamento\EventoMap.cs" />

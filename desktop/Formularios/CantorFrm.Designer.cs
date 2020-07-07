@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CantorFrm));
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.imageComboBoxEdit1 = new DevExpress.XtraEditors.ImageComboBoxEdit();
             this.txtObs = new DevExpress.XtraEditors.TextEdit();
             this.bindingSourceCantor = new System.Windows.Forms.BindingSource(this.components);
             this.txtCpf = new DevExpress.XtraEditors.TextEdit();
@@ -59,13 +58,11 @@
             this.pnliCpf = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem5 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.txtObservacao = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imageComboBoxEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtObs.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceCantor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCpf.Properties)).BeginInit();
@@ -86,7 +83,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pnliCpf)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtObservacao)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
             this.SuspendLayout();
@@ -94,7 +90,6 @@
             // layoutControl1
             // 
             this.layoutControl1.Controls.Add(this.textEdit1);
-            this.layoutControl1.Controls.Add(this.imageComboBoxEdit1);
             this.layoutControl1.Controls.Add(this.txtObs);
             this.layoutControl1.Controls.Add(this.txtCpf);
             this.layoutControl1.Controls.Add(this.txtRg);
@@ -111,31 +106,20 @@
             // 
             // textEdit1
             // 
-            this.textEdit1.Location = new System.Drawing.Point(648, 60);
+            this.textEdit1.Location = new System.Drawing.Point(420, 60);
             this.textEdit1.Margin = new System.Windows.Forms.Padding(0);
-            this.textEdit1.MaximumSize = new System.Drawing.Size(30, 0);
+            this.textEdit1.MaximumSize = new System.Drawing.Size(50, 0);
             this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(30, 20);
+            this.textEdit1.Size = new System.Drawing.Size(50, 20);
             this.textEdit1.StyleController = this.layoutControl1;
             this.textEdit1.TabIndex = 14;
-            // 
-            // imageComboBoxEdit1
-            // 
-            this.imageComboBoxEdit1.Location = new System.Drawing.Point(436, 60);
-            this.imageComboBoxEdit1.MaximumSize = new System.Drawing.Size(150, 0);
-            this.imageComboBoxEdit1.Name = "imageComboBoxEdit1";
-            this.imageComboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.imageComboBoxEdit1.Size = new System.Drawing.Size(133, 20);
-            this.imageComboBoxEdit1.StyleController = this.layoutControl1;
-            this.imageComboBoxEdit1.TabIndex = 13;
             // 
             // txtObs
             // 
             this.txtObs.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bindingSourceCantor, "observacao", true));
-            this.txtObs.Location = new System.Drawing.Point(306, 12);
+            this.txtObs.Location = new System.Drawing.Point(290, 12);
             this.txtObs.Name = "txtObs";
-            this.txtObs.Size = new System.Drawing.Size(392, 20);
+            this.txtObs.Size = new System.Drawing.Size(408, 20);
             this.txtObs.StyleController = this.layoutControl1;
             this.txtObs.TabIndex = 12;
             // 
@@ -146,20 +130,20 @@
             // txtCpf
             // 
             this.txtCpf.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bindingSourceCantor, "cpf", true));
-            this.txtCpf.Location = new System.Drawing.Point(240, 60);
+            this.txtCpf.Location = new System.Drawing.Point(224, 60);
             this.txtCpf.MaximumSize = new System.Drawing.Size(160, 0);
             this.txtCpf.Name = "txtCpf";
-            this.txtCpf.Size = new System.Drawing.Size(142, 20);
+            this.txtCpf.Size = new System.Drawing.Size(158, 20);
             this.txtCpf.StyleController = this.layoutControl1;
             this.txtCpf.TabIndex = 10;
             // 
             // txtRg
             // 
             this.txtRg.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bindingSourceCantor, "rg", true));
-            this.txtRg.Location = new System.Drawing.Point(62, 60);
+            this.txtRg.Location = new System.Drawing.Point(46, 60);
             this.txtRg.MinimumSize = new System.Drawing.Size(100, 0);
             this.txtRg.Name = "txtRg";
-            this.txtRg.Size = new System.Drawing.Size(124, 20);
+            this.txtRg.Size = new System.Drawing.Size(140, 20);
             this.txtRg.StyleController = this.layoutControl1;
             this.txtRg.TabIndex = 9;
             // 
@@ -242,20 +226,20 @@
             // txtEmail
             // 
             this.txtEmail.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bindingSourceCantor, "email", true));
-            this.txtEmail.Location = new System.Drawing.Point(62, 36);
+            this.txtEmail.Location = new System.Drawing.Point(46, 36);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(636, 20);
+            this.txtEmail.Size = new System.Drawing.Size(652, 20);
             this.txtEmail.StyleController = this.layoutControl1;
             this.txtEmail.TabIndex = 5;
             // 
             // txtNome
             // 
             this.txtNome.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bindingSourceCantor, "nome", true));
-            this.txtNome.Location = new System.Drawing.Point(62, 12);
+            this.txtNome.Location = new System.Drawing.Point(46, 12);
             this.txtNome.MaximumSize = new System.Drawing.Size(225, 0);
             this.txtNome.Name = "txtNome";
             this.txtNome.Properties.MaxLength = 200;
-            this.txtNome.Size = new System.Drawing.Size(190, 20);
+            this.txtNome.Size = new System.Drawing.Size(206, 20);
             this.txtNome.StyleController = this.layoutControl1;
             this.txtNome.TabIndex = 4;
             // 
@@ -274,7 +258,6 @@
             this.pnliCpf,
             this.emptySpaceItem5,
             this.txtObservacao,
-            this.layoutControlItem1,
             this.layoutControlItem2,
             this.emptySpaceItem2});
             this.Root.Name = "Root";
@@ -290,7 +273,7 @@
             this.pnliNome.ShowInCustomizationForm = false;
             this.pnliNome.Size = new System.Drawing.Size(244, 24);
             this.pnliNome.Text = "Nome:";
-            this.pnliNome.TextSize = new System.Drawing.Size(47, 13);
+            this.pnliNome.TextSize = new System.Drawing.Size(31, 13);
             // 
             // emptySpaceItem
             // 
@@ -308,7 +291,7 @@
             this.pnliEmail.Name = "pnliEmail";
             this.pnliEmail.Size = new System.Drawing.Size(690, 24);
             this.pnliEmail.Text = "Email:";
-            this.pnliEmail.TextSize = new System.Drawing.Size(47, 13);
+            this.pnliEmail.TextSize = new System.Drawing.Size(31, 13);
             // 
             // layoutControlItem4
             // 
@@ -353,7 +336,7 @@
             this.pnliRg.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.pnliRg.Text = "RG:";
             this.pnliRg.TextLocation = DevExpress.Utils.Locations.Left;
-            this.pnliRg.TextSize = new System.Drawing.Size(47, 13);
+            this.pnliRg.TextSize = new System.Drawing.Size(31, 13);
             // 
             // pnliCpf
             // 
@@ -369,7 +352,7 @@
             this.pnliCpf.Size = new System.Drawing.Size(196, 24);
             this.pnliCpf.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.pnliCpf.Text = "CPF:";
-            this.pnliCpf.TextSize = new System.Drawing.Size(47, 13);
+            this.pnliCpf.TextSize = new System.Drawing.Size(31, 13);
             // 
             // emptySpaceItem5
             // 
@@ -386,32 +369,23 @@
             this.txtObservacao.Name = "txtObservacao";
             this.txtObservacao.Size = new System.Drawing.Size(446, 24);
             this.txtObservacao.Text = "Obs";
-            this.txtObservacao.TextSize = new System.Drawing.Size(47, 13);
-            // 
-            // layoutControlItem1
-            // 
-            this.layoutControlItem1.Control = this.imageComboBoxEdit1;
-            this.layoutControlItem1.Location = new System.Drawing.Point(374, 48);
-            this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(187, 24);
-            this.layoutControlItem1.Text = "Categoria";
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(47, 13);
+            this.txtObservacao.TextSize = new System.Drawing.Size(31, 13);
             // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.textEdit1;
-            this.layoutControlItem2.Location = new System.Drawing.Point(586, 48);
+            this.layoutControlItem2.Location = new System.Drawing.Point(374, 48);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(104, 24);
+            this.layoutControlItem2.Size = new System.Drawing.Size(88, 24);
             this.layoutControlItem2.Text = "Idade";
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(47, 13);
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(31, 13);
             // 
             // emptySpaceItem2
             // 
             this.emptySpaceItem2.AllowHotTrack = false;
-            this.emptySpaceItem2.Location = new System.Drawing.Point(561, 48);
+            this.emptySpaceItem2.Location = new System.Drawing.Point(462, 48);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(25, 24);
+            this.emptySpaceItem2.Size = new System.Drawing.Size(228, 24);
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // CantorFrm
@@ -426,7 +400,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imageComboBoxEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtObs.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceCantor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCpf.Properties)).EndInit();
@@ -447,7 +420,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pnliCpf)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtObservacao)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
             this.ResumeLayout(false);
@@ -483,8 +455,6 @@
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem5;
         private DevExpress.XtraEditors.TextEdit txtObs;
         private DevExpress.XtraLayout.LayoutControlItem txtObservacao;
-        private DevExpress.XtraEditors.ImageComboBoxEdit imageComboBoxEdit1;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
         private DevExpress.XtraEditors.TextEdit textEdit1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem2;

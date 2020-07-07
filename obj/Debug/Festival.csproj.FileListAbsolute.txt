@@ -410,3 +410,4 @@ D:\Festival\obj\Debug\Festival.csproj.CoreCompileInputs.cache
 D:\Festival\obj\Debug\Festival.csproj.CopyComplete
 D:\Festival\obj\Debug\Festival.exe
 D:\Festival\obj\Debug\Festival.pdb
+D:\Festival\obj\Debug\Festival.csprojAssemblyReference.cache

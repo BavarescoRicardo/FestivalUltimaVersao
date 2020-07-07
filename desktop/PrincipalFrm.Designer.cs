@@ -32,17 +32,17 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.eventoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadastrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuCadastrarEvento = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuListarEvento = new System.Windows.Forms.ToolStripMenuItem();
             this.cayegoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadastrarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.listarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuCadastrarCategoria = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuListarCategoria = new System.Windows.Forms.ToolStripMenuItem();
             this.juriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadastrarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.listarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuCadastrarJurado = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuListarJurado = new System.Windows.Forms.ToolStripMenuItem();
             this.cantoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadastrarToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.listarToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuCadastrarCantor = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuListarCantor = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
@@ -88,91 +88,93 @@
             // eventoToolStripMenuItem
             // 
             this.eventoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cadastrarToolStripMenuItem,
-            this.listarToolStripMenuItem});
+            this.mnuCadastrarEvento,
+            this.mnuListarEvento});
             this.eventoToolStripMenuItem.Name = "eventoToolStripMenuItem";
             this.eventoToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
             this.eventoToolStripMenuItem.Text = "Evento";
             // 
-            // cadastrarToolStripMenuItem
+            // mnuCadastrarEvento
             // 
-            this.cadastrarToolStripMenuItem.Name = "cadastrarToolStripMenuItem";
-            this.cadastrarToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.cadastrarToolStripMenuItem.Text = "Cadastrar";
-            this.cadastrarToolStripMenuItem.Click += new System.EventHandler(this.cadastrarToolStripMenuItem_Click);
+            this.mnuCadastrarEvento.Name = "mnuCadastrarEvento";
+            this.mnuCadastrarEvento.Size = new System.Drawing.Size(124, 22);
+            this.mnuCadastrarEvento.Text = "Cadastrar";
+            this.mnuCadastrarEvento.Click += new System.EventHandler(this.cadastrarToolStripMenuItem_Click);
             // 
-            // listarToolStripMenuItem
+            // mnuListarEvento
             // 
-            this.listarToolStripMenuItem.Name = "listarToolStripMenuItem";
-            this.listarToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.listarToolStripMenuItem.Text = "Listar";
-            this.listarToolStripMenuItem.Click += new System.EventHandler(this.listarToolStripMenuItem_Click);
+            this.mnuListarEvento.Name = "mnuListarEvento";
+            this.mnuListarEvento.Size = new System.Drawing.Size(124, 22);
+            this.mnuListarEvento.Text = "Listar";
+            this.mnuListarEvento.Click += new System.EventHandler(this.listarToolStripMenuItem_Click);
             // 
             // cayegoriaToolStripMenuItem
             // 
             this.cayegoriaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cadastrarToolStripMenuItem1,
-            this.listarToolStripMenuItem1});
+            this.mnuCadastrarCategoria,
+            this.mnuListarCategoria});
             this.cayegoriaToolStripMenuItem.Name = "cayegoriaToolStripMenuItem";
             this.cayegoriaToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
             this.cayegoriaToolStripMenuItem.Text = "Categoria";
             // 
-            // cadastrarToolStripMenuItem1
+            // mnuCadastrarCategoria
             // 
-            this.cadastrarToolStripMenuItem1.Name = "cadastrarToolStripMenuItem1";
-            this.cadastrarToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
-            this.cadastrarToolStripMenuItem1.Text = "Cadastrar";
-            this.cadastrarToolStripMenuItem1.Click += new System.EventHandler(this.cadastrarToolStripMenuItem1_Click);
+            this.mnuCadastrarCategoria.Name = "mnuCadastrarCategoria";
+            this.mnuCadastrarCategoria.Size = new System.Drawing.Size(124, 22);
+            this.mnuCadastrarCategoria.Text = "Cadastrar";
+            this.mnuCadastrarCategoria.Click += new System.EventHandler(this.cadastrarToolStripMenuItem1_Click);
             // 
-            // listarToolStripMenuItem1
+            // mnuListarCategoria
             // 
-            this.listarToolStripMenuItem1.Name = "listarToolStripMenuItem1";
-            this.listarToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
-            this.listarToolStripMenuItem1.Text = "Listar";
-            this.listarToolStripMenuItem1.Click += new System.EventHandler(this.listarToolStripMenuItem1_Click);
+            this.mnuListarCategoria.Name = "mnuListarCategoria";
+            this.mnuListarCategoria.Size = new System.Drawing.Size(124, 22);
+            this.mnuListarCategoria.Text = "Listar";
+            this.mnuListarCategoria.Click += new System.EventHandler(this.listarToolStripMenuItem1_Click);
             // 
             // juriToolStripMenuItem
             // 
             this.juriToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cadastrarToolStripMenuItem2,
-            this.listarToolStripMenuItem2});
+            this.mnuCadastrarJurado,
+            this.mnuListarJurado});
             this.juriToolStripMenuItem.Name = "juriToolStripMenuItem";
             this.juriToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.juriToolStripMenuItem.Text = "Juri";
             // 
-            // cadastrarToolStripMenuItem2
+            // mnuCadastrarJurado
             // 
-            this.cadastrarToolStripMenuItem2.Name = "cadastrarToolStripMenuItem2";
-            this.cadastrarToolStripMenuItem2.Size = new System.Drawing.Size(124, 22);
-            this.cadastrarToolStripMenuItem2.Text = "Cadastrar";
+            this.mnuCadastrarJurado.Name = "mnuCadastrarJurado";
+            this.mnuCadastrarJurado.Size = new System.Drawing.Size(180, 22);
+            this.mnuCadastrarJurado.Text = "Cadastrar";
+            this.mnuCadastrarJurado.Click += new System.EventHandler(this.mnuCadastrarJurado_Click);
             // 
-            // listarToolStripMenuItem2
+            // mnuListarJurado
             // 
-            this.listarToolStripMenuItem2.Name = "listarToolStripMenuItem2";
-            this.listarToolStripMenuItem2.Size = new System.Drawing.Size(124, 22);
-            this.listarToolStripMenuItem2.Text = "Listar";
+            this.mnuListarJurado.Name = "mnuListarJurado";
+            this.mnuListarJurado.Size = new System.Drawing.Size(180, 22);
+            this.mnuListarJurado.Text = "Listar";
+            this.mnuListarJurado.Click += new System.EventHandler(this.mnuListarJurado_Click);
             // 
             // cantoresToolStripMenuItem
             // 
             this.cantoresToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cadastrarToolStripMenuItem3,
-            this.listarToolStripMenuItem3});
+            this.mnuCadastrarCantor,
+            this.mnuListarCantor});
             this.cantoresToolStripMenuItem.Name = "cantoresToolStripMenuItem";
             this.cantoresToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.cantoresToolStripMenuItem.Text = "Cantores";
             // 
-            // cadastrarToolStripMenuItem3
+            // mnuCadastrarCantor
             // 
-            this.cadastrarToolStripMenuItem3.Name = "cadastrarToolStripMenuItem3";
-            this.cadastrarToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
-            this.cadastrarToolStripMenuItem3.Text = "Cadastrar";
-            this.cadastrarToolStripMenuItem3.Click += new System.EventHandler(this.cadastrarToolStripMenuItem3_Click);
+            this.mnuCadastrarCantor.Name = "mnuCadastrarCantor";
+            this.mnuCadastrarCantor.Size = new System.Drawing.Size(180, 22);
+            this.mnuCadastrarCantor.Text = "Cadastrar";
+            this.mnuCadastrarCantor.Click += new System.EventHandler(this.mnuCadastrarCantor_Click);
             // 
-            // listarToolStripMenuItem3
+            // mnuListarCantor
             // 
-            this.listarToolStripMenuItem3.Name = "listarToolStripMenuItem3";
-            this.listarToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
-            this.listarToolStripMenuItem3.Text = "Listar";
+            this.mnuListarCantor.Name = "mnuListarCantor";
+            this.mnuListarCantor.Size = new System.Drawing.Size(180, 22);
+            this.mnuListarCantor.Text = "Listar";
             // 
             // toolStripMenuItem1
             // 
@@ -268,17 +270,17 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.ToolStripMenuItem eventoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cadastrarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem listarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mnuCadastrarEvento;
+        private System.Windows.Forms.ToolStripMenuItem mnuListarEvento;
         private System.Windows.Forms.ToolStripMenuItem cayegoriaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cadastrarToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem listarToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem mnuCadastrarCategoria;
+        private System.Windows.Forms.ToolStripMenuItem mnuListarCategoria;
         private System.Windows.Forms.ToolStripMenuItem juriToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cadastrarToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem listarToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem mnuCadastrarJurado;
+        private System.Windows.Forms.ToolStripMenuItem mnuListarJurado;
         private System.Windows.Forms.ToolStripMenuItem cantoresToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cadastrarToolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem listarToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem mnuCadastrarCantor;
+        private System.Windows.Forms.ToolStripMenuItem mnuListarCantor;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;

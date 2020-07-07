@@ -46,10 +46,22 @@ namespace Festival.desktop
             listaCategoria.Visible = true;
         }
 
-        private void cadastrarToolStripMenuItem3_Click(object sender, EventArgs e)
+        private void mnuCadastrarCantor_Click(object sender, EventArgs e)
         {
             CantorFrm cantor = new CantorFrm();
             cantor.Visible = true;
+        }
+
+        private void mnuCadastrarJurado_Click(object sender, EventArgs e)
+        {
+            JuradoFrm juradoF = new JuradoFrm();
+            juradoF.Visible = true;
+        }
+
+        private void mnuListarJurado_Click(object sender, EventArgs e)
+        {
+            ListaJuri listaJurado = new ListaJuri();
+            listaJurado.Visible = true;
         }
     }
 }
