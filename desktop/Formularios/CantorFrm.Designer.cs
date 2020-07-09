@@ -225,7 +225,7 @@
             this.colcategoria.Caption = "Selecione";
             this.colcategoria.ColumnEdit = this.cmbCategoriaRepositorioGrid;
             this.colcategoria.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
-            this.colcategoria.FieldName = "cate.id_categoria";
+            this.colcategoria.FieldName = "cate";
             this.colcategoria.Name = "colcategoria";
             this.colcategoria.Visible = true;
             this.colcategoria.VisibleIndex = 3;

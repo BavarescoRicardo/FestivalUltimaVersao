@@ -28,6 +28,6 @@ namespace Festival.or
         public virtual int cantor { get; set; }
         public virtual int categoria { get; set; }
 
-        public virtual Categoria cate { get; }
+        public virtual Categoria cate { get; set; }
     }
 }
