@@ -27,5 +27,7 @@ namespace Festival.or
         public virtual string artista { get; set; }
         public virtual int cantor { get; set; }
         public virtual int categoria { get; set; }
+
+        public virtual Categoria cate { get; }
     }
 }

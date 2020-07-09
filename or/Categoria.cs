@@ -22,5 +22,11 @@ namespace Festival.or
             this.categoria = categoria;
             this.dia = dia;
         }
-    }
+
+        public override string ToString()
+        {
+            return this.categoria + " " + this.id_categoria;
+        }
+
+    } 
 }

@@ -45,6 +45,7 @@
             this.colartista = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colcantor = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colcategoria = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.cmbCategoriaRepositorioGrid = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
             this.txtEmail = new DevExpress.XtraEditors.TextEdit();
             this.txtNome = new DevExpress.XtraEditors.TextEdit();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
@@ -70,6 +71,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceApresentacao)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbCategoriaRepositorioGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNome.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
@@ -163,6 +165,8 @@
             this.gridControl1.Location = new System.Drawing.Point(12, 110);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
+            this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.cmbCategoriaRepositorioGrid});
             this.gridControl1.Size = new System.Drawing.Size(686, 301);
             this.gridControl1.TabIndex = 7;
             this.gridControl1.UseEmbeddedNavigator = true;
@@ -189,6 +193,7 @@
             // 
             this.colCodigo.Caption = "Codigo";
             this.colCodigo.FieldName = "id_apresentacao";
+            this.colCodigo.FieldNameSortGroup = "cate";
             this.colCodigo.Name = "colCodigo";
             this.colCodigo.Visible = true;
             this.colCodigo.VisibleIndex = 0;
@@ -217,11 +222,22 @@
             // 
             // colcategoria
             // 
-            this.colcategoria.FieldName = "categoria";
+            this.colcategoria.Caption = "Selecione";
+            this.colcategoria.ColumnEdit = this.cmbCategoriaRepositorioGrid;
+            this.colcategoria.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
+            this.colcategoria.FieldName = "cate.id_categoria";
             this.colcategoria.Name = "colcategoria";
             this.colcategoria.Visible = true;
             this.colcategoria.VisibleIndex = 3;
             this.colcategoria.Width = 207;
+            // 
+            // cmbCategoriaRepositorioGrid
+            // 
+            this.cmbCategoriaRepositorioGrid.AutoHeight = false;
+            this.cmbCategoriaRepositorioGrid.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbCategoriaRepositorioGrid.EditFormat.FormatType = DevExpress.Utils.FormatType.Custom;
+            this.cmbCategoriaRepositorioGrid.Name = "cmbCategoriaRepositorioGrid";
             // 
             // txtEmail
             // 
@@ -407,6 +423,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceApresentacao)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbCategoriaRepositorioGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNome.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
@@ -458,5 +475,6 @@
         private DevExpress.XtraEditors.TextEdit textEdit1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem2;
+        private DevExpress.XtraEditors.Repository.RepositoryItemComboBox cmbCategoriaRepositorioGrid;
     }
 }
