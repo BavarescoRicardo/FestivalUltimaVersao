@@ -1,5 +1,6 @@
 ﻿using DevExpress.Data.Helpers;
 using DevExpress.Utils.Extensions;
+using DevExpress.XtraEditors;
 using Festival.bo;
 using Festival.or;
 using System;
@@ -16,7 +17,7 @@ namespace Festival.desktop
 {
     public partial class CantorFrm : Form
     {
-        private long categoriaTemp = 0;
+        private Categoria categoriaTemp = null;
 
         public CantorFrm()
         {
@@ -58,8 +59,8 @@ namespace Festival.desktop
                 {
                     Festival.bo.ApresentacaoBo apresentacaoBo = new Festival.bo.ApresentacaoBo();
                     bindingSourceApresentacao.EndEdit();
-                    apresentacao.cantor = cantor.id_cantor;
-                    apresentacao.categoria = (int)categoriaTemp;
+                    apresentacao.cantor = cantor;
+                    apresentacao.categoria = (Categoria)categoriaTemp;
                     apresentacaoBo.Inserir(apresentacao);
                     MessageBox.Show("Inserido com sucesso");
                 }
@@ -83,6 +84,12 @@ namespace Festival.desktop
                 MessageBox.Show("Erro ao inserir ");
                 throw new Exception("Erro ao inserir  " + ex);
             }
+        }
+
+        private void cmbCategoriaRepositorioGrid_EditValueChanged(object sender, EventArgs e)
+        {
+            ComboBoxEdit cb = (sender as ComboBoxEdit);
+            this.categoriaTemp = (Categoria)cb.EditValue;
         }
     }
     

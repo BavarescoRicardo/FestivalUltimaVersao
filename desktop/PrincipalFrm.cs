@@ -63,5 +63,11 @@ namespace Festival.desktop
             ListaJuri listaJurado = new ListaJuri();
             listaJurado.Visible = true;
         }
+
+        private void atribuirNotasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NotaFrm nota = new NotaFrm();
+            nota.Visible = true;
+        }
     }
 }

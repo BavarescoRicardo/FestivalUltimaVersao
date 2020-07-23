@@ -150,6 +150,12 @@
     <Compile Include="desktop\Formularios\JuradoFrm.Designer.cs">
       <DependentUpon>JuradoFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="desktop\Formularios\NotaFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="desktop\Formularios\NotaFrm.Designer.cs">
+      <DependentUpon>NotaFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="desktop\listagens\ListaCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -208,6 +214,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="desktop\Formularios\JuradoFrm.resx">
       <DependentUpon>JuradoFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="desktop\Formularios\NotaFrm.resx">
+      <DependentUpon>NotaFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="desktop\listagens\ListaCategoria.resx">
       <DependentUpon>ListaCategoria.cs</DependentUpon>

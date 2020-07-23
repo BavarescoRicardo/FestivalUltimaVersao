@@ -143,14 +143,14 @@
             // mnuCadastrarJurado
             // 
             this.mnuCadastrarJurado.Name = "mnuCadastrarJurado";
-            this.mnuCadastrarJurado.Size = new System.Drawing.Size(180, 22);
+            this.mnuCadastrarJurado.Size = new System.Drawing.Size(124, 22);
             this.mnuCadastrarJurado.Text = "Cadastrar";
             this.mnuCadastrarJurado.Click += new System.EventHandler(this.mnuCadastrarJurado_Click);
             // 
             // mnuListarJurado
             // 
             this.mnuListarJurado.Name = "mnuListarJurado";
-            this.mnuListarJurado.Size = new System.Drawing.Size(180, 22);
+            this.mnuListarJurado.Size = new System.Drawing.Size(124, 22);
             this.mnuListarJurado.Text = "Listar";
             this.mnuListarJurado.Click += new System.EventHandler(this.mnuListarJurado_Click);
             // 
@@ -166,14 +166,14 @@
             // mnuCadastrarCantor
             // 
             this.mnuCadastrarCantor.Name = "mnuCadastrarCantor";
-            this.mnuCadastrarCantor.Size = new System.Drawing.Size(180, 22);
+            this.mnuCadastrarCantor.Size = new System.Drawing.Size(124, 22);
             this.mnuCadastrarCantor.Text = "Cadastrar";
             this.mnuCadastrarCantor.Click += new System.EventHandler(this.mnuCadastrarCantor_Click);
             // 
             // mnuListarCantor
             // 
             this.mnuListarCantor.Name = "mnuListarCantor";
-            this.mnuListarCantor.Size = new System.Drawing.Size(180, 22);
+            this.mnuListarCantor.Size = new System.Drawing.Size(124, 22);
             this.mnuListarCantor.Text = "Listar";
             // 
             // toolStripMenuItem1
@@ -237,14 +237,15 @@
             // imprimirFichasToolStripMenuItem
             // 
             this.imprimirFichasToolStripMenuItem.Name = "imprimirFichasToolStripMenuItem";
-            this.imprimirFichasToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.imprimirFichasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.imprimirFichasToolStripMenuItem.Text = "Imprimir Fichas";
             // 
             // atribuirNotasToolStripMenuItem
             // 
             this.atribuirNotasToolStripMenuItem.Name = "atribuirNotasToolStripMenuItem";
-            this.atribuirNotasToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.atribuirNotasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.atribuirNotasToolStripMenuItem.Text = "Atribuir Notas";
+            this.atribuirNotasToolStripMenuItem.Click += new System.EventHandler(this.atribuirNotasToolStripMenuItem_Click);
             // 
             // PrincipalFrm
             // 

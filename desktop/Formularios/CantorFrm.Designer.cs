@@ -192,9 +192,12 @@
             // colCodigo
             // 
             this.colCodigo.Caption = "Codigo";
-            this.colCodigo.FieldName = "id_apresentacao";
             this.colCodigo.FieldNameSortGroup = "cate";
             this.colCodigo.Name = "colCodigo";
+            this.colCodigo.OptionsColumn.AllowEdit = false;
+            this.colCodigo.OptionsColumn.AllowFocus = false;
+            this.colCodigo.OptionsColumn.TabStop = false;
+            this.colCodigo.OptionsFilter.AllowFilter = false;
             this.colCodigo.Visible = true;
             this.colCodigo.VisibleIndex = 0;
             this.colCodigo.Width = 72;
@@ -225,7 +228,7 @@
             this.colcategoria.Caption = "Selecione";
             this.colcategoria.ColumnEdit = this.cmbCategoriaRepositorioGrid;
             this.colcategoria.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
-            this.colcategoria.FieldName = "cate";
+            this.colcategoria.FieldName = "categoria";
             this.colcategoria.Name = "colcategoria";
             this.colcategoria.Visible = true;
             this.colcategoria.VisibleIndex = 3;
@@ -238,6 +241,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbCategoriaRepositorioGrid.EditFormat.FormatType = DevExpress.Utils.FormatType.Custom;
             this.cmbCategoriaRepositorioGrid.Name = "cmbCategoriaRepositorioGrid";
+            this.cmbCategoriaRepositorioGrid.EditValueChanged += new System.EventHandler(this.cmbCategoriaRepositorioGrid_EditValueChanged);
             // 
             // txtEmail
             // 
