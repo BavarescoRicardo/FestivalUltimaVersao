@@ -237,13 +237,13 @@
             // imprimirFichasToolStripMenuItem
             // 
             this.imprimirFichasToolStripMenuItem.Name = "imprimirFichasToolStripMenuItem";
-            this.imprimirFichasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.imprimirFichasToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.imprimirFichasToolStripMenuItem.Text = "Imprimir Fichas";
             // 
             // atribuirNotasToolStripMenuItem
             // 
             this.atribuirNotasToolStripMenuItem.Name = "atribuirNotasToolStripMenuItem";
-            this.atribuirNotasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.atribuirNotasToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.atribuirNotasToolStripMenuItem.Text = "Atribuir Notas";
             this.atribuirNotasToolStripMenuItem.Click += new System.EventHandler(this.atribuirNotasToolStripMenuItem_Click);
             // 
