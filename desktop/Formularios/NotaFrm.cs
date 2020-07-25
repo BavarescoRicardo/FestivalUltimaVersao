@@ -50,5 +50,10 @@ namespace Festival.desktop
                 throw new Exception("Erro ao inserir  " + ex);
             }
         }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
