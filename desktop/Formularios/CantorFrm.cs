@@ -69,12 +69,6 @@ namespace Festival.desktop
                     MessageBox.Show("Erro ao gravar apresentação  "+eap.Message);
                 }
 
-
-                // Deveria fazer isto 
-                // INSERT INTO `evento`.`apresentacao` (`musica`, `artista`, `cantor`, `categoria`) VALUES ('simfonia da noite', 'cleiton rasta', '1', '3'); 
-
-
-
                 // Limpar campos
                 this.txtNome.Text = string.Empty;
 

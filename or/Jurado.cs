@@ -27,6 +27,10 @@ namespace Festival.or
         public virtual string contato { get; set; }
         public virtual string documento { get; set; }
         public virtual string observacao { get; set; }
-        
+
+        public override string ToString()
+        {
+            return string.Format("{0} {1}",this.id_jurado, this.nome);
+        }
     }
 }

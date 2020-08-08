@@ -25,49 +25,49 @@ namespace Festival.desktop
         private void cadastrarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             EventoFrm eventoFrm = new EventoFrm();
-            eventoFrm.Visible = true;
+            eventoFrm.ShowDialog();
         }
 
         private void listarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ListaEvento listar = new ListaEvento();
-            listar.Visible = true;
+            listar.ShowDialog();
         }
 
         private void cadastrarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             CategoriaFrm categoriaFrm = new CategoriaFrm();
-            categoriaFrm.Visible = true;
+            categoriaFrm.ShowDialog();
         }
 
         private void listarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             ListaCategoria listaCategoria = new ListaCategoria();
-            listaCategoria.Visible = true;
+            listaCategoria.ShowDialog();
         }
 
         private void mnuCadastrarCantor_Click(object sender, EventArgs e)
         {
             CantorFrm cantor = new CantorFrm();
-            cantor.Visible = true;
+            cantor.ShowDialog();
         }
 
         private void mnuCadastrarJurado_Click(object sender, EventArgs e)
         {
             JuradoFrm juradoF = new JuradoFrm();
-            juradoF.Visible = true;
+            juradoF.ShowDialog();
         }
 
         private void mnuListarJurado_Click(object sender, EventArgs e)
         {
             ListaJuri listaJurado = new ListaJuri();
-            listaJurado.Visible = true;
+            listaJurado.ShowDialog();
         }
 
         private void atribuirNotasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             NotaFrm nota = new NotaFrm();
-            nota.Visible = true;
+            nota.ShowDialog();
         }
     }
 }
