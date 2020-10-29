@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "sdWqL4U0gYNtpqOtjduXB1d73HCNnV3wg6FpHFG2Qfd6WV2KlKKIl16m6fSL1qd7AYjPmbwCYXdFJPVzKatDOw==",
+  "dgSpecHash": "X9I3uXKHPgVfDRNpsfIJaCXAifDfUwnj+VX/Azk+uyD+XHD7ZAuVD2Ke2DjnnBTUuGXHp5H/c2cv+1hz9rjbjw==",
   "success": true,
   "projectFilePath": "D:\\Festival\\Mobile\\EventoMobile\\EventoMobile.iOS\\EventoMobile.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ninguem\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\Ninguem\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
+    "C:\\Users\\Ninguem\\.nuget\\packages\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
     "C:\\Users\\Ninguem\\.nuget\\packages\\xamarin.forms\\4.3.0.908675\\xamarin.forms.4.3.0.908675.nupkg.sha512"
   ],
   "logs": [

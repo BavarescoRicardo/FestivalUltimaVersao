@@ -31,8 +31,6 @@ namespace Festival.desktop
             foreach (Categoria cat in listaCategoria)
             {
                 this.cmbCategoriaRepositorioGrid.Items.Add(cat);
-                // Testes
-               // this.cmbCategoriaRepositorioGrid.Items.Insert((int)n, cat.categoria);
             }            
         }
 
@@ -46,9 +44,9 @@ namespace Festival.desktop
                 cantor = (Festival.or.Cantor)bindingSourceCantor.Current;
                 
                 // Gravar cantor no banco
-                Festival.bo.CantorBo bo = new Festival.bo.CantorBo();
+                var crud = new RepositorioCrud<Cantor>();
                 bindingSourceCantor.EndEdit();
-                bo.Inserir(cantor);
+                crud.Inserir(cantor);
 
                 // Montar objeto Apresentação
                 Festival.or.Apresentacao apresentacao = new Festival.or.Apresentacao();

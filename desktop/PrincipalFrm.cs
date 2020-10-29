@@ -1,4 +1,5 @@
 ﻿using Festival.listagens;
+using Festival.or;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -68,6 +69,24 @@ namespace Festival.desktop
         {
             NotaFrm nota = new NotaFrm();
             nota.ShowDialog();
+        }
+
+        private void mnuListarCantor_Click(object sender, EventArgs e)
+        {
+            // Iniciar Dao
+            var crud = new RepositorioCrud<Cantor>();
+            DataTable tabela = new DataTable();
+            tabela = crud.ListaDataTable<Festival.or.Cantor>();
+
+            ListaPrincipal listaDinamica = new ListaPrincipal("Cantores");
+            listaDinamica.definirGrid(tabela);
+            listaDinamica.Show();
+        }
+
+        private void testarListaDinamicaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var crud = new RepositorioCrud<Festival.or.Cantor>();
+            crud.ListaDataTable<Festival.or.Cantor>();
         }
     }
 }

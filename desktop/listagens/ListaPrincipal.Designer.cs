@@ -28,33 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
+            this.pnlListaPrincipal = new System.Windows.Forms.Panel();
+            this.grdviewListaPrincipal = new System.Windows.Forms.DataGridView();
+            this.pnlListaPrincipal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grdviewListaPrincipal)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView
+            // pnlListaPrincipal
             // 
-            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Location = new System.Drawing.Point(3, 2);
-            this.dataGridView.Name = "dataGridView";
-            this.dataGridView.Size = new System.Drawing.Size(795, 436);
-            this.dataGridView.TabIndex = 0;
+            this.pnlListaPrincipal.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.pnlListaPrincipal.Controls.Add(this.grdviewListaPrincipal);
+            this.pnlListaPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlListaPrincipal.Location = new System.Drawing.Point(0, 0);
+            this.pnlListaPrincipal.Name = "pnlListaPrincipal";
+            this.pnlListaPrincipal.Size = new System.Drawing.Size(800, 450);
+            this.pnlListaPrincipal.TabIndex = 0;
+            // 
+            // grdviewListaPrincipal
+            // 
+            this.grdviewListaPrincipal.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.grdviewListaPrincipal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdviewListaPrincipal.Location = new System.Drawing.Point(12, 12);
+            this.grdviewListaPrincipal.Name = "grdviewListaPrincipal";
+            this.grdviewListaPrincipal.Size = new System.Drawing.Size(776, 355);
+            this.grdviewListaPrincipal.TabIndex = 0;
+            this.grdviewListaPrincipal.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdviewListaPrincipal_CellContentClick);
             // 
             // ListaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView);
+            this.Controls.Add(this.pnlListaPrincipal);
             this.Name = "ListaPrincipal";
             this.Text = "ListaPrincipal";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
+            this.pnlListaPrincipal.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.grdviewListaPrincipal)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView;
+        private System.Windows.Forms.Panel pnlListaPrincipal;
+        private System.Windows.Forms.DataGridView grdviewListaPrincipal;
     }
 }
