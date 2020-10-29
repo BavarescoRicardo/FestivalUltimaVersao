@@ -87,7 +87,6 @@ namespace Festival
         public DataTable ListaDataTable<X>()
         {
             DataTable dataGrid = new DataTable();
-            DataTable dataCopia = new DataTable();
             IList<X> tabela;
             using (ISession sessao = FluentySessionFactory.AbrirSessao())
             {
@@ -122,7 +121,6 @@ namespace Festival
                 for (int i = 0; i < listaColunasFormatadas.Count; i++)
                 {
                     dataGrid.Columns.Add(listaColunasFormatadas[i].ToString());
-                    dataCopia.Columns.Add(listaColunasFormatadas[i].ToString());
                 }
 
                 string[] valorCampo = new string[tabela.Count+2];
