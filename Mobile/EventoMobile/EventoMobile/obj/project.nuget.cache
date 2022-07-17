@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yfuzIVx47p5JRkPdoMBM7NAborQ7M32XuAn0i3/2vsF0rdH8p0Pim+age9KhCs0oqL8ujsb08bJe0Nu1ydR09g==",
+  "dgSpecHash": "g7PBUf0sF6y17RGYqL0RQK/XexGI9rNcIb4xZYkSRvPRsIMMSU37LvqFAAPooq4tkYd1Wr2Wvsk4FtGbtsL4kA==",
   "success": true,
-  "projectFilePath": "D:\\Festival\\Mobile\\EventoMobile\\EventoMobile\\EventoMobile.csproj",
+  "projectFilePath": "C:\\Users\\Ninguem\\source\\repos\\FestivalUltimaVersao\\Mobile\\EventoMobile\\EventoMobile\\EventoMobile.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ninguem\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Ninguem\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

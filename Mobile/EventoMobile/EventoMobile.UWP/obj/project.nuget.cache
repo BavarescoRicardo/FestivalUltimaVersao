@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "n7WYA72ObLFvEvcyp5hDvwFxhxceXR9e50QB5TAM1sjrV5DX2557Ii3n2xMA5e+aM2a+/xCs6ded5sjK6o1XHg==",
+  "dgSpecHash": "UaphQvsr5OqDYXjOhzbXA40C3V3m4UbkmX2HvBNPuiFltdeVcSCK9Z3uAd6RcrcJoYRz8e8Uay+SEhjSK5UYhQ==",
   "success": true,
-  "projectFilePath": "D:\\Festival\\Mobile\\EventoMobile\\EventoMobile.UWP\\EventoMobile.UWP.csproj",
+  "projectFilePath": "C:\\Users\\Ninguem\\source\\repos\\FestivalUltimaVersao\\Mobile\\EventoMobile\\EventoMobile.UWP\\EventoMobile.UWP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ninguem\\.nuget\\packages\\microsoft.net.native.compiler\\2.1.8\\microsoft.net.native.compiler.2.1.8.nupkg.sha512",
     "C:\\Users\\Ninguem\\.nuget\\packages\\microsoft.net.uwpcoreruntimesdk\\2.1.2\\microsoft.net.uwpcoreruntimesdk.2.1.2.nupkg.sha512",

@@ -195,3 +195,13 @@ D:\Festival\Mobile\EventoMobile\EventoMobile\obj\Debug\netstandard2.0\ref\Evento
 D:\Festival\Mobile\EventoMobile\EventoMobile\obj\Debug\netstandard2.0\EventoMobile.pdb
 D:\Festival\Mobile\EventoMobile\EventoMobile\obj\Debug\netstandard2.0\EventoMobile.csproj.CoreCompileInputs.cache
 D:\Festival\Mobile\EventoMobile\EventoMobile\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Ninguem\source\repos\FestivalUltimaVersao\Mobile\EventoMobile\EventoMobile\obj\Debug\netstandard2.0\EventoMobile.csproj.AssemblyReference.cache
+C:\Users\Ninguem\source\repos\FestivalUltimaVersao\Mobile\EventoMobile\EventoMobile\obj\Debug\netstandard2.0\EventoMobile.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ninguem\source\repos\FestivalUltimaVersao\Mobile\EventoMobile\EventoMobile\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Ninguem\source\repos\FestivalUltimaVersao\Mobile\EventoMobile\EventoMobile\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Ninguem\source\repos\FestivalUltimaVersao\Mobile\EventoMobile\EventoMobile\obj\Debug\netstandard2.0\EventoMobile.AssemblyInfoInputs.cache
+C:\Users\Ninguem\source\repos\FestivalUltimaVersao\Mobile\EventoMobile\EventoMobile\obj\Debug\netstandard2.0\EventoMobile.AssemblyInfo.cs
+C:\Users\Ninguem\source\repos\FestivalUltimaVersao\Mobile\EventoMobile\EventoMobile\obj\Debug\netstandard2.0\EventoMobile.csproj.CoreCompileInputs.cache
+C:\Users\Ninguem\source\repos\FestivalUltimaVersao\Mobile\EventoMobile\EventoMobile\obj\Debug\netstandard2.0\EventoMobile.dll
+C:\Users\Ninguem\source\repos\FestivalUltimaVersao\Mobile\EventoMobile\EventoMobile\obj\Debug\netstandard2.0\ref\EventoMobile.dll
+C:\Users\Ninguem\source\repos\FestivalUltimaVersao\Mobile\EventoMobile\EventoMobile\obj\Debug\netstandard2.0\EventoMobile.pdb

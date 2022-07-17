@@ -20,12 +20,23 @@ namespace Festival.desktop
         {
             InitializeComponent();
             //bindingSource.DataSource = new Festival.or.Notas();
+            ApresentacaoBo apresentacaoBo = new ApresentacaoBo();
             CantorBo cantorBo = new CantorBo();
             JuradoBo juradoBo = new JuradoBo();
 
             foreach (Jurado jurado in juradoBo.Listar())
             {
                 this.cmbJurado.Properties.Items.Add(jurado);
+            }
+
+            foreach (Cantor cantor in cantorBo.Listar())
+            {
+                this.cmbCantor.Properties.Items.Add(cantor);
+            }
+
+            foreach (Apresentacao apresentacao in apresentacaoBo.Listar())
+            {
+                this.cmbApresentacao.Properties.Items.Add(apresentacao);
             }
         }
 

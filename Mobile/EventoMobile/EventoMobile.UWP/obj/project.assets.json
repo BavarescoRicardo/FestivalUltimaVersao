@@ -8337,28 +8337,28 @@
   },
   "packageFolders": {
     "C:\\Users\\Ninguem\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Festival\\Mobile\\EventoMobile\\EventoMobile.UWP\\EventoMobile.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\Ninguem\\source\\repos\\FestivalUltimaVersao\\Mobile\\EventoMobile\\EventoMobile.UWP\\EventoMobile.UWP.csproj",
       "projectName": "EventoMobile.UWP",
-      "projectPath": "D:\\Festival\\Mobile\\EventoMobile\\EventoMobile.UWP\\EventoMobile.UWP.csproj",
+      "projectPath": "C:\\Users\\Ninguem\\source\\repos\\FestivalUltimaVersao\\Mobile\\EventoMobile\\EventoMobile.UWP\\EventoMobile.UWP.csproj",
       "packagesPath": "C:\\Users\\Ninguem\\.nuget\\packages\\",
-      "outputPath": "D:\\Festival\\Mobile\\EventoMobile\\EventoMobile.UWP\\obj\\",
+      "outputPath": "C:\\Users\\Ninguem\\source\\repos\\FestivalUltimaVersao\\Mobile\\EventoMobile\\EventoMobile.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
         "C:\\Users\\Ninguem\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "uap10.0.16299"
@@ -8371,8 +8371,8 @@
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "D:\\Festival\\Mobile\\EventoMobile\\EventoMobile\\EventoMobile.csproj": {
-              "projectPath": "D:\\Festival\\Mobile\\EventoMobile\\EventoMobile\\EventoMobile.csproj"
+            "C:\\Users\\Ninguem\\source\\repos\\FestivalUltimaVersao\\Mobile\\EventoMobile\\EventoMobile\\EventoMobile.csproj": {
+              "projectPath": "C:\\Users\\Ninguem\\source\\repos\\FestivalUltimaVersao\\Mobile\\EventoMobile\\EventoMobile\\EventoMobile.csproj"
             }
           }
         }

@@ -26,6 +26,18 @@ namespace Festival.or
         public virtual string musica { get; set; }
         public virtual string artista { get; set; }
         public virtual Cantor cantor { get; set; }
-        public virtual Categoria categoria { get; set; }        
+        public virtual Categoria categoria { get; set; }
+
+        public override string ToString()
+        {
+            // return "Apresentac";
+            /*if (this.cantor.ToString().Length > 0)
+            {
+                return string.Format("{0} {1}", this.id_apresentacao, this.musica);
+            }*/
+
+            return string.Format("{0} {1}", this.id_apresentacao, this.musica);
+        }
+
     }
 }
