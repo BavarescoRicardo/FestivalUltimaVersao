@@ -23,6 +23,7 @@ namespace Festival.desktop
             ApresentacaoBo apresentacaoBo = new ApresentacaoBo();
             CantorBo cantorBo = new CantorBo();
             JuradoBo juradoBo = new JuradoBo();
+            CategoriaBo categoriaBo = new CategoriaBo();
 
             foreach (Jurado jurado in juradoBo.Listar())
             {
@@ -32,6 +33,11 @@ namespace Festival.desktop
             foreach (Cantor cantor in cantorBo.Listar())
             {
                 this.cmbCantor.Properties.Items.Add(cantor);
+            }
+
+            foreach (Categoria categoria in categoriaBo.Listar())
+            {
+                this.cmbCategoria.Properties.Items.Add(categoria);
             }
 
             foreach (Apresentacao apresentacao in apresentacaoBo.Listar())
@@ -66,5 +72,6 @@ namespace Festival.desktop
         {
             this.Close();
         }
+
     }
 }
