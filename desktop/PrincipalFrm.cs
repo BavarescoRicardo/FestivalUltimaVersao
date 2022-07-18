@@ -85,8 +85,14 @@ namespace Festival.desktop
 
         private void testarListaDinamicaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var crud = new RepositorioCrud<Festival.or.Cantor>();
-            crud.ListaDataTable<Festival.or.Cantor>();
+            // Iniciar Dao
+            var crud = new RepositorioCrud<Notas>();
+            DataTable tabela = new DataTable();
+            tabela = crud.ListaDataTable<Festival.or.Notas>();
+
+            ListaPrincipal listaDinamica = new ListaPrincipal("Notas");
+            listaDinamica.definirGrid(tabela);
+            listaDinamica.Show();
         }
     }
 }

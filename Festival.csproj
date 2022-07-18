@@ -131,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="bo\ApresentacaoBo.cs" />
+    <Compile Include="bo\NotasBo.cs" />
     <Compile Include="bo\CantorBo.cs" />
     <Compile Include="bo\CategoriaBo.cs" />
     <Compile Include="bo\EventoBo.cs" />
@@ -259,6 +260,7 @@
     <None Include="Properties\DataSources\Evento.bo.EventoBo.datasource" />
     <None Include="Properties\DataSources\Evento.or.Evento.datasource" />
     <None Include="Properties\DataSources\Festival.or.Categoria.datasource" />
+    <None Include="Properties\DataSources\Festival.or.Notas.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NotaFrm));
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.cmbCategoria = new DevExpress.XtraEditors.ComboBoxEdit();
@@ -50,7 +51,6 @@
             this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.pnliInserir = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem4 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.pnliApresentacao = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -63,9 +63,11 @@
             this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem7 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem8 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem9 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.pnliApresentacao = new DevExpress.XtraLayout.LayoutControlItem();
+            this.bindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmbCategoria.Properties)).BeginInit();
@@ -82,7 +84,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnliInserir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pnliApresentacao)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
@@ -95,9 +96,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pnliApresentacao)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -334,16 +337,6 @@
             this.emptySpaceItem4.Size = new System.Drawing.Size(415, 64);
             this.emptySpaceItem4.TextSize = new System.Drawing.Size(0, 0);
             // 
-            // pnliApresentacao
-            // 
-            this.pnliApresentacao.Control = this.cmbApresentacao;
-            this.pnliApresentacao.CustomizationFormText = "Apresentacao";
-            this.pnliApresentacao.Location = new System.Drawing.Point(0, 72);
-            this.pnliApresentacao.Name = "pnliApresentacao";
-            this.pnliApresentacao.Size = new System.Drawing.Size(273, 24);
-            this.pnliApresentacao.Text = "Apresentação";
-            this.pnliApresentacao.TextSize = new System.Drawing.Size(67, 13);
-            // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.labelNotas;
@@ -459,15 +452,6 @@
             this.emptySpaceItem7.Size = new System.Drawing.Size(208, 26);
             this.emptySpaceItem7.TextSize = new System.Drawing.Size(0, 0);
             // 
-            // layoutControlItem9
-            // 
-            this.layoutControlItem9.Control = this.cmbCategoria;
-            this.layoutControlItem9.Location = new System.Drawing.Point(0, 48);
-            this.layoutControlItem9.Name = "layoutControlItem9";
-            this.layoutControlItem9.Size = new System.Drawing.Size(273, 24);
-            this.layoutControlItem9.Text = "Categoria";
-            this.layoutControlItem9.TextSize = new System.Drawing.Size(67, 13);
-            // 
             // emptySpaceItem8
             // 
             this.emptySpaceItem8.AllowHotTrack = false;
@@ -483,6 +467,29 @@
             this.emptySpaceItem9.Name = "emptySpaceItem9";
             this.emptySpaceItem9.Size = new System.Drawing.Size(273, 24);
             this.emptySpaceItem9.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // layoutControlItem9
+            // 
+            this.layoutControlItem9.Control = this.cmbCategoria;
+            this.layoutControlItem9.Location = new System.Drawing.Point(0, 48);
+            this.layoutControlItem9.Name = "layoutControlItem9";
+            this.layoutControlItem9.Size = new System.Drawing.Size(273, 24);
+            this.layoutControlItem9.Text = "Categoria";
+            this.layoutControlItem9.TextSize = new System.Drawing.Size(67, 13);
+            // 
+            // pnliApresentacao
+            // 
+            this.pnliApresentacao.Control = this.cmbApresentacao;
+            this.pnliApresentacao.CustomizationFormText = "Apresentacao";
+            this.pnliApresentacao.Location = new System.Drawing.Point(0, 72);
+            this.pnliApresentacao.Name = "pnliApresentacao";
+            this.pnliApresentacao.Size = new System.Drawing.Size(273, 24);
+            this.pnliApresentacao.Text = "Apresentação";
+            this.pnliApresentacao.TextSize = new System.Drawing.Size(67, 13);
+            // 
+            // bindingSource
+            // 
+            this.bindingSource.DataSource = typeof(Festival.or.Notas);
             // 
             // NotaFrm
             // 
@@ -515,7 +522,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnliInserir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pnliApresentacao)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
@@ -528,9 +534,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pnliApresentacao)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -574,5 +582,6 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem8;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem9;
+        private System.Windows.Forms.BindingSource bindingSource;
     }
 }

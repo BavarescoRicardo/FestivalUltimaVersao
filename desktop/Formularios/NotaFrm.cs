@@ -19,7 +19,8 @@ namespace Festival.desktop
         public NotaFrm()
         {
             InitializeComponent();
-            //bindingSource.DataSource = new Festival.or.Notas();
+            bindingSource.DataSource = new Festival.or.Notas();
+
             ApresentacaoBo apresentacaoBo = new ApresentacaoBo();
             CantorBo cantorBo = new CantorBo();
             JuradoBo juradoBo = new JuradoBo();
@@ -51,15 +52,21 @@ namespace Festival.desktop
             try
             {
                 // Montar objeto
-                //Festival.or.Notas categoria = new Festival.or.Notas();
-                //CategoriaBo bo = new CategoriaBo();
-                //categoria = (Festival.or.Notas)bindingSource.Current; 
+                Festival.or.Notas notas = new Festival.or.Notas();
+                NotasBo bo = new NotasBo();
+                notas = (Festival.or.Notas)bindingSource.Current;
 
                 // Gravar no banco
-                //bindingSource.EndEdit();
-                //bo.Inserir(Notas);
+                bindingSource.EndEdit();
+                if ((notas == null) || (notas.id_nota <= 0))
+                {
+                    MessageBox.Show("Erro ao inserir: Nota nula  ");
+                    return;
+                }
+                    
+                bo.Inserir(notas);
                 MessageBox.Show("Inserido com sucesso");
-               
+
             }
             catch (Exception ex)
             {
