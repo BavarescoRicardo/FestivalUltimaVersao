@@ -35,6 +35,7 @@ namespace Festival.listagens
             {
                 this.cmbFiltro.Properties.Items.Add(cat);
             }
+            this.cmbFiltro.Properties.Items.Add(new Categoria() {categoria = "Todos" });
         }
 
 
@@ -86,7 +87,15 @@ namespace Festival.listagens
             gridView1.ActiveFilterString.Equals(cmbFiltro.SelectedText);
 
             Categoria cat = (Categoria)cmbFiltro.SelectedItem;
-            bindingSource.DataSource = lista.Where(x => x.categoria == cat.id_categoria);
+            if (lista.Where(x => x.categoria == cat.id_categoria).Count() > 0)
+            {
+                bindingSource.DataSource = lista.Where(x => x.categoria == cat.id_categoria);
+            }
+            else
+            {
+                bindingSource.DataSource = lista;
+            }
+            
         }
     }
 }
