@@ -17,8 +17,8 @@ namespace Festival.listagens
         {
             InitializeComponent();
 
-            CategoriaBo bo = new CategoriaBo();
-            IList<Festival.or.Categoria> lista = bo.Listar();
+            NotasBo bo = new NotasBo();
+            IList<Festival.or.Notas> lista = bo.Listar();
             gridControl.RefreshDataSource();
 
             this.bindingSource.Clear();
@@ -30,6 +30,37 @@ namespace Festival.listagens
         private void gridControl_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void gridView1_CustomColumnDisplayText(object sender, DevExpress.XtraGrid.Views.Base.CustomColumnDisplayTextEventArgs e)
+        {
+            if (e.Column.FieldName == "cantor")
+            {
+                // Inicia objeto do banco caso esteja na coluna certa
+                CantorBo bo = new CantorBo();
+                // Localize objeto pelo id e substitui na coluna
+                e.DisplayText = bo.RetornePeloId((int)e.Value).nome;
+            }
+
+            if (e.Column.FieldName == "categoria")
+            {
+                CategoriaBo bo = new CategoriaBo();
+                e.DisplayText = bo.RetornePeloId((int)e.Value).categoria;
+            }
+
+            if (e.Column.FieldName == "apresentacao")
+            {
+                // Inicia objeto do banco caso esteja na coluna certa
+                ApresentacaoBo bo = new ApresentacaoBo();
+                // Localize objeto pelo id e substitui na coluna
+                e.DisplayText = bo.RetornePeloId((int)e.Value).musica;
+            }
+
+            if (e.Column.FieldName == "jurado")
+            {
+                JuradoBo bo = new JuradoBo();
+                e.DisplayText = bo.RetornePeloId((int)e.Value).nome;
+            }
         }
     }
 }

@@ -339,6 +339,9 @@
     <EmbeddedResource Include="desktop\listagens\ListaJuri.resx">
       <DependentUpon>ListaJuri.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="desktop\listagens\ListaNotas.resx">
+      <DependentUpon>ListaNotas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="desktop\listagens\ListaPrincipal.resx">
       <DependentUpon>ListaPrincipal.cs</DependentUpon>
     </EmbeddedResource>

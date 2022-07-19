@@ -240,21 +240,22 @@
             // imprimirFichasToolStripMenuItem
             // 
             this.imprimirFichasToolStripMenuItem.Name = "imprimirFichasToolStripMenuItem";
-            this.imprimirFichasToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.imprimirFichasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.imprimirFichasToolStripMenuItem.Text = "Imprimir Fichas";
+            this.imprimirFichasToolStripMenuItem.Visible = false;
             // 
             // atribuirNotasToolStripMenuItem
             // 
             this.atribuirNotasToolStripMenuItem.Name = "atribuirNotasToolStripMenuItem";
-            this.atribuirNotasToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.atribuirNotasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.atribuirNotasToolStripMenuItem.Text = "Atribuir Notas";
             this.atribuirNotasToolStripMenuItem.Click += new System.EventHandler(this.atribuirNotasToolStripMenuItem_Click);
             // 
             // testarListaDinamicaToolStripMenuItem
             // 
             this.testarListaDinamicaToolStripMenuItem.Name = "testarListaDinamicaToolStripMenuItem";
-            this.testarListaDinamicaToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.testarListaDinamicaToolStripMenuItem.Text = "Testar Lista Dinamica";
+            this.testarListaDinamicaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.testarListaDinamicaToolStripMenuItem.Text = "Listar notas";
             this.testarListaDinamicaToolStripMenuItem.Click += new System.EventHandler(this.testarListaDinamicaToolStripMenuItem_Click);
             // 
             // PrincipalFrm

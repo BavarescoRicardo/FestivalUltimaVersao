@@ -608,3 +608,4 @@ C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.csproj.Cop
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.exe
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.pdb
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.listagens.ListaCategoria.resources
+C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.listagens.ListaNotas.resources
