@@ -152,7 +152,7 @@ namespace Festival
                     // Se encontrou um valor para aquela linha adiciona na tabela
                     if (prop != null)
                         dataGrid.Rows.Add(new Object[] { valorCampo[0], valorCampo[1], valorCampo[2], valorCampo[3],
-                            valorCampo[4], valorCampo[5], valorCampo[6] });
+                            valorCampo[4], valorCampo[5], valorCampo[6]});
                 }
 
                 // Retorna DataTable ja preenchida
@@ -162,7 +162,21 @@ namespace Festival
 
         public X RetornePeloId(int id)
         {
-            throw new NotImplementedException();
+            using (ISession sessao = FluentySessionFactory.AbrirSessao())
+            {
+                using (ITransaction transacao = sessao.BeginTransaction())
+                {
+                    try
+                    {
+                        return sessao.Get<X>(id);
+                    }
+                    catch (Exception e)
+                    {
+                        throw new Exception("Erro ao obter informação   " + e.Message);
+                    }
+
+                }
+            }
         }
     }
 }

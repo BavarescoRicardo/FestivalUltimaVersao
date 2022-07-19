@@ -30,14 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             this.gridControl = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.bindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colSequencial = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colcategoria = new DevExpress.XtraGrid.Columns.GridColumn();
             this.coldia = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControl
@@ -51,6 +51,10 @@
             this.gridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
+            // bindingSource
+            // 
+            this.bindingSource.DataSource = typeof(Festival.or.Categoria);
+            // 
             // gridView1
             // 
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
@@ -61,10 +65,6 @@
             this.gridView1.Name = "gridView1";
             this.gridView1.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
             new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.colSequencial, DevExpress.Data.ColumnSortOrder.Ascending)});
-            // 
-            // bindingSource
-            // 
-            this.bindingSource.DataSource = typeof(Festival.or.Categoria);
             // 
             // colSequencial
             // 
@@ -98,10 +98,10 @@
             this.ClientSize = new System.Drawing.Size(800, 367);
             this.Controls.Add(this.gridControl);
             this.Name = "ListaCategoria";
-            this.Text = "ListaCategoria";
+            this.Text = "Lista Categorias";
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
 
         }

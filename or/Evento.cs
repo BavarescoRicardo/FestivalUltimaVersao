@@ -28,5 +28,11 @@ namespace Festival.or
         public virtual string descricao { get; set; }
         public virtual DateTime dataInicial { get; set; }
         public virtual DateTime dataFinal { get; set; }
+
+        public override string ToString()
+        {
+            return this.titulo + " " + this.descricao;
+        }
+
     }
 }

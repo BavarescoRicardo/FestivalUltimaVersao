@@ -8,7 +8,7 @@ namespace Festival.or
 {
    public class Categoria
     {
-        public virtual long id_categoria { get; set; }
+        public virtual int id_categoria { get; set; }
         public virtual string categoria { get; set; }
         public virtual DateTime dia { get; set; }
 

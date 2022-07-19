@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Festival.bo;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,15 +29,11 @@ namespace Festival.or
         public virtual Cantor cantor { get; set; }
         public virtual Categoria categoria { get; set; }
 
+        private CantorBo bo = new CantorBo();
+
         public override string ToString()
         {
-            // return "Apresentac";
-            /*if (this.cantor.ToString().Length > 0)
-            {
-                return string.Format("{0} {1}", this.id_apresentacao, this.musica);
-            }*/
-
-            return string.Format("{0} {1}", this.id_apresentacao, this.musica);
+            return string.Format("{0} {1}", this.musica, this.bo.RetornePeloId(this.cantor.id_cantor));
         }
 
     }

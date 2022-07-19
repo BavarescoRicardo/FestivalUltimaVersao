@@ -51,6 +51,9 @@
     <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
       <HintPath>packages\Antlr3.Runtime.3.5.1\lib\net40-client\Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.3.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>packages\BouncyCastle.1.8.3.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
     <Reference Include="DevExpress.Data.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Sparkline.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -69,11 +72,75 @@
     <Reference Include="FluentNHibernate, Version=2.1.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\FluentNHibernate.2.1.2\lib\net461\FluentNHibernate.dll</HintPath>
     </Reference>
+    <Reference Include="Google.Protobuf, Version=3.11.4.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>packages\Google.Protobuf.3.11.4\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
     <Reference Include="Iesi.Collections, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
       <HintPath>packages\Iesi.Collections.4.0.4\lib\net461\Iesi.Collections.dll</HintPath>
     </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>packages\K4os.Compression.LZ4.1.1.11\lib\net46\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>packages\K4os.Compression.LZ4.Streams.1.1.11\lib\net46\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.1.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+      <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.1.1.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.HashCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.HashCode.1.1.0\lib\net461\Microsoft.Bcl.HashCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore, Version=3.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.EntityFrameworkCore.3.1.1\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Abstractions, Version=3.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.EntityFrameworkCore.Abstractions.3.1.1\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Relational, Version=3.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.EntityFrameworkCore.Relational.3.1.1\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Relational.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Abstractions, Version=3.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Caching.Abstractions.3.1.1\lib\netstandard2.0\Microsoft.Extensions.Caching.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Memory, Version=3.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Caching.Memory.3.1.1\lib\netstandard2.0\Microsoft.Extensions.Caching.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration, Version=3.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Configuration.3.1.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=3.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Configuration.Abstractions.3.1.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Binder, Version=3.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Configuration.Binder.3.1.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.Binder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=3.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.DependencyInjection.3.1.1\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=3.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.DependencyInjection.Abstractions.3.1.1\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging, Version=3.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Logging.3.1.1\lib\netstandard2.0\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=3.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Logging.Abstractions.3.1.1\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=3.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Options.3.1.1\lib\netstandard2.0\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=3.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Primitives.3.1.1\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.22.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>packages\MySql.Data.8.0.22\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.EntityFrameworkCore, Version=8.0.22.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>packages\MySql.Data.EntityFrameworkCore.8.0.22\lib\netstandard2.0\MySql.Data.EntityFrameworkCore.dll</HintPath>
     </Reference>
     <Reference Include="NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
       <HintPath>packages\NHibernate.5.1.1\lib\net461\NHibernate.dll</HintPath>
@@ -87,14 +154,30 @@
     <Reference Include="Remotion.Linq.EagerFetching, Version=2.1.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
       <HintPath>packages\Remotion.Linq.EagerFetching.2.1.0\lib\net45\Remotion.Linq.EagerFetching.dll</HintPath>
     </Reference>
+    <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>packages\SSH.NET.2016.1.0\lib\net40\Renci.SshNet.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Buffers.4.5.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=1.2.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Collections.Immutable.1.7.0\lib\netstandard2.0\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.ComponentModel.Annotations.4.7.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Diagnostics.DiagnosticSource.4.7.0\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
     <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
     </Reference>
@@ -102,8 +185,8 @@
     <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
     </Reference>
-    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.6.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.7.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Text.Encodings.Web, Version=4.0.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -128,6 +211,12 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>packages\MySql.Data.8.0.22\lib\net452\Ubiety.Dns.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Zstandard.Net, Version=1.1.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>packages\MySql.Data.8.0.22\lib\net452\Zstandard.Net.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="bo\ApresentacaoBo.cs" />
@@ -136,6 +225,17 @@
     <Compile Include="bo\CategoriaBo.cs" />
     <Compile Include="bo\EventoBo.cs" />
     <Compile Include="bo\JuradoBo.cs" />
+    <Compile Include="desktop\listagens\ListaCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="desktop\listagens\ListaCategoria.Designer.cs">
+      <DependentUpon>ListaCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mapeamento\NotasMap.cs" />
+    <Compile Include="Migrations\202207190615015_notn.cs" />
+    <Compile Include="Migrations\202207190615015_notn.designer.cs">
+      <DependentUpon>202207190615015_notn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MyDBContext.cs" />
     <Compile Include="desktop\Formularios\CantorFrm.cs">
@@ -168,11 +268,11 @@
     <Compile Include="desktop\Formularios\NotaFrm.Designer.cs">
       <DependentUpon>NotaFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="desktop\listagens\ListaCategoria.cs">
+    <Compile Include="desktop\listagens\ListaNotas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="desktop\listagens\ListaCategoria.Designer.cs">
-      <DependentUpon>ListaCategoria.cs</DependentUpon>
+    <Compile Include="desktop\listagens\ListaNotas.Designer.cs">
+      <DependentUpon>ListaNotas.cs</DependentUpon>
     </Compile>
     <Compile Include="desktop\listagens\ListaEvento.cs">
       <SubType>Form</SubType>
@@ -245,6 +345,9 @@
     <EmbeddedResource Include="desktop\PrincipalFrm.resx">
       <DependentUpon>PrincipalFrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202207190615015_notn.resx">
+      <DependentUpon>202207190615015_notn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -256,6 +359,21 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include=".vs\Evento\config\applicationhost.config" />
+    <None Include=".vs\Evento\DesignTimeBuild\.dtbcache" />
+    <None Include=".vs\Evento\DesignTimeBuild\.dtbcache.v2" />
+    <None Include=".vs\Evento\v16\Server\sqlite3\db.lock" />
+    <None Include=".vs\Evento\v16\Server\sqlite3\storage.ide" />
+    <None Include=".vs\Evento\v16\Server\sqlite3\storage.ide-shm" />
+    <None Include=".vs\Evento\v16\Server\sqlite3\storage.ide-wal" />
+    <None Include=".vs\Festival\v16\.suo" />
+    <None Include=".vs\Festival\v16\Server\sqlite3\db.lock" />
+    <None Include=".vs\Festival\v16\Server\sqlite3\storage.ide" />
+    <None Include=".vs\ProjectSettings.json" />
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include="bin\Debug\Festival.exe.config" />
+    <None Include="bin\Release\Festival.exe.config" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Evento.bo.EventoBo.datasource" />
     <None Include="Properties\DataSources\Evento.or.Evento.datasource" />
@@ -277,12 +395,136 @@
   <ItemGroup>
     <None Include="fundomusicaacordes.png" />
     <None Include="icons8_delete_48px.png" />
+    <Content Include="bin\Debug\Festival.exe" />
+    <Content Include="bin\Debug\Festival.pdb" />
+    <Content Include="bin\Release\Antlr3.Runtime.dll" />
+    <Content Include="bin\Release\Antlr3.Runtime.xml" />
+    <Content Include="bin\Release\DevExpress.Data.v19.2.dll" />
+    <Content Include="bin\Release\DevExpress.Data.v19.2.xml" />
+    <Content Include="bin\Release\DevExpress.Images.v19.2.dll" />
+    <Content Include="bin\Release\DevExpress.Office.v19.2.Core.dll" />
+    <Content Include="bin\Release\DevExpress.Office.v19.2.Core.xml" />
+    <Content Include="bin\Release\DevExpress.Pdf.v19.2.Core.dll" />
+    <Content Include="bin\Release\DevExpress.Pdf.v19.2.Core.xml" />
+    <Content Include="bin\Release\DevExpress.Printing.v19.2.Core.dll" />
+    <Content Include="bin\Release\DevExpress.Printing.v19.2.Core.xml" />
+    <Content Include="bin\Release\DevExpress.RichEdit.v19.2.Core.dll" />
+    <Content Include="bin\Release\DevExpress.RichEdit.v19.2.Core.xml" />
+    <Content Include="bin\Release\DevExpress.Sparkline.v19.2.Core.dll" />
+    <Content Include="bin\Release\DevExpress.Sparkline.v19.2.Core.xml" />
+    <Content Include="bin\Release\DevExpress.Utils.v19.2.dll" />
+    <Content Include="bin\Release\DevExpress.Utils.v19.2.xml" />
+    <Content Include="bin\Release\DevExpress.XtraBars.v19.2.dll" />
+    <Content Include="bin\Release\DevExpress.XtraBars.v19.2.xml" />
+    <Content Include="bin\Release\DevExpress.XtraEditors.v19.2.dll" />
+    <Content Include="bin\Release\DevExpress.XtraEditors.v19.2.xml" />
+    <Content Include="bin\Release\DevExpress.XtraGrid.v19.2.dll" />
+    <Content Include="bin\Release\DevExpress.XtraGrid.v19.2.xml" />
+    <Content Include="bin\Release\DevExpress.XtraLayout.v19.2.dll" />
+    <Content Include="bin\Release\DevExpress.XtraLayout.v19.2.xml" />
+    <Content Include="bin\Release\DevExpress.XtraPrinting.v19.2.dll" />
+    <Content Include="bin\Release\DevExpress.XtraPrinting.v19.2.xml" />
+    <Content Include="bin\Release\DevExpress.XtraTreeList.v19.2.dll" />
+    <Content Include="bin\Release\DevExpress.XtraTreeList.v19.2.xml" />
+    <Content Include="bin\Release\DevExpress.XtraVerticalGrid.v19.2.dll" />
+    <Content Include="bin\Release\DevExpress.XtraVerticalGrid.v19.2.xml" />
+    <Content Include="bin\Release\de\DevExpress.Data.v19.2.resources.dll" />
+    <Content Include="bin\Release\de\DevExpress.Office.v19.2.Core.resources.dll" />
+    <Content Include="bin\Release\de\DevExpress.Pdf.v19.2.Core.resources.dll" />
+    <Content Include="bin\Release\de\DevExpress.Printing.v19.2.Core.resources.dll" />
+    <Content Include="bin\Release\de\DevExpress.RichEdit.v19.2.Core.resources.dll" />
+    <Content Include="bin\Release\de\DevExpress.Sparkline.v19.2.Core.resources.dll" />
+    <Content Include="bin\Release\de\DevExpress.Utils.v19.2.resources.dll" />
+    <Content Include="bin\Release\de\DevExpress.XtraBars.v19.2.resources.dll" />
+    <Content Include="bin\Release\de\DevExpress.XtraEditors.v19.2.resources.dll" />
+    <Content Include="bin\Release\de\DevExpress.XtraGrid.v19.2.resources.dll" />
+    <Content Include="bin\Release\de\DevExpress.XtraLayout.v19.2.resources.dll" />
+    <Content Include="bin\Release\de\DevExpress.XtraPrinting.v19.2.resources.dll" />
+    <Content Include="bin\Release\de\DevExpress.XtraTreeList.v19.2.resources.dll" />
+    <Content Include="bin\Release\de\DevExpress.XtraVerticalGrid.v19.2.resources.dll" />
+    <Content Include="bin\Release\es\DevExpress.Data.v19.2.resources.dll" />
+    <Content Include="bin\Release\es\DevExpress.Office.v19.2.Core.resources.dll" />
+    <Content Include="bin\Release\es\DevExpress.Pdf.v19.2.Core.resources.dll" />
+    <Content Include="bin\Release\es\DevExpress.Printing.v19.2.Core.resources.dll" />
+    <Content Include="bin\Release\es\DevExpress.RichEdit.v19.2.Core.resources.dll" />
+    <Content Include="bin\Release\es\DevExpress.Sparkline.v19.2.Core.resources.dll" />
+    <Content Include="bin\Release\es\DevExpress.Utils.v19.2.resources.dll" />
+    <Content Include="bin\Release\es\DevExpress.XtraBars.v19.2.resources.dll" />
+    <Content Include="bin\Release\es\DevExpress.XtraEditors.v19.2.resources.dll" />
+    <Content Include="bin\Release\es\DevExpress.XtraGrid.v19.2.resources.dll" />
+    <Content Include="bin\Release\es\DevExpress.XtraLayout.v19.2.resources.dll" />
+    <Content Include="bin\Release\es\DevExpress.XtraPrinting.v19.2.resources.dll" />
+    <Content Include="bin\Release\es\DevExpress.XtraTreeList.v19.2.resources.dll" />
+    <Content Include="bin\Release\es\DevExpress.XtraVerticalGrid.v19.2.resources.dll" />
+    <Content Include="bin\Release\Festival.exe" />
+    <Content Include="bin\Release\Festival.pdb" />
+    <Content Include="bin\Release\FluentNHibernate.dll" />
+    <Content Include="bin\Release\FluentNHibernate.xml" />
+    <Content Include="bin\Release\Iesi.Collections.dll" />
+    <Content Include="bin\Release\Iesi.Collections.xml" />
+    <Content Include="bin\Release\ja\DevExpress.Data.v19.2.resources.dll" />
+    <Content Include="bin\Release\ja\DevExpress.Office.v19.2.Core.resources.dll" />
+    <Content Include="bin\Release\ja\DevExpress.Pdf.v19.2.Core.resources.dll" />
+    <Content Include="bin\Release\ja\DevExpress.Printing.v19.2.Core.resources.dll" />
+    <Content Include="bin\Release\ja\DevExpress.RichEdit.v19.2.Core.resources.dll" />
+    <Content Include="bin\Release\ja\DevExpress.Sparkline.v19.2.Core.resources.dll" />
+    <Content Include="bin\Release\ja\DevExpress.Utils.v19.2.resources.dll" />
+    <Content Include="bin\Release\ja\DevExpress.XtraBars.v19.2.resources.dll" />
+    <Content Include="bin\Release\ja\DevExpress.XtraEditors.v19.2.resources.dll" />
+    <Content Include="bin\Release\ja\DevExpress.XtraGrid.v19.2.resources.dll" />
+    <Content Include="bin\Release\ja\DevExpress.XtraLayout.v19.2.resources.dll" />
+    <Content Include="bin\Release\ja\DevExpress.XtraPrinting.v19.2.resources.dll" />
+    <Content Include="bin\Release\ja\DevExpress.XtraTreeList.v19.2.resources.dll" />
+    <Content Include="bin\Release\ja\DevExpress.XtraVerticalGrid.v19.2.resources.dll" />
+    <Content Include="bin\Release\Microsoft.Bcl.AsyncInterfaces.dll" />
+    <Content Include="bin\Release\Microsoft.Bcl.AsyncInterfaces.xml" />
+    <Content Include="bin\Release\NHibernate.dll" />
+    <Content Include="bin\Release\NHibernate.xml" />
+    <Content Include="bin\Release\Npgsql.dll" />
+    <Content Include="bin\Release\Npgsql.pdb" />
+    <Content Include="bin\Release\Npgsql.xml" />
+    <Content Include="bin\Release\Remotion.Linq.dll" />
+    <Content Include="bin\Release\Remotion.Linq.EagerFetching.dll" />
+    <Content Include="bin\Release\Remotion.Linq.EagerFetching.xml" />
+    <Content Include="bin\Release\Remotion.Linq.xml" />
+    <Content Include="bin\Release\ru\DevExpress.Data.v19.2.resources.dll" />
+    <Content Include="bin\Release\ru\DevExpress.Office.v19.2.Core.resources.dll" />
+    <Content Include="bin\Release\ru\DevExpress.Pdf.v19.2.Core.resources.dll" />
+    <Content Include="bin\Release\ru\DevExpress.Printing.v19.2.Core.resources.dll" />
+    <Content Include="bin\Release\ru\DevExpress.RichEdit.v19.2.Core.resources.dll" />
+    <Content Include="bin\Release\ru\DevExpress.Sparkline.v19.2.Core.resources.dll" />
+    <Content Include="bin\Release\ru\DevExpress.Utils.v19.2.resources.dll" />
+    <Content Include="bin\Release\ru\DevExpress.XtraBars.v19.2.resources.dll" />
+    <Content Include="bin\Release\ru\DevExpress.XtraEditors.v19.2.resources.dll" />
+    <Content Include="bin\Release\ru\DevExpress.XtraGrid.v19.2.resources.dll" />
+    <Content Include="bin\Release\ru\DevExpress.XtraLayout.v19.2.resources.dll" />
+    <Content Include="bin\Release\ru\DevExpress.XtraPrinting.v19.2.resources.dll" />
+    <Content Include="bin\Release\ru\DevExpress.XtraTreeList.v19.2.resources.dll" />
+    <Content Include="bin\Release\ru\DevExpress.XtraVerticalGrid.v19.2.resources.dll" />
+    <Content Include="bin\Release\System.Buffers.dll" />
+    <Content Include="bin\Release\System.Buffers.xml" />
+    <Content Include="bin\Release\System.Memory.dll" />
+    <Content Include="bin\Release\System.Memory.xml" />
+    <Content Include="bin\Release\System.Numerics.Vectors.dll" />
+    <Content Include="bin\Release\System.Numerics.Vectors.xml" />
+    <Content Include="bin\Release\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="bin\Release\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="bin\Release\System.Text.Encodings.Web.dll" />
+    <Content Include="bin\Release\System.Text.Encodings.Web.xml" />
+    <Content Include="bin\Release\System.Text.Json.dll" />
+    <Content Include="bin\Release\System.Text.Json.xml" />
+    <Content Include="bin\Release\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="bin\Release\System.Threading.Tasks.Extensions.xml" />
+    <Content Include="bin\Release\System.ValueTuple.dll" />
+    <Content Include="bin\Release\System.ValueTuple.xml" />
     <Content Include="Music-Audio-Wave-2-icon.ico" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include=".vs\FestivalUltimaVersao\v16\" />
+    <Folder Include="bin\Testes\" />
     <Folder Include="server\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

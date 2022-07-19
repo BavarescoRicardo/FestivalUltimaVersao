@@ -16,7 +16,7 @@ namespace Festival.mapeamento
             Map(c => c.contato);
             Map(c => c.documento);
             Map(c => c.observacao);
-            Table("Jurado");
+            Table("jurado");
         }
     }
 }

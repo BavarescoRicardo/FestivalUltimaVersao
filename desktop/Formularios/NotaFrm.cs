@@ -56,9 +56,27 @@ namespace Festival.desktop
                 NotasBo bo = new NotasBo();
                 notas = (Festival.or.Notas)bindingSource.Current;
 
+                // Encontrando identificadores
+                /* 
+                 notas.cantor = cmbCantor.SelectedItem;
+                 notas.categoria = cmbCategoria.SelectedItem;
+                 notas.jurado = cmbJurado.SelectedItem;
+                 notas.apresentacao = cmbApresentacao.SelectedItem;
+                */
+
+                Cantor ctr = (Cantor)cmbCantor.SelectedItem;
+                Categoria cat = (Categoria)cmbCategoria.SelectedItem;
+                Jurado jur = (Jurado)cmbJurado.SelectedItem;
+                Apresentacao ap = (Apresentacao)cmbApresentacao.SelectedItem;
+
+                notas.cantor = ctr.id_cantor;
+                notas.categoria = cat.id_categoria;
+                notas.jurado = jur.id_jurado;
+                notas.apresentacao = ap.id_apresentacao;
+
                 // Gravar no banco
                 bindingSource.EndEdit();
-                if ((notas == null) || (notas.id_nota <= 0))
+                if (notas == null)
                 {
                     MessageBox.Show("Erro ao inserir: Nota nula  ");
                     return;
