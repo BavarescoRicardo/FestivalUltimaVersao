@@ -124,6 +124,9 @@ namespace Festival.desktop
             // Carrega combo apresentações filtrando pelo cantor selecionado neste combo box
             this.cmbCantor.Properties.Items.Clear();
             this.cmbApresentacao.Properties.Items.Clear();
+            // Reseta as listas para todos os resultados
+            listaApresentacao = (List<Apresentacao>)apresentacaoBo.Listar();
+            listaCantores = (List<Cantor>)cantorBo.Listar();
             // Inserir cantor todos
             this.cmbCantor.Properties.Items.Add(new Cantor() { nome = "Todos", id_cantor = 0 });
 
