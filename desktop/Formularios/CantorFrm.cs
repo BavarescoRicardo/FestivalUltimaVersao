@@ -91,17 +91,25 @@ namespace Festival.desktop
             {
                 string listA = "A ";
                 string listB = "B ";
-
+                int cont = 0;
                 while (!reader.EndOfStream)
                 {
                     var line = reader.ReadLine();
                     var values = line.Split(',');
 
-                    listA += values[0];
-                    listB += values[1];
+                    string[] subs = line.Split(',');
+
+                    foreach (var sub in subs)
+                    {
+                        MessageBox.Show($"Substring: {sub}");
+                    }
+
+
+
+                    cont++;
                 }
-                MessageBox.Show(listA += "A ");
-                MessageBox.Show(listB += "B ");
+/*                MessageBox.Show(listA += "A ");
+                MessageBox.Show(listB += "B ");*/
             }
         }
     }
