@@ -84,8 +84,6 @@ namespace Festival.listagens
 
         private void cmbFiltro_SelectedValueChanged(object sender, EventArgs e)
         {
-            gridView1.ActiveFilterString.Equals(cmbFiltro.SelectedText);
-
             Categoria cat = (Categoria)cmbFiltro.SelectedItem;
             if (lista.Where(x => x.categoria == cat.id_categoria).Count() > 0)
             {

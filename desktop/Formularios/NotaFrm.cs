@@ -16,13 +16,15 @@ namespace Festival.desktop
 {
     public partial class NotaFrm : Form
     {
+        List<Cantor> listaCantores = new List<Cantor>();
+        List<Apresentacao> listaApresentacao = new List<Apresentacao>();
+        CantorBo cantorBo = new CantorBo();
+        ApresentacaoBo apresentacaoBo = new ApresentacaoBo();
         public NotaFrm()
         {
             InitializeComponent();
             bindingSource.DataSource = new Festival.or.Notas();
 
-            ApresentacaoBo apresentacaoBo = new ApresentacaoBo();
-            CantorBo cantorBo = new CantorBo();
             JuradoBo juradoBo = new JuradoBo();
             CategoriaBo categoriaBo = new CategoriaBo();
 
@@ -31,8 +33,11 @@ namespace Festival.desktop
                 this.cmbJurado.Properties.Items.Add(jurado);
             }
 
+            // Inserir cantor todos
+            this.cmbCantor.Properties.Items.Add(new Cantor() { nome = "Todos", id_cantor = 0 });
             foreach (Cantor cantor in cantorBo.Listar())
             {
+                listaCantores.Add(cantor);
                 this.cmbCantor.Properties.Items.Add(cantor);
             }
 
@@ -43,6 +48,7 @@ namespace Festival.desktop
 
             foreach (Apresentacao apresentacao in apresentacaoBo.Listar())
             {
+                listaApresentacao.Add(apresentacao);
                 this.cmbApresentacao.Properties.Items.Add(apresentacao);
             }
         }
@@ -98,5 +104,43 @@ namespace Festival.desktop
             this.Close();
         }
 
+        private void cmbCantor_SelectedValueChanged(object sender, EventArgs e)
+        {
+            // Carrega combo apresentações filtrando pelo cantor selecionado neste combo box
+            this.cmbApresentacao.Properties.Items.Clear();
+            Cantor ctr = (Cantor)cmbCantor.SelectedItem;
+            foreach (Apresentacao apr in apresentacaoBo.Listar())
+            {                
+                if ((apr.cantor.id_cantor == ctr.id_cantor) || (ctr.id_cantor == 0))
+                {
+                    this.cmbApresentacao.Properties.Items.Add(apr);
+                }
+                
+            }
+        }
+
+        private void cmbCategoria_SelectedValueChanged(object sender, EventArgs e)
+        {
+            // Carrega combo apresentações filtrando pelo cantor selecionado neste combo box
+            this.cmbCantor.Properties.Items.Clear();
+            this.cmbApresentacao.Properties.Items.Clear();
+            // Inserir cantor todos
+            this.cmbCantor.Properties.Items.Add(new Cantor() { nome = "Todos", id_cantor = 0 });
+
+            Categoria cat = (Categoria)cmbCategoria.SelectedItem;
+            listaApresentacao = listaApresentacao.FindAll(x => x.categoria.id_categoria == cat.id_categoria);
+            //listaCantores =
+            listaCantores = (List<Cantor>)listaCantores.FindAll(p => listaApresentacao.Any(p2 => p2.cantor.id_cantor == p.id_cantor));
+
+            foreach (Cantor cantor in listaCantores)
+            {
+                this.cmbCantor.Properties.Items.Add(cantor);
+            }
+
+            foreach (Apresentacao apr in listaApresentacao)
+            {
+                this.cmbApresentacao.Properties.Items.Add(apr);
+            }            
+        }
     }
 }
