@@ -89,8 +89,8 @@ namespace Festival.desktop
         {
             using (var reader = new StreamReader(@"C:\Users\Ninguem\Downloads\inscrifm.csv"))
             {
-                string listA = " ";
-                string listB = " ";
+                string listA = "A ";
+                string listB = "B ";
 
                 while (!reader.EndOfStream)
                 {
@@ -100,8 +100,8 @@ namespace Festival.desktop
                     listA += values[0];
                     listB += values[1];
                 }
-                MessageBox.Show(listA);
-                MessageBox.Show(listB);
+                MessageBox.Show(listA += "A ");
+                MessageBox.Show(listB += "B ");
             }
         }
     }
