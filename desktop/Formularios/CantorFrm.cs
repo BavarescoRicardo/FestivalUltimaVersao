@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -82,6 +83,26 @@ namespace Festival.desktop
         {
             ComboBoxEdit cb = (sender as ComboBoxEdit);
             this.categoriaTemp = (Categoria)cb.EditValue;
+        }
+
+        private void btnImport_Click(object sender, EventArgs e)
+        {
+            using (var reader = new StreamReader(@"C:\Users\Ninguem\Downloads\inscrifm.csv"))
+            {
+                string listA = " ";
+                string listB = " ";
+
+                while (!reader.EndOfStream)
+                {
+                    var line = reader.ReadLine();
+                    var values = line.Split(',');
+
+                    listA += values[0];
+                    listB += values[1];
+                }
+                MessageBox.Show(listA);
+                MessageBox.Show(listB);
+            }
         }
     }
     
