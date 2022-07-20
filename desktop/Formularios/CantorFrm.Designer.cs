@@ -47,6 +47,8 @@
             this.colcantor = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colcategoria = new DevExpress.XtraGrid.Columns.GridColumn();
             this.cmbCategoriaRepositorioGrid = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
+            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.txtEmail = new DevExpress.XtraEditors.TextEdit();
             this.txtNome = new DevExpress.XtraEditors.TextEdit();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
@@ -198,7 +200,9 @@
             this.colmusica,
             this.colartista,
             this.colcantor,
-            this.colcategoria});
+            this.colcategoria,
+            this.gridColumn1,
+            this.gridColumn2});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
@@ -214,7 +218,7 @@
             this.colCodigo.OptionsFilter.AllowFilter = false;
             this.colCodigo.Visible = true;
             this.colCodigo.VisibleIndex = 0;
-            this.colCodigo.Width = 72;
+            this.colCodigo.Width = 56;
             // 
             // colmusica
             // 
@@ -222,7 +226,7 @@
             this.colmusica.Name = "colmusica";
             this.colmusica.Visible = true;
             this.colmusica.VisibleIndex = 1;
-            this.colmusica.Width = 203;
+            this.colmusica.Width = 151;
             // 
             // colartista
             // 
@@ -230,7 +234,7 @@
             this.colartista.Name = "colartista";
             this.colartista.Visible = true;
             this.colartista.VisibleIndex = 2;
-            this.colartista.Width = 203;
+            this.colartista.Width = 118;
             // 
             // colcantor
             // 
@@ -239,14 +243,14 @@
             // 
             // colcategoria
             // 
-            this.colcategoria.Caption = "Selecione";
+            this.colcategoria.Caption = "Categoria";
             this.colcategoria.ColumnEdit = this.cmbCategoriaRepositorioGrid;
             this.colcategoria.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
             this.colcategoria.FieldName = "categoria";
             this.colcategoria.Name = "colcategoria";
             this.colcategoria.Visible = true;
-            this.colcategoria.VisibleIndex = 3;
-            this.colcategoria.Width = 207;
+            this.colcategoria.VisibleIndex = 5;
+            this.colcategoria.Width = 129;
             // 
             // cmbCategoriaRepositorioGrid
             // 
@@ -256,6 +260,24 @@
             this.cmbCategoriaRepositorioGrid.EditFormat.FormatType = DevExpress.Utils.FormatType.Custom;
             this.cmbCategoriaRepositorioGrid.Name = "cmbCategoriaRepositorioGrid";
             this.cmbCategoriaRepositorioGrid.EditValueChanged += new System.EventHandler(this.cmbCategoriaRepositorioGrid_EditValueChanged);
+            // 
+            // gridColumn1
+            // 
+            this.gridColumn1.Caption = "Gravação";
+            this.gridColumn1.FieldName = "gravacao";
+            this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.Visible = true;
+            this.gridColumn1.VisibleIndex = 3;
+            this.gridColumn1.Width = 144;
+            // 
+            // gridColumn2
+            // 
+            this.gridColumn2.Caption = "Tom";
+            this.gridColumn2.FieldName = "tom";
+            this.gridColumn2.Name = "gridColumn2";
+            this.gridColumn2.Visible = true;
+            this.gridColumn2.VisibleIndex = 4;
+            this.gridColumn2.Width = 63;
             // 
             // txtEmail
             // 
@@ -507,5 +529,7 @@
         private DevExpress.XtraEditors.Repository.RepositoryItemComboBox cmbCategoriaRepositorioGrid;
         private DevExpress.XtraEditors.SimpleButton btnImport;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
     }
 }

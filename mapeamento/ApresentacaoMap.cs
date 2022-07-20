@@ -9,6 +9,8 @@
         public ApresentacaoMap()
         {
             Id(c => c.id_apresentacao);
+            Map(c => c.tom);
+            Map(c => c.gravacao);
             Map(c => c.musica);
             Map(c => c.artista);
             References<Cantor>(x => x.cantor).Column("cantor").ForeignKey("id_cantor");

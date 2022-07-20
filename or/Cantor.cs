@@ -16,6 +16,7 @@ namespace Festival.or
         public virtual string rg { get; set; }
         public virtual string observacao { get; set; }
 
+
         public Cantor()
         {
 

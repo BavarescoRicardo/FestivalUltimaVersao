@@ -14,9 +14,10 @@ namespace Festival.or
 
         }
 
-        public Apresentacao(int id_apresentacao, string musica, string artista, Cantor cantor, Categoria categoria)
+        public Apresentacao(int id_apresentacao, string tom, string gravacao, string musica, string artista, Cantor cantor, Categoria categoria)
         {
             this.id_apresentacao = id_apresentacao;
+
             this.musica = musica;
             this.artista = artista;
             this.cantor = cantor;
@@ -24,6 +25,8 @@ namespace Festival.or
         }
 
         public virtual int id_apresentacao { get; set; }
+        public virtual string tom { get; set; }
+        public virtual string gravacao { get; set; }
         public virtual string musica { get; set; }
         public virtual string artista { get; set; }
         public virtual Cantor cantor { get; set; }
