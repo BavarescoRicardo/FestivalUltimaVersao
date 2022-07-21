@@ -10,6 +10,8 @@
             Id(c => c.id_notas);
             Map(c => c.nota1);
             Map(c => c.nota2);
+            Map(c => c.nota3);
+            Map(c => c.nota4);
             Map(c => c.cantor);
             Map(c => c.categoria);
             Map(c => c.jurado);

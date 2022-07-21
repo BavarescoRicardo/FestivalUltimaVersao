@@ -91,6 +91,13 @@ namespace Festival.desktop
                 bo.Inserir(notas);
                 MessageBox.Show("Inserido com sucesso");
 
+                // Limpar campos
+                txtNota1.Text = " ";
+                txtNota2.Text = " ";
+                txtNota3.Text = " ";
+                txtNota4.Text = " ";
+                this.cmbJurado.Refresh();
+
             }
             catch (Exception ex)
             {

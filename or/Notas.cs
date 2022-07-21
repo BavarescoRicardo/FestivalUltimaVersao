@@ -13,12 +13,13 @@ namespace Festival.or
 
         }
 
-        public Notas(int id_notas, double nota1, double nota2, int cantor,
-            int categoria, int jurado, int apresentacao)
+        public Notas(int id_notas, double nota1, double nota2, double nota3, double nota4, int cantor, int categoria, int jurado, int apresentacao)
         {
             this.id_notas = id_notas;
             this.nota1 = nota1;
             this.nota2 = nota2;
+            this.nota3 = nota3;
+            this.nota4 = nota4;
             this.cantor = cantor;
             this.categoria = categoria;
             this.jurado = jurado;
@@ -28,6 +29,8 @@ namespace Festival.or
         public virtual int id_notas { get; set; }
         public virtual double nota1 { get; set; }
         public virtual double nota2 { get; set; }
+        public virtual double nota3 { get; set; }
+        public virtual double nota4 { get; set; }
         public virtual int cantor { get; set; }
         public virtual int categoria { get; set; }
         public virtual int jurado { get; set; }
