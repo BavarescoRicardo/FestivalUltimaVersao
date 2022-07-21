@@ -312,6 +312,7 @@
     <Compile Include="mapeamento\FluentySessionFactory.cs" />
     <Compile Include="mapeamento\JuradoMap.cs" />
     <Compile Include="or\Apresentacao.cs" />
+    <Compile Include="or\Calculos.cs" />
     <Compile Include="or\Cantor.cs" />
     <Compile Include="or\Categoria.cs" />
     <Compile Include="or\Classificacao.cs" />

@@ -88,5 +88,11 @@ namespace Festival.desktop
             ListaNotas listar = new ListaNotas();
             listar.ShowDialog();
         }
+
+        private void listarToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            ListaClassifica listar = new ListaClassifica();
+            listar.ShowDialog();
+        }
     }
 }

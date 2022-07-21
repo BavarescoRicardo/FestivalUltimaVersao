@@ -132,6 +132,7 @@
             // 
             // gridColumn3
             // 
+            this.gridColumn3.Caption = "Média notas";
             this.gridColumn3.FieldName = "nota1";
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.OptionsFilter.AllowAutoFilter = false;
@@ -169,7 +170,7 @@
             this.Controls.Add(this.cmbFiltro);
             this.Controls.Add(this.gridControl);
             this.Name = "ListaClassifica";
-            this.Text = "Lista das Notas";
+            this.Text = "Classificação";
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
