@@ -74,11 +74,15 @@ namespace Festival.desktop
                 Categoria cat = (Categoria)cmbCategoria.SelectedItem;
                 Jurado jur = (Jurado)cmbJurado.SelectedItem;
                 Apresentacao ap = (Apresentacao)cmbApresentacao.SelectedItem;
+                Calculos calc = new Calculos();
 
                 notas.cantor = ctr.id_cantor;
                 notas.categoria = cat.id_categoria;
                 notas.jurado = jur.id_jurado;
                 notas.apresentacao = ap.id_apresentacao;
+
+                // Faz media das notas e desconta maxima e minima
+                notas.notafinal = calc.mediaNota(notas.nota1, notas.nota2, notas.nota3, notas.nota4);
 
                 // Gravar no banco
                 bindingSource.EndEdit();

@@ -31,6 +31,7 @@ namespace Festival.or
         public virtual double nota2 { get; set; }
         public virtual double nota3 { get; set; }
         public virtual double nota4 { get; set; }
+        public virtual double notafinal { get; set; }
         public virtual int cantor { get; set; }
         public virtual int categoria { get; set; }
         public virtual int jurado { get; set; }

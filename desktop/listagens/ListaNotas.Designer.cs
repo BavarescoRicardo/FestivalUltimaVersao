@@ -41,10 +41,10 @@
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             this.cmbFiltro = new DevExpress.XtraEditors.ComboBoxEdit();
             this.label1 = new System.Windows.Forms.Label();
-            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
@@ -175,6 +175,14 @@
             this.gridColumn6.VisibleIndex = 8;
             this.gridColumn6.Width = 66;
             // 
+            // gridColumn7
+            // 
+            this.gridColumn7.Caption = "Média final";
+            this.gridColumn7.FieldName = "notafinal";
+            this.gridColumn7.Name = "gridColumn7";
+            this.gridColumn7.Visible = true;
+            this.gridColumn7.VisibleIndex = 9;
+            // 
             // cmbFiltro
             // 
             this.cmbFiltro.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -194,14 +202,6 @@
             this.label1.Size = new System.Drawing.Size(119, 23);
             this.label1.TabIndex = 2;
             this.label1.Text = "Categoria";
-            // 
-            // gridColumn7
-            // 
-            this.gridColumn7.Caption = "Média final";
-            this.gridColumn7.FieldName = "nota2";
-            this.gridColumn7.Name = "gridColumn7";
-            this.gridColumn7.Visible = true;
-            this.gridColumn7.VisibleIndex = 9;
             // 
             // ListaNotas
             // 

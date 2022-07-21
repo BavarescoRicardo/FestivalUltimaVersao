@@ -16,10 +16,11 @@
             Map(c => c.categoria);
             Map(c => c.jurado);
             Map(c => c.apresentacao);
-/*            References<Cantor>(x => x.cantor).Column("cantor").ForeignKey("id_cantor");
-            References<Categoria>(x => x.categoria).Column("categoria").ForeignKey("id_categoria");
-            References<Jurado>(x => x.jurado).Column("jurado").ForeignKey("id_jurado");
-            References<Apresentacao>(x => x.apresentacao).Column("apresentacao").ForeignKey("id_apresentacao");*/
+            Map(c => c.notafinal);
+            /*            References<Cantor>(x => x.cantor).Column("cantor").ForeignKey("id_cantor");
+                        References<Categoria>(x => x.categoria).Column("categoria").ForeignKey("id_categoria");
+                        References<Jurado>(x => x.jurado).Column("jurado").ForeignKey("id_jurado");
+                        References<Apresentacao>(x => x.apresentacao).Column("apresentacao").ForeignKey("id_apresentacao");*/
 
             Table("notas");
         }

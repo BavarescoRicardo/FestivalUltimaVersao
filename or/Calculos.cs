@@ -53,7 +53,7 @@ namespace Festival.or
             // Soma todos os valores restantes
             for (int cont = 0; cont < 4; cont++)
             {
-                soma = valores[cont];                
+                soma += valores[cont];                
             }
 
             return soma / 2;
