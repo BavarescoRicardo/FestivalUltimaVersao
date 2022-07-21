@@ -13,20 +13,20 @@ namespace Festival.or
 
         }
 
-        public double mediaNotaMediana(double n1, double n2, double n3, double n4)
+        public double mediaNotaMediana(double jurN1, double jurN2, double jurN3, double jurN4, double jurN5)
         {
             // Descontar maior e menor nota
-            double max = n1;
-            double min = n1;
+            double max = jurN1;
+            double min = jurN1;
             double soma = 0;
             int indiceMax = 0;
             int indiceMin = 0;
 
             List<double> valores = new List<double>();
-            valores.Add(n1);
-            valores.Add(n2);
-            valores.Add(n3);
-            valores.Add(n4);
+            valores.Add(jurN1);
+            valores.Add(jurN2);
+            valores.Add(jurN3);
+            valores.Add(jurN4);
 
             // Encontra minimo e deixa igual a 0
             for(int cont = 0; cont < 4; cont++)

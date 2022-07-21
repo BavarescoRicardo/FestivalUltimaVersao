@@ -24,8 +24,13 @@ namespace Festival.listagens
             gridControl.RefreshDataSource();
 
             this.bindingSource.Clear();
-            bindingSource.DataSource = lista;
-            // bindingSource.DataSource = lista.Where(x => x.categoria == 6);
+
+            // Ordenar lista pelas maiores notas finais
+            //lista = (IList<Festival.or.Notas>)lista.OrderByDescending(x => x.notafinal);
+
+            // Atribuir lista ordenada ao bind da tabela
+            bindingSource.DataSource = lista; 
+            
             this.bindingSource.ResetBindings(true);
             gridControl.Refresh();
 
