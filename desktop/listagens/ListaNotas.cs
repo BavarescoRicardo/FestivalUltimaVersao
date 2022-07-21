@@ -25,9 +25,6 @@ namespace Festival.listagens
 
             this.bindingSource.Clear();
 
-            // Ordenar lista pelas maiores notas finais
-            //lista = (IList<Festival.or.Notas>)lista.OrderByDescending(x => x.notafinal);
-
             // Atribuir lista ordenada ao bind da tabela
             bindingSource.DataSource = lista; 
             
