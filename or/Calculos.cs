@@ -13,7 +13,7 @@ namespace Festival.or
 
         }
 
-        public double mediaNota(double n1, double n2, double n3, double n4)
+        public double mediaNotaMediana(double n1, double n2, double n3, double n4)
         {
             // Descontar maior e menor nota
             double max = n1;
@@ -57,6 +57,12 @@ namespace Festival.or
             }
 
             return soma / 2;
+        }
+
+        public double mediaNota(double n1, double n2, double n3, double n4)
+        {
+            // Soma todos os valores restantes e retorna media
+            return (n1+n2+n3+n4) / 4;
         }
     }
 }
