@@ -1,6 +1,6 @@
 ﻿namespace Festival.listagens
 {
-    partial class ListaNotas
+    partial class ListaClassifica
     {
         /// <summary>
         /// Required designer variable.
@@ -38,13 +38,9 @@
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             this.cmbFiltro = new DevExpress.XtraEditors.ComboBoxEdit();
             this.label1 = new System.Windows.Forms.Label();
-            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
@@ -58,7 +54,7 @@
             this.gridControl.Location = new System.Drawing.Point(13, 8);
             this.gridControl.MainView = this.gridView1;
             this.gridControl.Name = "gridControl";
-            this.gridControl.Size = new System.Drawing.Size(1051, 403);
+            this.gridControl.Size = new System.Drawing.Size(860, 366);
             this.gridControl.TabIndex = 0;
             this.gridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -75,11 +71,7 @@
             this.coldia,
             this.gridColumn1,
             this.gridColumn2,
-            this.gridColumn3,
-            this.gridColumn4,
-            this.gridColumn5,
-            this.gridColumn6,
-            this.gridColumn7});
+            this.gridColumn3});
             this.gridView1.GridControl = this.gridControl;
             this.gridView1.GroupPanelText = "Notas";
             this.gridView1.Name = "gridView1";
@@ -148,33 +140,6 @@
             this.gridColumn3.VisibleIndex = 5;
             this.gridColumn3.Width = 97;
             // 
-            // gridColumn4
-            // 
-            this.gridColumn4.Caption = "nota2";
-            this.gridColumn4.FieldName = "nota2";
-            this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 6;
-            this.gridColumn4.Width = 56;
-            // 
-            // gridColumn5
-            // 
-            this.gridColumn5.Caption = "nota3";
-            this.gridColumn5.FieldName = "nota3";
-            this.gridColumn5.Name = "gridColumn5";
-            this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 7;
-            this.gridColumn5.Width = 56;
-            // 
-            // gridColumn6
-            // 
-            this.gridColumn6.Caption = "nota4";
-            this.gridColumn6.FieldName = "nota4";
-            this.gridColumn6.Name = "gridColumn6";
-            this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 8;
-            this.gridColumn6.Width = 66;
-            // 
             // cmbFiltro
             // 
             this.cmbFiltro.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -195,23 +160,15 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Categoria";
             // 
-            // gridColumn7
-            // 
-            this.gridColumn7.Caption = "Média final";
-            this.gridColumn7.FieldName = "nota2";
-            this.gridColumn7.Name = "gridColumn7";
-            this.gridColumn7.Visible = true;
-            this.gridColumn7.VisibleIndex = 9;
-            // 
-            // ListaNotas
+            // ListaClassifica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1076, 423);
+            this.ClientSize = new System.Drawing.Size(881, 382);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbFiltro);
             this.Controls.Add(this.gridControl);
-            this.Name = "ListaNotas";
+            this.Name = "ListaClassifica";
             this.Text = "Lista das Notas";
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).EndInit();
@@ -236,9 +193,5 @@
         private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
         private DevExpress.XtraEditors.ComboBoxEdit cmbFiltro;
         private System.Windows.Forms.Label label1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
     }
 }

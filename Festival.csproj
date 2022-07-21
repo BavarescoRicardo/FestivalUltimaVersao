@@ -231,6 +231,12 @@
     <Compile Include="desktop\listagens\ListaCategoria.Designer.cs">
       <DependentUpon>ListaCategoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="desktop\listagens\ListaClassifica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="desktop\listagens\ListaClassifica.Designer.cs">
+      <DependentUpon>ListaClassifica.cs</DependentUpon>
+    </Compile>
     <Compile Include="mapeamento\NotasMap.cs" />
     <Compile Include="Migrations\202207190615015_notn.cs" />
     <Compile Include="Migrations\202207190615015_notn.designer.cs">
@@ -338,6 +344,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="desktop\listagens\ListaJuri.resx">
       <DependentUpon>ListaJuri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="desktop\listagens\ListaClassifica.resx">
+      <DependentUpon>ListaClassifica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="desktop\listagens\ListaNotas.resx">
       <DependentUpon>ListaNotas.cs</DependentUpon>

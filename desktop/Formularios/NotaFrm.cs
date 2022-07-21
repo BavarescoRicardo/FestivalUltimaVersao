@@ -96,7 +96,7 @@ namespace Festival.desktop
                 txtNota2.Text = " ";
                 txtNota3.Text = " ";
                 txtNota4.Text = " ";
-                this.cmbJurado.Refresh();
+                this.cmbJurado.SelectedIndex += 1;
 
             }
             catch (Exception ex)
