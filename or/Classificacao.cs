@@ -25,5 +25,6 @@ namespace Festival.or
         public virtual Apresentacao apresentacao { get; set; }
         public virtual Cantor cantor { get; set; }
         public virtual Categoria categoria { get; set; }
+        public virtual bool codigosSelecionados { get; set; }
     }
 }

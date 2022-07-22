@@ -220,7 +220,11 @@ namespace Festival.desktop
 
             // Monta objeto classificacao e salva no banco
             Classificacao classificacao = new Classificacao();
+            
             classificacao.apresentacao = (Apresentacao)this.cmbApresentacao.SelectedItem;
+            classificacao .cantor= (Cantor)cmbCantor.SelectedItem;
+            classificacao.categoria = (Categoria)cmbCategoria.SelectedItem;
+
             classificacao.notafinal = calc.mediaNotaMediana(notaJurados[0], notaJurados[1], notaJurados[2], notaJurados[3], notaJurados[4]);
 
             ClassificacaoBo classificacaoBo = new ClassificacaoBo();

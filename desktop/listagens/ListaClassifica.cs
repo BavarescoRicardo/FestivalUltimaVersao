@@ -14,6 +14,7 @@ namespace Festival.listagens
 {
     public partial class ListaClassifica : Form
     {
+        public int[] IdsSelecionados;
         public ListaClassifica()
         {
             InitializeComponent();
@@ -69,6 +70,28 @@ namespace Festival.listagens
                 throw;
             }
         }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < gridView1.DataRowCount; i++)
+            {
+                if (gridView1.IsRowSelected(i))
+                {
+                    // code when checked
+                    MessageBox.Show("Selecionado linha: " +i);
+                }
+                else
+                {
+                    // code when not checked
+                    MessageBox.Show("Não selecionado linha: " + i);
+                }
+            }
+
+            ClassificacaoBo bo = new ClassificacaoBo();
+            // MessageBox.Show(gridView1.GetSelectedCells().ToString());
+
+        }
+
 
         /*        private void cmbFiltro_SelectedValueChanged(object sender, EventArgs e)
                 {
