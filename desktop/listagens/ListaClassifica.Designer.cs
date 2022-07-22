@@ -33,7 +33,6 @@
             this.bindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colSequencial = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colcategoria = new DevExpress.XtraGrid.Columns.GridColumn();
             this.coldia = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -65,7 +64,6 @@
             // 
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colSequencial,
-            this.colcategoria,
             this.coldia,
             this.gridColumn1,
             this.gridColumn2,
@@ -75,6 +73,7 @@
             this.gridView1.Name = "gridView1";
             this.gridView1.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
             new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.colSequencial, DevExpress.Data.ColumnSortOrder.Ascending)});
+            this.gridView1.CustomColumnDisplayText += new DevExpress.XtraGrid.Views.Base.CustomColumnDisplayTextEventHandler(this.gridView1_CustomColumnDisplayText_1);
             // 
             // colSequencial
             // 
@@ -87,16 +86,6 @@
             this.colSequencial.VisibleIndex = 0;
             this.colSequencial.Width = 70;
             // 
-            // colcategoria
-            // 
-            this.colcategoria.FieldName = "apresentacao.id_apresentacao";
-            this.colcategoria.Name = "colcategoria";
-            this.colcategoria.OptionsFilter.AllowAutoFilter = false;
-            this.colcategoria.OptionsFilter.AllowFilter = false;
-            this.colcategoria.Visible = true;
-            this.colcategoria.VisibleIndex = 1;
-            this.colcategoria.Width = 227;
-            // 
             // coldia
             // 
             this.coldia.FieldName = "apresentacao.categoria";
@@ -104,7 +93,7 @@
             this.coldia.OptionsFilter.AllowAutoFilter = false;
             this.coldia.OptionsFilter.AllowFilter = false;
             this.coldia.Visible = true;
-            this.coldia.VisibleIndex = 2;
+            this.coldia.VisibleIndex = 1;
             this.coldia.Width = 156;
             // 
             // gridColumn1
@@ -114,28 +103,28 @@
             this.gridColumn1.OptionsFilter.AllowAutoFilter = false;
             this.gridColumn1.OptionsFilter.AllowFilter = false;
             this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 3;
+            this.gridColumn1.VisibleIndex = 2;
             this.gridColumn1.Width = 149;
             // 
             // gridColumn2
             // 
-            this.gridColumn2.FieldName = "apresentacao";
+            this.gridColumn2.FieldName = "apresentacao.cantor";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.OptionsFilter.AllowAutoFilter = false;
             this.gridColumn2.OptionsFilter.AllowFilter = false;
             this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 4;
+            this.gridColumn2.VisibleIndex = 3;
             this.gridColumn2.Width = 149;
             // 
             // gridColumn3
             // 
             this.gridColumn3.Caption = "Média notas";
-            this.gridColumn3.FieldName = "nota1";
+            this.gridColumn3.FieldName = "notafinal";
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.OptionsFilter.AllowAutoFilter = false;
             this.gridColumn3.OptionsFilter.AllowFilter = false;
             this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 5;
+            this.gridColumn3.VisibleIndex = 4;
             this.gridColumn3.Width = 97;
             // 
             // cmbFiltro
@@ -181,7 +170,6 @@
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private System.Windows.Forms.BindingSource bindingSource;
         private DevExpress.XtraGrid.Columns.GridColumn colSequencial;
-        private DevExpress.XtraGrid.Columns.GridColumn colcategoria;
         private DevExpress.XtraGrid.Columns.GridColumn coldia;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;

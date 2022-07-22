@@ -15,7 +15,7 @@ namespace Festival.listagens
     public partial class ListaClassifica : Form
     {
         IList<Festival.or.Classificacao> lista;
-        int idClassificacao = 0;
+        int idApresentacao = 0;
         public ListaClassifica()
         {
             InitializeComponent();
@@ -39,36 +39,39 @@ namespace Festival.listagens
             this.cmbFiltro.Properties.Items.Add(new Categoria() {categoria = "Todos" });
         }
 
-
-        private void gridView1_CustomColumnDisplayText(object sender, DevExpress.XtraGrid.Views.Base.CustomColumnDisplayTextEventArgs e)
+        private void gridView1_CustomColumnDisplayText_1(object sender, DevExpress.XtraGrid.Views.Base.CustomColumnDisplayTextEventArgs e)
         {
             try
             {
-                if (e.Column.FieldName == "id_classificacao")
+                if (e.Column.FieldName == "apresentacao.id_apresentacao")
                 {
                     // Guarda o id atual da classificacao mostrada na tabela
-                    idClassificacao = (int)e.Value;
+                    idApresentacao = (int)e.Value;
 
                 }
 
-                if (e.Column.FieldName == "apresentacao.categoria.id_categoria")
+                if (e.Column.FieldName == "apresentacao.categoria")
                 {
-                    ClassificacaoBo bo = new ClassificacaoBo();
-                    e.DisplayText = bo.RetornePeloId(idClassificacao).apresentacao.categoria.categoria;
+                    ApresentacaoBo bo = new ApresentacaoBo();
+                    CategoriaBo categoriaBo = new CategoriaBo();
+                    e.DisplayText = 
+                           categoriaBo.RetornePeloId(bo.RetornePeloId(idApresentacao).categoria.id_categoria).categoria;
                 }
 
                 if (e.Column.FieldName == "apresentacao.musica")
                 {
                     // Inicia objeto do banco caso esteja na coluna certa
-                    ClassificacaoBo bo = new ClassificacaoBo();
+                    ApresentacaoBo bo = new ApresentacaoBo();
                     // Localize objeto pelo id e substitui na coluna
-                    e.DisplayText = bo.RetornePeloId(idClassificacao).apresentacao.musica;
+                    e.DisplayText = bo.RetornePeloId(idApresentacao).musica;
                 }
 
-                if (e.Column.FieldName == "jurado")
+                if (e.Column.FieldName == "apresentacao.cantor")
                 {
-                    JuradoBo bo = new JuradoBo();
-                    e.DisplayText = bo.RetornePeloId((int)e.Value).nome;
+                    ApresentacaoBo bo = new ApresentacaoBo();
+                    CantorBo categoriaBo = new CantorBo();
+                    e.DisplayText =
+                           categoriaBo.RetornePeloId(bo.RetornePeloId(idApresentacao).cantor.id_cantor).nome;
                 }
             }
             catch (Exception)
@@ -77,20 +80,19 @@ namespace Festival.listagens
                 //return;
                 throw;
             }
-
         }
 
-/*        private void cmbFiltro_SelectedValueChanged(object sender, EventArgs e)
-        {
-            Categoria cat = (Categoria)cmbFiltro.SelectedItem;
-            if (lista.Where(x => x.categoria == cat.id_categoria).Count() > 0)
-            {
-                bindingSource.DataSource = lista.Where(x => x.categoria == cat.id_categoria);
-            }
-            else
-            {
-                bindingSource.DataSource = lista;
-            }*/
+        /*        private void cmbFiltro_SelectedValueChanged(object sender, EventArgs e)
+                {
+                    Categoria cat = (Categoria)cmbFiltro.SelectedItem;
+                    if (lista.Where(x => x.categoria == cat.id_categoria).Count() > 0)
+                    {
+                        bindingSource.DataSource = lista.Where(x => x.categoria == cat.id_categoria);
+                    }
+                    else
+                    {
+                        bindingSource.DataSource = lista;
+                    }*/
 
     }
 }
