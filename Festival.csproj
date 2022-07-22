@@ -231,16 +231,27 @@
     <Compile Include="desktop\listagens\ListaCategoria.Designer.cs">
       <DependentUpon>ListaCategoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="desktop\listagens\ListaCantores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="desktop\listagens\ListaCantores.Designer.cs">
+      <DependentUpon>ListaCantores.cs</DependentUpon>
+    </Compile>
     <Compile Include="desktop\listagens\ListaClassifica.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="desktop\listagens\ListaClassifica.Designer.cs">
       <DependentUpon>ListaClassifica.cs</DependentUpon>
     </Compile>
+    <Compile Include="mapeamento\ClassificacaoMap.cs" />
     <Compile Include="mapeamento\NotasMap.cs" />
     <Compile Include="Migrations\202207190615015_notn.cs" />
     <Compile Include="Migrations\202207190615015_notn.designer.cs">
       <DependentUpon>202207190615015_notn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202207220054320_clasi.cs" />
+    <Compile Include="Migrations\202207220054320_clasi.designer.cs">
+      <DependentUpon>202207220054320_clasi.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MyDBContext.cs" />
@@ -340,6 +351,9 @@
     <EmbeddedResource Include="desktop\listagens\ListaCategoria.resx">
       <DependentUpon>ListaCategoria.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="desktop\listagens\ListaCantores.resx">
+      <DependentUpon>ListaCantores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="desktop\listagens\ListaEvento.resx">
       <DependentUpon>ListaEvento.cs</DependentUpon>
     </EmbeddedResource>
@@ -360,6 +374,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202207190615015_notn.resx">
       <DependentUpon>202207190615015_notn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202207220054320_clasi.resx">
+      <DependentUpon>202207220054320_clasi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -390,6 +407,8 @@
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Evento.bo.EventoBo.datasource" />
     <None Include="Properties\DataSources\Evento.or.Evento.datasource" />
+    <None Include="Properties\DataSources\Festival.or.Apresentacao.datasource" />
+    <None Include="Properties\DataSources\Festival.or.Cantor.datasource" />
     <None Include="Properties\DataSources\Festival.or.Categoria.datasource" />
     <None Include="Properties\DataSources\Festival.or.Notas.datasource" />
     <None Include="Properties\Settings.settings">

@@ -73,13 +73,7 @@ namespace Festival.desktop
 
         private void mnuListarCantor_Click(object sender, EventArgs e)
         {
-            // Iniciar Dao
-            var crud = new RepositorioCrud<Cantor>();
-            DataTable tabela = new DataTable();
-            tabela = crud.ListaDataTable<Festival.or.Cantor>();
-
-            ListaPrincipal listaDinamica = new ListaPrincipal("Cantores");
-            listaDinamica.definirGrid(tabela);
+            ListaCantores listaDinamica = new ListaCantores();
             listaDinamica.Show();
         }
 
