@@ -226,6 +226,12 @@
     <Compile Include="bo\CategoriaBo.cs" />
     <Compile Include="bo\EventoBo.cs" />
     <Compile Include="bo\JuradoBo.cs" />
+    <Compile Include="desktop\Formularios\AtribuiNotaFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="desktop\Formularios\AtribuiNotaFrm.Designer.cs">
+      <DependentUpon>AtribuiNotaFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="desktop\listagens\ListaCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -345,6 +351,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="desktop\Formularios\JuradoFrm.resx">
       <DependentUpon>JuradoFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="desktop\Formularios\AtribuiNotaFrm.resx">
+      <DependentUpon>AtribuiNotaFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="desktop\Formularios\NotaFrm.resx">
       <DependentUpon>NotaFrm.cs</DependentUpon>
