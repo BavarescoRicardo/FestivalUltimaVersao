@@ -220,6 +220,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="bo\ApresentacaoBo.cs" />
+    <Compile Include="bo\ClassificacaoBo.cs" />
     <Compile Include="bo\NotasBo.cs" />
     <Compile Include="bo\CantorBo.cs" />
     <Compile Include="bo\CategoriaBo.cs" />
@@ -410,6 +411,7 @@
     <None Include="Properties\DataSources\Festival.or.Apresentacao.datasource" />
     <None Include="Properties\DataSources\Festival.or.Cantor.datasource" />
     <None Include="Properties\DataSources\Festival.or.Categoria.datasource" />
+    <None Include="Properties\DataSources\Festival.or.Classificacao.datasource" />
     <None Include="Properties\DataSources\Festival.or.Notas.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

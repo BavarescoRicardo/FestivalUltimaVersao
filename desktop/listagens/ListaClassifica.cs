@@ -14,12 +14,12 @@ namespace Festival.listagens
 {
     public partial class ListaClassifica : Form
     {
-        IList<Festival.or.Notas> lista;
+        IList<Festival.or.Classificacao> lista;
         public ListaClassifica()
         {
             InitializeComponent();
 
-            NotasBo bo = new NotasBo();
+            ClassificacaoBo bo = new ClassificacaoBo();
             lista = bo.Listar();
             gridControl.RefreshDataSource();
 
@@ -38,7 +38,7 @@ namespace Festival.listagens
             this.cmbFiltro.Properties.Items.Add(new Categoria() {categoria = "Todos" });
         }
 
-
+/*
         private void gridView1_CustomColumnDisplayText(object sender, DevExpress.XtraGrid.Views.Base.CustomColumnDisplayTextEventArgs e)
         {
             try
@@ -94,6 +94,6 @@ namespace Festival.listagens
                 bindingSource.DataSource = lista;
             }
             
-        }
+        }*/
     }
 }
