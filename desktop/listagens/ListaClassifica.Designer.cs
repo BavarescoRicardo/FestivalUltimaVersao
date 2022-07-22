@@ -79,7 +79,7 @@
             // colSequencial
             // 
             this.colSequencial.Caption = "Codigo";
-            this.colSequencial.FieldName = "id_notas";
+            this.colSequencial.FieldName = "id_classificacao";
             this.colSequencial.Name = "colSequencial";
             this.colSequencial.OptionsFilter.AllowAutoFilter = false;
             this.colSequencial.OptionsFilter.AllowFilter = false;
@@ -89,7 +89,7 @@
             // 
             // colcategoria
             // 
-            this.colcategoria.FieldName = "cantor";
+            this.colcategoria.FieldName = "apresentacao.id_apresentacao";
             this.colcategoria.Name = "colcategoria";
             this.colcategoria.OptionsFilter.AllowAutoFilter = false;
             this.colcategoria.OptionsFilter.AllowFilter = false;
@@ -99,7 +99,7 @@
             // 
             // coldia
             // 
-            this.coldia.FieldName = "categoria";
+            this.coldia.FieldName = "apresentacao.categoria";
             this.coldia.Name = "coldia";
             this.coldia.OptionsFilter.AllowAutoFilter = false;
             this.coldia.OptionsFilter.AllowFilter = false;
@@ -109,7 +109,7 @@
             // 
             // gridColumn1
             // 
-            this.gridColumn1.FieldName = "jurado";
+            this.gridColumn1.FieldName = "apresentacao.musica";
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.OptionsFilter.AllowAutoFilter = false;
             this.gridColumn1.OptionsFilter.AllowFilter = false;

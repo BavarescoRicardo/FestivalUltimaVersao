@@ -611,6 +611,6 @@ C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.listagens.
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.listagens.ListaNotas.resources
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.listagens.ListaClassifica.resources
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.listagens.ListaCantores.resources
-C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.csproj.AssemblyReference.cache
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.Migrations.clasi.resources
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.desktop.AtribuiNotaFrm.resources
+C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.csproj.AssemblyReference.cache

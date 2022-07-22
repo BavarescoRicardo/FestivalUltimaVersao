@@ -1,15 +1,8 @@
-﻿using DevExpress.Utils.Behaviors;
-using DevExpress.Utils.MVVM;
-using Festival.bo;
+﻿using Festival.bo;
 using Festival.or;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Festival.desktop
@@ -20,10 +13,12 @@ namespace Festival.desktop
         List<Apresentacao> listaApresentacao = new List<Apresentacao>();
         CantorBo cantorBo = new CantorBo();
         ApresentacaoBo apresentacaoBo = new ApresentacaoBo();
+        Festival.or.Notas notas = new Festival.or.Notas();
+        double[] notaJurados = new double[5];
+
         public AtribuiNotaFrm()
         {
-            InitializeComponent();
-            bindingSource.DataSource = new Festival.or.Notas();
+            InitializeComponent();            
 
             CategoriaBo categoriaBo = new CategoriaBo();
 
@@ -51,30 +46,13 @@ namespace Festival.desktop
         {
             try
             {
-                // Montar objeto
-                Festival.or.Notas notas = new Festival.or.Notas();
-                NotasBo bo = new NotasBo();
-                notas = (Festival.or.Notas)bindingSource.Current;
-
-                // Encontrando identificadores
-                /* 
-                 notas.cantor = cmbCantor.SelectedItem;
-                 notas.categoria = cmbCategoria.SelectedItem;
-                 notas.jurado = cmbJurado.SelectedItem;
-                 notas.apresentacao = cmbApresentacao.SelectedItem;
-                */
-
                 Cantor ctr = (Cantor)cmbCantor.SelectedItem;
                 Categoria cat = (Categoria)cmbCategoria.SelectedItem;
                 Apresentacao ap = (Apresentacao)cmbApresentacao.SelectedItem;
-                Calculos calc = new Calculos();
 
                 notas.cantor = ctr.id_cantor;
                 notas.categoria = cat.id_categoria;
                 notas.apresentacao = ap.id_apresentacao;
-
-                // Faz media das notas e desconta maxima e minima
-                notas.notafinal = calc.mediaNota(notas.nota1, notas.nota2, notas.nota3, notas.nota4);
 
                 // Gravar no banco
                 bindingSource.EndEdit();
@@ -83,17 +61,38 @@ namespace Festival.desktop
                     MessageBox.Show("Erro ao inserir: Nota nula  ");
                     return;
                 }
-                    
-                bo.Inserir(notas);
-                MessageBox.Show("Inserido com sucesso");
+
+                // Chama o metodo para inserir notas
+                inserirNota();
+                MessageBox.Show("Inseridas notas com sucesso");
+                inserirClassificacao();
+                MessageBox.Show("Gravada classificação com sucesso");
 
                 // Limpar campos
                 txtNota1J1.Text = " ";
                 txtNota2J1.Text = " ";
                 txtNota3J1.Text = " ";
                 txtNota4J1.Text = " ";
-                notas.jurado = 1;
 
+                txtNota1J2.Text = " ";
+                txtNota2J2.Text = " ";
+                txtNota3J2.Text = " ";
+                txtNota4J2.Text = " ";
+
+                txtNota1J3.Text = " ";
+                txtNota2J3.Text = " ";
+                txtNota3J3.Text = " ";
+                txtNota4J3.Text = " ";
+
+                txtNota1J4.Text = " ";
+                txtNota2J4.Text = " ";
+                txtNota3J4.Text = " ";
+                txtNota4J4.Text = " ";
+
+                txtNota1J5.Text = " ";
+                txtNota2J5.Text = " ";
+                txtNota3J5.Text = " ";
+                txtNota4J5.Text = " ";
             }
             catch (Exception ex)
             {
@@ -147,6 +146,85 @@ namespace Festival.desktop
             {
                 this.cmbApresentacao.Properties.Items.Add(apr);
             }            
+        }
+
+        private void inserirNota()
+        {
+            NotasBo bo = new NotasBo();
+            Calculos calc = new Calculos();
+
+            // Notas do primeiro jurado
+            notas.jurado = 1;
+            notas.nota1 = double.Parse(txtNota1J1.Text);
+            notas.nota2 = double.Parse(txtNota2J1.Text);
+            notas.nota3 = double.Parse(txtNota3J1.Text);
+            notas.nota4 = double.Parse(txtNota4J1.Text);
+            notas.notafinal = calc.mediaNota(notas.nota1, notas.nota2, notas.nota3, notas.nota4);
+            
+            notaJurados[0] = notas.notafinal;
+            bo.Inserir(notas);
+
+
+            // Notas do segundo jurado
+            notas.jurado = 2;
+            notas.nota1 = double.Parse(txtNota1J2.Text);
+            notas.nota2 = double.Parse(txtNota2J2.Text);
+            notas.nota3 = double.Parse(txtNota3J2.Text);
+            notas.nota4 = double.Parse(txtNota4J2.Text);
+            notas.notafinal = calc.mediaNota(notas.nota1, notas.nota2, notas.nota3, notas.nota4);
+
+            notaJurados[1] = notas.notafinal;
+            bo.Inserir(notas);
+
+
+            // Notas do terceiro jurado
+            notas.jurado = 3;
+            notas.nota1 = double.Parse(txtNota1J3.Text);
+            notas.nota2 = double.Parse(txtNota2J3.Text);
+            notas.nota3 = double.Parse(txtNota3J3.Text);
+            notas.nota4 = double.Parse(txtNota4J3.Text);
+            notas.notafinal = calc.mediaNota(notas.nota1, notas.nota2, notas.nota3, notas.nota4);
+
+            notaJurados[2] = notas.notafinal;
+            bo.Inserir(notas);
+
+
+            // Notas do quarto jurado
+            notas.jurado = 4;
+            notas.nota1 = double.Parse(txtNota1J4.Text);
+            notas.nota2 = double.Parse(txtNota2J4.Text);
+            notas.nota3 = double.Parse(txtNota3J4.Text);
+            notas.nota4 = double.Parse(txtNota4J4.Text);
+            notas.notafinal = calc.mediaNota(notas.nota1, notas.nota2, notas.nota3, notas.nota4);
+
+            notaJurados[3] = notas.notafinal;
+            bo.Inserir(notas);
+
+
+            // Notas do quinto jurado
+            notas.jurado = 5;
+            notas.nota1 = double.Parse(txtNota1J5.Text);
+            notas.nota2 = double.Parse(txtNota2J5.Text);
+            notas.nota3 = double.Parse(txtNota3J5.Text);
+            notas.nota4 = double.Parse(txtNota4J5.Text);
+            notas.notafinal = calc.mediaNota(notas.nota1, notas.nota2, notas.nota3, notas.nota4);
+
+            notaJurados[4] = notas.notafinal;
+            bo.Inserir(notas);
+        }
+
+        private void inserirClassificacao()
+        {
+            NotasBo bo = new NotasBo();
+            Calculos calc = new Calculos();
+
+            // Monta objeto classificacao e salva no banco
+            Classificacao classificacao = new Classificacao();
+            classificacao.apresentacao = (Apresentacao)this.cmbApresentacao.SelectedItem;
+            classificacao.notafinal = calc.mediaNotaMediana(notaJurados[0], notaJurados[1], notaJurados[2], notaJurados[3], notaJurados[4]);
+
+            ClassificacaoBo classificacaoBo = new ClassificacaoBo();
+            classificacaoBo.Inserir(classificacao);
         }
     }
 }
