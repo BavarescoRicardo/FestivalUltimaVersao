@@ -14,11 +14,10 @@ namespace Festival.listagens
 {
     public partial class ListaClassifica : Form
     {
-        IList<Festival.or.Classificacao> lista;
-        int idApresentacao = 0;
         public ListaClassifica()
         {
             InitializeComponent();
+            IList<Festival.or.Classificacao> lista;
 
             ClassificacaoBo bo = new ClassificacaoBo();
             lista = bo.Listar();
@@ -26,7 +25,7 @@ namespace Festival.listagens
 
             this.bindingSource.Clear();
             bindingSource.DataSource = lista;
-            // bindingSource.DataSource = lista.Where(x => x.categoria == 6);
+            
             this.bindingSource.ResetBindings(true);
             gridControl.Refresh();
 
@@ -43,41 +42,30 @@ namespace Festival.listagens
         {
             try
             {
-                if (e.Column.FieldName == "apresentacao.id_apresentacao")
+                if (e.Column.FieldName == "categoria.id_categoria")
                 {
-                    // Guarda o id atual da classificacao mostrada na tabela
-                    idApresentacao = (int)e.Value;
-
-                }
-
-                if (e.Column.FieldName == "apresentacao.categoria")
-                {
-                    ApresentacaoBo bo = new ApresentacaoBo();
                     CategoriaBo categoriaBo = new CategoriaBo();
-                    e.DisplayText = 
-                           categoriaBo.RetornePeloId(bo.RetornePeloId(idApresentacao).categoria.id_categoria).categoria;
+                    e.DisplayText =
+                           categoriaBo.RetornePeloId((int)e.Value).categoria;
                 }
-
-                if (e.Column.FieldName == "apresentacao.musica")
+                
+                if (e.Column.FieldName == "apresentacao.id_apresentacao")
                 {
                     // Inicia objeto do banco caso esteja na coluna certa
                     ApresentacaoBo bo = new ApresentacaoBo();
                     // Localize objeto pelo id e substitui na coluna
-                    e.DisplayText = bo.RetornePeloId(idApresentacao).musica;
+                    e.DisplayText = bo.RetornePeloId((int)e.Value).musica;
                 }
 
-                if (e.Column.FieldName == "apresentacao.cantor")
+                if (e.Column.FieldName == "cantor.id_cantor")
                 {
-                    ApresentacaoBo bo = new ApresentacaoBo();
                     CantorBo categoriaBo = new CantorBo();
                     e.DisplayText =
-                           categoriaBo.RetornePeloId(bo.RetornePeloId(idApresentacao).cantor.id_cantor).nome;
+                            categoriaBo.RetornePeloId((int)e.Value).nome;
                 }
             }
             catch (Exception)
             {
-                MessageBox.Show("Filtro não pode ser realizado");
-                //return;
                 throw;
             }
         }

@@ -23,5 +23,7 @@ namespace Festival.or
         public virtual int id_classificacao { get; set; }
         public virtual double notafinal { get; set; }
         public virtual Apresentacao apresentacao { get; set; }
+        public virtual Cantor cantor { get; set; }
+        public virtual Categoria categoria { get; set; }
     }
 }

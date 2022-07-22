@@ -88,7 +88,8 @@
             // 
             // coldia
             // 
-            this.coldia.FieldName = "apresentacao.categoria";
+            this.coldia.Caption = "Categoria";
+            this.coldia.FieldName = "categoria.id_categoria";
             this.coldia.Name = "coldia";
             this.coldia.OptionsFilter.AllowAutoFilter = false;
             this.coldia.OptionsFilter.AllowFilter = false;
@@ -98,7 +99,8 @@
             // 
             // gridColumn1
             // 
-            this.gridColumn1.FieldName = "apresentacao.musica";
+            this.gridColumn1.Caption = "Musica";
+            this.gridColumn1.FieldName = "apresentacao.id_apresentacao";
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.OptionsFilter.AllowAutoFilter = false;
             this.gridColumn1.OptionsFilter.AllowFilter = false;
@@ -108,7 +110,8 @@
             // 
             // gridColumn2
             // 
-            this.gridColumn2.FieldName = "apresentacao.cantor";
+            this.gridColumn2.Caption = "Cantor";
+            this.gridColumn2.FieldName = "cantor.id_cantor";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.OptionsFilter.AllowAutoFilter = false;
             this.gridColumn2.OptionsFilter.AllowFilter = false;

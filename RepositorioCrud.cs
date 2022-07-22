@@ -84,7 +84,7 @@ namespace Festival
             }
         }
 
-        public DataTable ListaDataTable<X>()
+      /*  public DataTable ListaDataTable<X>()
         {
             DataTable dataGrid = new DataTable();
             IList<X> tabela;
@@ -158,7 +158,7 @@ namespace Festival
                 // Retorna DataTable ja preenchida
                 return dataGrid;                
             }
-        }
+        }*/
 
         public X RetornePeloId(int id)
         {
