@@ -25,13 +25,7 @@ namespace Festival.desktop
             InitializeComponent();
             bindingSource.DataSource = new Festival.or.Notas();
 
-            JuradoBo juradoBo = new JuradoBo();
             CategoriaBo categoriaBo = new CategoriaBo();
-
-            foreach (Jurado jurado in juradoBo.Listar())
-            {
-                this.cmbJurado.Properties.Items.Add(jurado);
-            }
 
             // Inserir cantor todos
             this.cmbCantor.Properties.Items.Add(new Cantor() { nome = "Todos", id_cantor = 0 });
@@ -72,13 +66,11 @@ namespace Festival.desktop
 
                 Cantor ctr = (Cantor)cmbCantor.SelectedItem;
                 Categoria cat = (Categoria)cmbCategoria.SelectedItem;
-                Jurado jur = (Jurado)cmbJurado.SelectedItem;
                 Apresentacao ap = (Apresentacao)cmbApresentacao.SelectedItem;
                 Calculos calc = new Calculos();
 
                 notas.cantor = ctr.id_cantor;
                 notas.categoria = cat.id_categoria;
-                notas.jurado = jur.id_jurado;
                 notas.apresentacao = ap.id_apresentacao;
 
                 // Faz media das notas e desconta maxima e minima
@@ -96,11 +88,11 @@ namespace Festival.desktop
                 MessageBox.Show("Inserido com sucesso");
 
                 // Limpar campos
-                txtNota1.Text = " ";
-                txtNota2.Text = " ";
-                txtNota3.Text = " ";
-                txtNota4.Text = " ";
-                this.cmbJurado.SelectedIndex += 1;
+                txtNota1J1.Text = " ";
+                txtNota2J1.Text = " ";
+                txtNota3J1.Text = " ";
+                txtNota4J1.Text = " ";
+                notas.jurado = 1;
 
             }
             catch (Exception ex)

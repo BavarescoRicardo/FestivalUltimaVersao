@@ -67,7 +67,7 @@ namespace Festival.desktop
 
         private void atribuirNotasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            NotaFrm nota = new NotaFrm();
+            AtribuiNotaFrm nota = new AtribuiNotaFrm();
             nota.ShowDialog();
         }
 
