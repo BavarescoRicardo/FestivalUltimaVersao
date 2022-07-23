@@ -102,6 +102,7 @@
             // 
             this.colcategoria.FieldName = "cantor";
             this.colcategoria.Name = "colcategoria";
+            this.colcategoria.OptionsColumn.AllowEdit = false;
             this.colcategoria.OptionsFilter.AllowAutoFilter = false;
             this.colcategoria.OptionsFilter.AllowFilter = false;
             this.colcategoria.Visible = true;
@@ -112,6 +113,7 @@
             // 
             this.coldia.FieldName = "categoria";
             this.coldia.Name = "coldia";
+            this.coldia.OptionsColumn.AllowEdit = false;
             this.coldia.OptionsFilter.AllowAutoFilter = false;
             this.coldia.OptionsFilter.AllowFilter = false;
             this.coldia.Visible = true;
@@ -122,6 +124,7 @@
             // 
             this.gridColumn1.FieldName = "jurado";
             this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.OptionsColumn.AllowEdit = false;
             this.gridColumn1.OptionsFilter.AllowAutoFilter = false;
             this.gridColumn1.OptionsFilter.AllowFilter = false;
             this.gridColumn1.Visible = true;
@@ -132,6 +135,7 @@
             // 
             this.gridColumn2.FieldName = "apresentacao";
             this.gridColumn2.Name = "gridColumn2";
+            this.gridColumn2.OptionsColumn.AllowEdit = false;
             this.gridColumn2.OptionsFilter.AllowAutoFilter = false;
             this.gridColumn2.OptionsFilter.AllowFilter = false;
             this.gridColumn2.Visible = true;

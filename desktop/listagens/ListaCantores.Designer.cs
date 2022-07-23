@@ -95,6 +95,7 @@
             this.colcategoria.Caption = "Cantor";
             this.colcategoria.FieldName = "cantor.id_cantor";
             this.colcategoria.Name = "colcategoria";
+            this.colcategoria.OptionsColumn.AllowEdit = false;
             this.colcategoria.OptionsFilter.AllowAutoFilter = false;
             this.colcategoria.OptionsFilter.AllowFilter = false;
             this.colcategoria.Visible = true;
@@ -106,6 +107,7 @@
             this.coldia.Caption = "Categoria";
             this.coldia.FieldName = "categoria.id_categoria";
             this.coldia.Name = "coldia";
+            this.coldia.OptionsColumn.AllowEdit = false;
             this.coldia.OptionsFilter.AllowAutoFilter = false;
             this.coldia.OptionsFilter.AllowFilter = false;
             this.coldia.Visible = true;
