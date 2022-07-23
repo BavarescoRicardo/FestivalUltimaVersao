@@ -129,14 +129,17 @@ namespace Festival.listagens
                     c = (Classificacao)gridView1.GetRow(i);
                 }
             }
-
-            for (int i = 0; i < listaNotas.Count; i++)
+            int antigaContagem = listaNotas.Where(x => x.apresentacao == c.apresentacao.id_apresentacao).ToList().Count;
+            for (int i = 0; i < antigaContagem; i++)
             {
-                // Remove notas               
-                notabo.Excluir(listaNotas.Where(x => x.apresentacao == c.apresentacao.id_apresentacao).ToList().First());
-                listaNotas = notabo.Listar().ToList();
-            }
-            
+                // Remove notas se forem da apresentacao igual a classificacao
+                if (listaNotas.Where(x => x.apresentacao == c.apresentacao.id_apresentacao).ToList().Count > 0)
+                {
+                    notabo.Excluir(listaNotas.Where(x => x.apresentacao == c.apresentacao.id_apresentacao).ToList().First());
+                    listaNotas.Remove(listaNotas.Where(x => x.apresentacao == c.apresentacao.id_apresentacao).ToList().First());
+                }
+
+            }            
 
 
             /*        private void cmbFiltro_SelectedValueChanged(object sender, EventArgs e)
