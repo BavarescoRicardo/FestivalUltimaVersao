@@ -38,13 +38,11 @@
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.bindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cmbFiltro = new DevExpress.XtraEditors.ComboBoxEdit();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbFiltro.Properties)).BeginInit();
             this.SuspendLayout();
             // 
@@ -144,10 +142,6 @@
             this.gridColumn3.VisibleIndex = 5;
             this.gridColumn3.Width = 97;
             // 
-            // bindingSource
-            // 
-            this.bindingSource.DataSource = typeof(Festival.or.Cantor);
-            // 
             // cmbFiltro
             // 
             this.cmbFiltro.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -181,7 +175,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbFiltro.Properties)).EndInit();
             this.ResumeLayout(false);
 
@@ -191,7 +184,6 @@
 
         private DevExpress.XtraGrid.GridControl gridControl;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private System.Windows.Forms.BindingSource bindingSource;
         private DevExpress.XtraGrid.Columns.GridColumn colSequencial;
         private DevExpress.XtraGrid.Columns.GridColumn colcategoria;
         private DevExpress.XtraGrid.Columns.GridColumn coldia;
