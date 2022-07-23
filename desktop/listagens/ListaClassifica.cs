@@ -22,6 +22,7 @@ namespace Festival.listagens
 
             ClassificacaoBo bo = new ClassificacaoBo();
             lista = bo.Listar();
+            IdsSelecionados = new int[lista.Count];
             gridControl.RefreshDataSource();
 
             this.bindingSource.Clear();
@@ -75,21 +76,25 @@ namespace Festival.listagens
         {
             for (int i = 0; i < gridView1.DataRowCount; i++)
             {
-                if (gridView1.IsRowSelected(i))
-                {
-                    // code when checked
-                    MessageBox.Show("Selecionado linha: " +i);
-                }
-                else
-                {
-                    // code when not checked
-                    MessageBox.Show("Não selecionado linha: " + i);
-                }
+                // code when checked
+                if (IdsSelecionados[i] == 1)
+                    MessageBox.Show("Selecionado linha: " + i);
+                
+
             }
 
             ClassificacaoBo bo = new ClassificacaoBo();
-            // MessageBox.Show(gridView1.GetSelectedCells().ToString());
+        }
 
+        private void repositoryItemCheckEdit4_CheckStateChanged(object sender, EventArgs e)
+        {
+            if (IdsSelecionados[gridView1.GetSelectedRows().First()] == 0)
+            {
+                IdsSelecionados[gridView1.GetSelectedRows().First()] = 1;
+            } else
+            {
+                IdsSelecionados[gridView1.GetSelectedRows().First()] = 0;
+            }
         }
 
 
