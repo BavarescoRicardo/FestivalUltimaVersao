@@ -74,15 +74,33 @@ namespace Festival.listagens
 
         private void btnRemove_Click(object sender, EventArgs e)
         {
+            ClassificacaoBo bo = new ClassificacaoBo();
+            Classificacao c = new Classificacao();
             for (int i = 0; i < gridView1.DataRowCount; i++)
             {
                 // code when checked
-                if (IdsSelecionados[i] == 1)
-                    MessageBox.Show("Selecionado linha: " + i);                
+                if (IdsSelecionados[i] == 1) 
+                {
+                    c = (Classificacao)gridView1.GetRow(i);
+
+                    DialogResult dr = MessageBox.Show("Deseja remover a classificação: " + c.id_classificacao,
+                      "Código ", MessageBoxButtons.YesNo);
+                    switch (dr)
+                    {
+                        case DialogResult.Yes:
+                            bo.Excluir(c);
+                            bindingSource.DataSource = bo.Listar();
+                            gridView1.RefreshData();
+                            break;
+                        case DialogResult.No:
+                            break;
+                    }
+
+                }
+                                    
 
             }
-
-            ClassificacaoBo bo = new ClassificacaoBo();
+            
         }
 
         private void repositoryItemCheckEdit4_CheckStateChanged(object sender, EventArgs e)
