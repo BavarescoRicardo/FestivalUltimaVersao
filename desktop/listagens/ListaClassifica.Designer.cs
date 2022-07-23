@@ -208,6 +208,7 @@
             this.btnAprovar.TabIndex = 4;
             this.btnAprovar.Text = "Aprovar os itens selecionados";
             this.btnAprovar.UseVisualStyleBackColor = true;
+            this.btnAprovar.Click += new System.EventHandler(this.btnAprovar_Click);
             // 
             // ListaClassifica
             // 

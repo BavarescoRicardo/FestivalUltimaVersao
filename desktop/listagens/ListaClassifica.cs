@@ -1,5 +1,8 @@
 ﻿using Festival.bo;
+using Festival.mapeamento;
 using Festival.or;
+using FluentNHibernate.Cfg;
+using FluentNHibernate.Cfg.Db;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,7 +25,7 @@ namespace Festival.listagens
 
             this.bindingSource.Clear();
             bindingSource.DataSource = lista;
-            
+
             this.bindingSource.ResetBindings(true);
             gridControl.Refresh();
 
@@ -32,7 +35,7 @@ namespace Festival.listagens
             {
                 this.cmbFiltro.Properties.Items.Add(cat);
             }
-            this.cmbFiltro.Properties.Items.Add(new Categoria() {categoria = "Todos" });
+            this.cmbFiltro.Properties.Items.Add(new Categoria() { categoria = "Todos" });
         }
 
         private void gridView1_CustomColumnDisplayText_1(object sender, DevExpress.XtraGrid.Views.Base.CustomColumnDisplayTextEventArgs e)
@@ -45,7 +48,7 @@ namespace Festival.listagens
                     e.DisplayText =
                            categoriaBo.RetornePeloId((int)e.Value).categoria;
                 }
-                
+
                 if (e.Column.FieldName == "apresentacao.id_apresentacao")
                 {
                     // Inicia objeto do banco caso esteja na coluna certa
@@ -74,7 +77,7 @@ namespace Festival.listagens
             for (int i = 0; i < gridView1.DataRowCount; i++)
             {
                 // code when checked
-                if (IdsSelecionados[i] == 1) 
+                if (IdsSelecionados[i] == 1)
                 {
                     c = (Classificacao)gridView1.GetRow(i);
 
@@ -92,10 +95,10 @@ namespace Festival.listagens
                     }
 
                 }
-                                    
+
 
             }
-            
+
         }
 
         private void repositoryItemCheckEdit4_CheckStateChanged(object sender, EventArgs e)
@@ -103,25 +106,52 @@ namespace Festival.listagens
             if (IdsSelecionados[gridView1.GetSelectedRows().First()] == 0)
             {
                 IdsSelecionados[gridView1.GetSelectedRows().First()] = 1;
-            } else
+            }
+            else
             {
                 IdsSelecionados[gridView1.GetSelectedRows().First()] = 0;
             }
         }
 
+        private void btnAprovar_Click(object sender, EventArgs e)
+        {
+            NotasBo notabo = new NotasBo();
+            List<Notas> listaNotas = new List<Notas>();
+            listaNotas = (List<Notas>)notabo.Listar();
+            ClassificacaoBo bo = new ClassificacaoBo();
+            Classificacao c = new Classificacao();
 
-        /*        private void cmbFiltro_SelectedValueChanged(object sender, EventArgs e)
+            for (int i = 0; i < gridView1.DataRowCount; i++)
+            {
+                // code when checked
+                if (IdsSelecionados[i] == 1)
                 {
-                    Categoria cat = (Categoria)cmbFiltro.SelectedItem;
-                    if (lista.Where(x => x.categoria == cat.id_categoria).Count() > 0)
-                    {
-                        bindingSource.DataSource = lista.Where(x => x.categoria == cat.id_categoria);
-                    }
-                    else
-                    {
-                        bindingSource.DataSource = lista;
-                    }*/
+                    c = (Classificacao)gridView1.GetRow(i);
+                }
+            }
 
+            for (int i = 0; i < listaNotas.Count; i++)
+            {
+                // Remove notas               
+                notabo.Excluir(listaNotas.Where(x => x.apresentacao == c.apresentacao.id_apresentacao).ToList().First());
+                listaNotas = notabo.Listar().ToList();
+            }
+            
+
+
+            /*        private void cmbFiltro_SelectedValueChanged(object sender, EventArgs e)
+                    {
+                        Categoria cat = (Categoria)cmbFiltro.SelectedItem;
+                        if (lista.Where(x => x.categoria == cat.id_categoria).Count() > 0)
+                        {
+                            bindingSource.DataSource = lista.Where(x => x.categoria == cat.id_categoria);
+                        }
+                        else
+                        {
+                            bindingSource.DataSource = lista;
+                        }*/
+
+        }
     }
 }
 
