@@ -78,8 +78,7 @@ namespace Festival.listagens
             {
                 // code when checked
                 if (IdsSelecionados[i] == 1)
-                    MessageBox.Show("Selecionado linha: " + i);
-                
+                    MessageBox.Show("Selecionado linha: " + i);                
 
             }
 
