@@ -157,6 +157,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbFiltro.Size = new System.Drawing.Size(161, 20);
             this.cmbFiltro.TabIndex = 1;
+            this.cmbFiltro.SelectedValueChanged += new System.EventHandler(this.cmbFiltro_SelectedValueChanged);
             // 
             // label1
             // 

@@ -26,7 +26,7 @@ namespace Festival.listagens
             this.bindingSource1.Clear();
             bindingSource1.DataSource = lista;
             // bindingSource1.DataSource = lista.Where(x => x.categoria == 6);
-            this.bindingSource1.ResetBindings(true);
+            // this.bindingSource1.ResetBindings(true);
             gridControl.Refresh();
 
             // Carregar filtro
@@ -64,6 +64,21 @@ namespace Festival.listagens
                 throw;
             }
 
+        }
+
+        private void cmbFiltro_SelectedValueChanged(object sender, EventArgs e)
+        {
+            Categoria cat = (Categoria)cmbFiltro.SelectedItem;
+            if (lista.Where(x => x.categoria.id_categoria == cat.id_categoria).Count() > 0)
+            {
+                bindingSource1.DataSource = lista.Where(x => x.categoria.id_categoria == cat.id_categoria);
+                gridControl.Refresh();
+            }
+            else
+            {
+                bindingSource1.DataSource = lista;
+            }
+            
         }
 
         /*
