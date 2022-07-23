@@ -1,4 +1,5 @@
 ﻿using Festival.bo;
+using Festival.desktop.Formularios;
 using Festival.mapeamento;
 using Festival.or;
 using FluentNHibernate.Cfg;
@@ -13,6 +14,7 @@ namespace Festival.listagens
     public partial class ListaClassifica : Form
     {
         public int[] IdsSelecionados;
+        public int[] idsApresentacao;
         public ListaClassifica()
         {
             InitializeComponent();
@@ -123,7 +125,16 @@ namespace Festival.listagens
 
         private void btnAprovar_Click(object sender, EventArgs e)
         {
-            
+            NotasBo notabo = new NotasBo();
+            List<Notas> listaNotas = new List<Notas>();
+            listaNotas = (List<Notas>)notabo.Listar();
+
+
+            idsApresentacao = listaNotas.Select(x => x.apresentacao).Distinct().ToArray();
+
+            Aprovar aprovaForm = new Aprovar();
+            aprovaForm.idApresentacao = idsApresentacao;
+            aprovaForm.ShowDialog();
         }
 
         private void removerNotas()

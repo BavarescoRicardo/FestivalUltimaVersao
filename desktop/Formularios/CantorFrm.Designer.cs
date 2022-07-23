@@ -461,6 +461,7 @@
             this.ClientSize = new System.Drawing.Size(719, 486);
             this.Controls.Add(this.layoutControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "CantorFrm";
             this.Text = "CantorFrm";
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();

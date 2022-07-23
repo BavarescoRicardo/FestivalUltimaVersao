@@ -226,6 +226,12 @@
     <Compile Include="bo\CategoriaBo.cs" />
     <Compile Include="bo\EventoBo.cs" />
     <Compile Include="bo\JuradoBo.cs" />
+    <Compile Include="desktop\Formularios\Aprovar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="desktop\Formularios\Aprovar.Designer.cs">
+      <DependentUpon>Aprovar.cs</DependentUpon>
+    </Compile>
     <Compile Include="desktop\Formularios\AtribuiNotaFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -340,6 +346,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RepositorioCrud.cs" />
+    <EmbeddedResource Include="desktop\Formularios\Aprovar.resx">
+      <DependentUpon>Aprovar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="desktop\Formularios\CantorFrm.resx">
       <DependentUpon>CantorFrm.cs</DependentUpon>
     </EmbeddedResource>
