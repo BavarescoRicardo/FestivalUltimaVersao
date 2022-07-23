@@ -79,21 +79,29 @@ namespace Festival.listagens
                 // code when checked
                 if (IdsSelecionados[i] == 1)
                 {
-                    c = (Classificacao)gridView1.GetRow(i);
-
-                    DialogResult dr = MessageBox.Show("Deseja remover a classificação: " + c.id_classificacao,
-                      "Código ", MessageBoxButtons.YesNo);
-                    switch (dr)
+                    try
                     {
-                        case DialogResult.Yes:
-                            bo.Excluir(c);
-                            bindingSource.DataSource = bo.Listar();
-                            gridView1.RefreshData();
-                            break;
-                        case DialogResult.No:
-                            break;
-                    }
+                        c = (Classificacao)gridView1.GetRow(i);
 
+                        DialogResult dr = MessageBox.Show("Deseja remover a classificação: " + c.id_classificacao,
+                          "Código ", MessageBoxButtons.YesNo);
+                        switch (dr)
+                        {
+                            case DialogResult.Yes:
+                                removerNotas();
+                                bo.Excluir(c);
+                                bindingSource.DataSource = bo.Listar();
+                                gridView1.RefreshData();                                
+                                break;
+                            case DialogResult.No:
+                                break;
+                        }
+                    }
+                    catch (Exception)
+                    {
+
+                        MessageBox.Show("Não foi possivek remover a classificação ou as notas.. ");
+                    }
                 }
 
 
@@ -114,6 +122,11 @@ namespace Festival.listagens
         }
 
         private void btnAprovar_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void removerNotas()
         {
             NotasBo notabo = new NotasBo();
             List<Notas> listaNotas = new List<Notas>();
@@ -139,22 +152,20 @@ namespace Festival.listagens
                     listaNotas.Remove(listaNotas.Where(x => x.apresentacao == c.apresentacao.id_apresentacao).ToList().First());
                 }
 
-            }            
-
-
-            /*        private void cmbFiltro_SelectedValueChanged(object sender, EventArgs e)
-                    {
-                        Categoria cat = (Categoria)cmbFiltro.SelectedItem;
-                        if (lista.Where(x => x.categoria == cat.id_categoria).Count() > 0)
-                        {
-                            bindingSource.DataSource = lista.Where(x => x.categoria == cat.id_categoria);
-                        }
-                        else
-                        {
-                            bindingSource.DataSource = lista;
-                        }*/
-
+            }
         }
+
+        /*        private void cmbFiltro_SelectedValueChanged(object sender, EventArgs e)
+                {
+                    Categoria cat = (Categoria)cmbFiltro.SelectedItem;
+                    if (lista.Where(x => x.categoria == cat.id_categoria).Count() > 0)
+                    {
+                        bindingSource.DataSource = lista.Where(x => x.categoria == cat.id_categoria);
+                    }
+                    else
+                    {
+                        bindingSource.DataSource = lista;
+                    }*/
     }
 }
 
