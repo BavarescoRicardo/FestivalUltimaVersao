@@ -45,6 +45,7 @@
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             this.cmbFiltro = new DevExpress.XtraEditors.ComboBoxEdit();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnSair = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
@@ -207,11 +208,22 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Categoria";
             // 
+            // btnSair
+            // 
+            this.btnSair.Location = new System.Drawing.Point(13, 414);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(122, 22);
+            this.btnSair.TabIndex = 19;
+            this.btnSair.Text = "Sair";
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
+            // 
             // ListaNotas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1076, 423);
+            this.ClientSize = new System.Drawing.Size(1076, 437);
+            this.ControlBox = false;
+            this.Controls.Add(this.btnSair);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbFiltro);
             this.Controls.Add(this.gridControl);
@@ -244,5 +256,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
+        private DevExpress.XtraEditors.SimpleButton btnSair;
     }
 }

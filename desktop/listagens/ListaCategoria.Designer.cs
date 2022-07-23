@@ -35,6 +35,7 @@
             this.colSequencial = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colcategoria = new DevExpress.XtraGrid.Columns.GridColumn();
             this.coldia = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.btnSair = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
@@ -91,11 +92,22 @@
             this.coldia.VisibleIndex = 2;
             this.coldia.Width = 234;
             // 
+            // btnSair
+            // 
+            this.btnSair.Location = new System.Drawing.Point(12, 339);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(122, 22);
+            this.btnSair.TabIndex = 19;
+            this.btnSair.Text = "Sair";
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
+            // 
             // ListaCategoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 367);
+            this.ControlBox = false;
+            this.Controls.Add(this.btnSair);
             this.Controls.Add(this.gridControl);
             this.Name = "ListaCategoria";
             this.Text = "Lista Categorias";
@@ -114,5 +126,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn colSequencial;
         private DevExpress.XtraGrid.Columns.GridColumn colcategoria;
         private DevExpress.XtraGrid.Columns.GridColumn coldia;
+        private DevExpress.XtraEditors.SimpleButton btnSair;
     }
 }

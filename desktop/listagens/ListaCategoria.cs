@@ -19,5 +19,10 @@ namespace Festival.listagens
             this.bindingSource.ResetBindings(true);
             gridControl.Refresh();
         }
+
+        private void btnSair_Click(object sender, System.EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -155,6 +155,11 @@ namespace Festival.listagens
             }
         }
 
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         /*        private void cmbFiltro_SelectedValueChanged(object sender, EventArgs e)
                 {
                     Categoria cat = (Categoria)cmbFiltro.SelectedItem;

@@ -45,6 +45,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnAprovar = new System.Windows.Forms.Button();
+            this.btnSair = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
@@ -192,7 +193,7 @@
             // 
             // btnRemove
             // 
-            this.btnRemove.Location = new System.Drawing.Point(13, 381);
+            this.btnRemove.Location = new System.Drawing.Point(571, 380);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(140, 41);
             this.btnRemove.TabIndex = 3;
@@ -202,7 +203,7 @@
             // 
             // btnAprovar
             // 
-            this.btnAprovar.Location = new System.Drawing.Point(175, 381);
+            this.btnAprovar.Location = new System.Drawing.Point(733, 380);
             this.btnAprovar.Name = "btnAprovar";
             this.btnAprovar.Size = new System.Drawing.Size(140, 41);
             this.btnAprovar.TabIndex = 4;
@@ -210,17 +211,30 @@
             this.btnAprovar.UseVisualStyleBackColor = true;
             this.btnAprovar.Click += new System.EventHandler(this.btnAprovar_Click);
             // 
+            // btnSair
+            // 
+            this.btnSair.Location = new System.Drawing.Point(13, 380);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(122, 22);
+            this.btnSair.TabIndex = 19;
+            this.btnSair.Text = "Sair";
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
+            // 
             // ListaClassifica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(881, 446);
+            this.ControlBox = false;
+            this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnAprovar);
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbFiltro);
             this.Controls.Add(this.gridControl);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "ListaClassifica";
+            this.ShowIcon = false;
             this.Text = "Classificação";
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).EndInit();
@@ -252,5 +266,6 @@
         private DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit repositoryItemCheckEdit2;
         private DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit repositoryItemCheckEdit3;
         private DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit repositoryItemCheckEdit4;
+        private DevExpress.XtraEditors.SimpleButton btnSair;
     }
 }
