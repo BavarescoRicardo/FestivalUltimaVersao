@@ -13,12 +13,12 @@ namespace Festival.listagens
 {
     public partial class ListaClassifica : Form
     {
-        public int[] IdsSelecionados;
-        public int[] idsApresentacao;
+        private int[] IdsSelecionados;
+        private int[] idsApresentacao;
+        private IList<Festival.or.Classificacao> lista;
         public ListaClassifica()
         {
-            InitializeComponent();
-            IList<Festival.or.Classificacao> lista;
+            InitializeComponent();            
 
             ClassificacaoBo bo = new ClassificacaoBo();
             lista = bo.Listar();
@@ -171,17 +171,28 @@ namespace Festival.listagens
             this.Close();
         }
 
-        /*        private void cmbFiltro_SelectedValueChanged(object sender, EventArgs e)
+        private void cmbFiltro_SelectedValueChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Categoria cat = (Categoria)cmbFiltro.SelectedItem;
+                if (lista.Where(x => x.categoria.id_categoria == cat.id_categoria).Count() > 0)
                 {
-                    Categoria cat = (Categoria)cmbFiltro.SelectedItem;
-                    if (lista.Where(x => x.categoria == cat.id_categoria).Count() > 0)
-                    {
-                        bindingSource.DataSource = lista.Where(x => x.categoria == cat.id_categoria);
-                    }
-                    else
-                    {
-                        bindingSource.DataSource = lista;
-                    }*/
+                    bindingSource.DataSource = lista.Where(x => x.categoria.id_categoria == cat.id_categoria);
+                }
+                else
+                {
+                    bindingSource.DataSource = lista;
+                }
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Não foi possível filtrar por esta categoria");
+            }
+
+        }
+
     }
 }
 
