@@ -1,4 +1,7 @@
-﻿using Festival.listagens;
+﻿using DevExpress.XtraReports.UI;
+using Festival.bo;
+using Festival.desktop.impressao;
+using Festival.listagens;
 using Festival.or;
 using System;
 using System.Collections.Generic;
@@ -88,5 +91,34 @@ namespace Festival.desktop
             ListaClassifica listar = new ListaClassifica();
             listar.ShowDialog();
         }
+
+        private void cantoresToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            CantorReport report = new CantorReport();
+            //report.DataSource = CreateData();
+
+            // Carregar dados no relatório
+            try
+            {
+                ApresentacaoBo bo = new ApresentacaoBo();
+                List<ApresentacaoDtoReport> listaDto = new List<ApresentacaoDtoReport>();
+                foreach (Apresentacao apr in bo.Listar())
+                {
+                    listaDto.Add(new ApresentacaoDtoReport(apr.id_apresentacao, apr.tom, apr.gravacao, apr.musica, apr.artista, apr.cantor.id_cantor, apr.categoria.id_categoria));
+                }
+                report.DataSource = listaDto;
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Não foi possível carregar este relatório");
+            }
+
+
+            ReportPrintTool tool = new ReportPrintTool(report);
+            tool.ShowPreview();
+        }
+
+        
     }
 }

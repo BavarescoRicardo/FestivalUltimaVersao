@@ -278,7 +278,7 @@
             // listarToolStripMenuItem
             // 
             this.listarToolStripMenuItem.Name = "listarToolStripMenuItem";
-            this.listarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listarToolStripMenuItem.Size = new System.Drawing.Size(102, 22);
             this.listarToolStripMenuItem.Text = "Listar";
             this.listarToolStripMenuItem.Click += new System.EventHandler(this.listarToolStripMenuItem_Click_1);
             // 
@@ -298,6 +298,7 @@
             this.cantoresToolStripMenuItem1.Name = "cantoresToolStripMenuItem1";
             this.cantoresToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.cantoresToolStripMenuItem1.Text = "Cantores";
+            this.cantoresToolStripMenuItem1.Click += new System.EventHandler(this.cantoresToolStripMenuItem1_Click);
             // 
             // notasToolStripMenuItem1
             // 
