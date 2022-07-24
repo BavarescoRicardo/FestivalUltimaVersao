@@ -148,6 +148,8 @@
             // gridColumn3
             // 
             this.gridColumn3.Caption = "Média notas";
+            this.gridColumn3.DisplayFormat.FormatString = "n2";
+            this.gridColumn3.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn3.FieldName = "notafinal";
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.OptionsColumn.AllowEdit = false;

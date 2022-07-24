@@ -126,11 +126,25 @@ namespace Festival.listagens
         private void btnAprovar_Click(object sender, EventArgs e)
         {
             NotasBo notabo = new NotasBo();
+            List<Classificacao> c = new List<Classificacao>();
             List<Notas> listaNotas = new List<Notas>();
             listaNotas = (List<Notas>)notabo.Listar();
 
+            for (int i = 0; i < gridView1.DataRowCount; i++)
+            {
+                // code when checked
+                if (IdsSelecionados[i] == 1)
+                {
+                    c.Add((Classificacao)gridView1.GetRow(i));
+                }
+            }
+            idsApresentacao = (int[])listaNotas.FindAll
+                (p => c.Any(p2 => p2.apresentacao.id_apresentacao == p.apresentacao))
+                    .Select(x => x.apresentacao).Distinct().ToArray();
+            
 
-            idsApresentacao = listaNotas.Select(x => x.apresentacao).Distinct().ToArray();
+
+            //idsApresentacao = listaNotas.Select(x => x.apresentacao).Distinct().ToArray();
 
             Aprovar aprovaForm = new Aprovar();
             aprovaForm.idApresentacao = idsApresentacao;

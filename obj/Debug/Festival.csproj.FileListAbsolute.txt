@@ -705,4 +705,3 @@ C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.csproj.Cor
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.csproj.CopyComplete
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.exe
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.pdb
-C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.csproj.AssemblyReference.cache

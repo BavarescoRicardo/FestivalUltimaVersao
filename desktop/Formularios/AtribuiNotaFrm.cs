@@ -108,17 +108,26 @@ namespace Festival.desktop
 
         private void cmbCantor_SelectedValueChanged(object sender, EventArgs e)
         {
-            // Carrega combo apresentações filtrando pelo cantor selecionado neste combo box
-            this.cmbApresentacao.Properties.Items.Clear();
-            Cantor ctr = (Cantor)cmbCantor.SelectedItem;
-            foreach (Apresentacao apr in apresentacaoBo.Listar())
-            {                
-                if ((apr.cantor.id_cantor == ctr.id_cantor) || (ctr.id_cantor == 0))
+            try
+            {
+                // Carrega combo apresentações filtrando pelo cantor selecionado neste combo box
+                this.cmbApresentacao.Properties.Items.Clear();
+                Cantor ctr = (Cantor)cmbCantor.SelectedItem;
+                foreach (Apresentacao apr in apresentacaoBo.Listar())
                 {
-                    this.cmbApresentacao.Properties.Items.Add(apr);
+                    if ((apr.cantor.id_cantor == ctr.id_cantor) || (ctr.id_cantor == 0))
+                    {
+                        this.cmbApresentacao.Properties.Items.Add(apr);
+                    }
+
                 }
-                
             }
+            catch (Exception)
+            {
+                MessageBox.Show("Não foi possível filtrar");
+                this.Close();
+            }
+
         }
 
         private void cmbCategoria_SelectedValueChanged(object sender, EventArgs e)
