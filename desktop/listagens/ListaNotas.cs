@@ -75,11 +75,11 @@ namespace Festival.listagens
                     e.DisplayText = bo.RetornePeloId((int)e.Value).nome;
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 MessageBox.Show("Filtro não pode ser realizado");
-                //return;
-                throw;
+                MessageBox.Show("Motivo:  "+ex.Message);
+                this.Close();
             }
             
         }

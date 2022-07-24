@@ -28,22 +28,32 @@ namespace Festival.desktop.Formularios
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Apresentacao apresentacao = new Apresentacao();
-            ApresentacaoBo apresentacaoBo = new ApresentacaoBo();
-            cat = (Categoria)this.cmbCat.SelectedItem;
-
-            // encontrar apresentacoes selecionadas
-            foreach (int id in idApresentacao)
+            try
             {
-                apresentacao = apresentacaoBo.RetornePeloId(id);
-                
-                // Montar nova apresentacao
-                apresentacao.categoria = cat;
-                apresentacao.id_apresentacao = 0;
+                Apresentacao apresentacao = new Apresentacao();
+                ApresentacaoBo apresentacaoBo = new ApresentacaoBo();
+                cat = (Categoria)this.cmbCat.SelectedItem;
 
-                // Gravar novas apresentacoes na classe selecionada
-                apresentacaoBo.Inserir(apresentacao);
+                // encontrar apresentacoes selecionadas
+                foreach (int id in idApresentacao)
+                {
+                    apresentacao = apresentacaoBo.RetornePeloId(id);
+
+                    // Montar nova apresentacao
+                    apresentacao.categoria = cat;
+                    apresentacao.id_apresentacao = 0;
+
+                    // Gravar novas apresentacoes na classe selecionada
+                    apresentacaoBo.Inserir(apresentacao);
+                }
             }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Nâo foi possível classificar a apresentação");
+                MessageBox.Show("Motivo:  "+ex.Message);
+            }
+
 
             MessageBox.Show("Aprovadas com sucesso..");
             this.Close();
