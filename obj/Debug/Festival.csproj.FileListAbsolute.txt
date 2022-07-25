@@ -707,3 +707,4 @@ C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.exe
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.pdb
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.desktop.impressao.JuradoNotaReport.resources
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.desktop.Formularios.PreImpressoNota.resources
+C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.csproj.AssemblyReference.cache
