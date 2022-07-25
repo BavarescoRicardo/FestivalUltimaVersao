@@ -15,6 +15,8 @@ namespace Festival.or
         public virtual string cpf { get; set; }
         public virtual string rg { get; set; }
         public virtual string observacao { get; set; }
+        public virtual string cidade { get; set; }
+        public virtual string estado { get; set; }
 
 
         public Cantor()

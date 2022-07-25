@@ -13,6 +13,8 @@
             Map(c => c.cpf);
             Map(c => c.rg);
             Map(c => c.observacao);
+            Map(c => c.cidade);
+            Map(c => c.estado);
             Table("cantor");
         } 
     }
