@@ -132,28 +132,37 @@ namespace Festival.desktop
 
         private void cmbCategoria_SelectedValueChanged(object sender, EventArgs e)
         {
-            // Carrega combo apresentações filtrando pelo cantor selecionado neste combo box
-            this.cmbCantor.Properties.Items.Clear();
-            this.cmbApresentacao.Properties.Items.Clear();
-            // Reseta as listas para todos os resultados
-            listaApresentacao = (List<Apresentacao>)apresentacaoBo.Listar();
-            listaCantores = (List<Cantor>)cantorBo.Listar();
-            // Inserir cantor todos
-            this.cmbCantor.Properties.Items.Add(new Cantor() { nome = "Todos", id_cantor = 0 });
-
-            Categoria cat = (Categoria)cmbCategoria.SelectedItem;
-            listaApresentacao = listaApresentacao.FindAll(x => x.categoria.id_categoria == cat.id_categoria);
-            //listaCantores =
-            listaCantores = (List<Cantor>)listaCantores.FindAll(p => listaApresentacao.Any(p2 => p2.cantor.id_cantor == p.id_cantor));
-
-            foreach (Cantor cantor in listaCantores)
+            try
             {
-                this.cmbCantor.Properties.Items.Add(cantor);
+                // Carrega combo apresentações filtrando pelo cantor selecionado neste combo box
+                this.cmbCantor.Properties.Items.Clear();
+                this.cmbApresentacao.Properties.Items.Clear();
+                // Reseta as listas para todos os resultados
+                listaApresentacao = (List<Apresentacao>)apresentacaoBo.Listar();
+                listaCantores = (List<Cantor>)cantorBo.Listar();
+                // Inserir cantor todos
+                this.cmbCantor.Properties.Items.Add(new Cantor() { nome = "Todos", id_cantor = 0 });
+
+                Categoria cat = (Categoria)cmbCategoria.SelectedItem;
+                listaApresentacao = listaApresentacao.FindAll(x => x.categoria.id_categoria == cat.id_categoria);
+                //listaCantores =
+                listaCantores = (List<Cantor>)listaCantores.FindAll(p => listaApresentacao.Any(p2 => p2.cantor.id_cantor == p.id_cantor));
+
+                foreach (Cantor cantor in listaCantores)
+                {
+                    this.cmbCantor.Properties.Items.Add(cantor);
+                }
+
+                foreach (Apresentacao apr in listaApresentacao)
+                {
+                    this.cmbApresentacao.Properties.Items.Add(apr);
+                }
             }
-
-            foreach (Apresentacao apr in listaApresentacao)
+            catch (Exception)
             {
-                this.cmbApresentacao.Properties.Items.Add(apr);
+
+                MessageBox.Show("Não foi possível filtrar");
+                return;
             }            
         }
 

@@ -89,8 +89,6 @@ namespace Festival.desktop
         {
             using (var reader = new StreamReader(@"C:\Users\Ninguem\Downloads\inscrifm.csv"))
             {
-                string listA = "A ";
-                string listB = "B ";
                 int cont = 0;
                 while (!reader.EndOfStream)
                 {

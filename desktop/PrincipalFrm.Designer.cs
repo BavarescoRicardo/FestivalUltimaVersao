@@ -304,7 +304,8 @@
             // 
             this.notasToolStripMenuItem1.Name = "notasToolStripMenuItem1";
             this.notasToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.notasToolStripMenuItem1.Text = "Notas";
+            this.notasToolStripMenuItem1.Text = "Jurados Notas";
+            this.notasToolStripMenuItem1.Click += new System.EventHandler(this.notasToolStripMenuItem1_Click);
             // 
             // músicasToolStripMenuItem
             // 

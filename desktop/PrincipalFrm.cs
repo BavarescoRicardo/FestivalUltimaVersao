@@ -1,5 +1,6 @@
 ﻿using DevExpress.XtraReports.UI;
 using Festival.bo;
+using Festival.desktop.Formularios;
 using Festival.desktop.impressao;
 using Festival.listagens;
 using Festival.or;
@@ -119,6 +120,20 @@ namespace Festival.desktop
             tool.ShowPreview();
         }
 
-        
+        private void notasToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            
+
+            // Carregar dados no relatório
+            try
+            {
+                PreImpressoNota aprovaForm = new PreImpressoNota();
+                aprovaForm.ShowDialog();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Não foi possível carregar este relatório");
+            }
+        }
     }
 }

@@ -15,7 +15,6 @@ namespace Festival.or
             CantorBo cantorBo = new CantorBo();
 
             this.id_apresentacao = id_apresentacao;
-
             this.musica = musica;
             this.tom = tom;
             this.gravacao = gravacao;
@@ -29,15 +28,8 @@ namespace Festival.or
         public virtual string gravacao { get; set; }
         public virtual string musica { get; set; }
         public virtual string artista { get; set; }
-        public virtual Cantor cantor { get; set; }
+        public virtual Cantor cantor { get; set; }        
         public virtual Categoria categoria { get; set; }
-
-        private CantorBo bo = new CantorBo();
-
-        public override string ToString()
-        {
-            return string.Format("{0} {1}", this.musica, this.bo.RetornePeloId(this.cantor.id_cantor));
-        }
 
     }
 }
