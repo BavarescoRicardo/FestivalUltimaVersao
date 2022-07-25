@@ -17,6 +17,7 @@ namespace Festival.or
         public virtual string observacao { get; set; }
         public virtual string cidade { get; set; }
         public virtual string estado { get; set; }
+        public virtual string idade { get; set; }
 
 
         public Cantor()
@@ -24,7 +25,8 @@ namespace Festival.or
 
         }
 
-        public Cantor(int id_cantor, string nome, string email, string contato, string cpf, string rg, string observacao)
+        public Cantor(int id_cantor, string nome, string email, string contato, string cpf, 
+                string rg, string observacao, string cidade, string estado, string idade)
         {
             this.id_cantor = id_cantor;
             this.nome = nome;
@@ -33,6 +35,9 @@ namespace Festival.or
             this.cpf = cpf;
             this.rg = rg;
             this.observacao = observacao;
+            this.cidade = cidade;
+            this.estado = estado;
+            this.idade = idade;
         }
 
         public override string ToString()

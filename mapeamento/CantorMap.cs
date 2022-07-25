@@ -15,6 +15,7 @@
             Map(c => c.observacao);
             Map(c => c.cidade);
             Map(c => c.estado);
+            Map(c => c.idade);
             Table("cantor");
         } 
     }
