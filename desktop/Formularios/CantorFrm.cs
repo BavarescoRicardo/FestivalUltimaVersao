@@ -87,27 +87,26 @@ namespace Festival.desktop
 
         private void btnImport_Click(object sender, EventArgs e)
         {
-            using (var reader = new StreamReader(@"C:\Users\Ninguem\Downloads\inscrifm.csv"))
+            using (var reader = new StreamReader(@"C:\Users\Ninguem\Downloads\fimusiirani.csv"))
             {
                 int cont = 0;
+                string[] subs = new string[150];
+
                 while (!reader.EndOfStream)
                 {
                     var line = reader.ReadLine();
                     var values = line.Split(',');
 
-                    string[] subs = line.Split(',');
-
-                    foreach (var sub in subs)
-                    {
-                        MessageBox.Show($"Substring: {sub}");
-                    }
-
-
-
+                    subs = line.Split(',');
+                    
                     cont++;
                 }
-/*                MessageBox.Show(listA += "A ");
-                MessageBox.Show(listB += "B ");*/
+
+                for (int n = 0; n < subs.Length; n++)
+                {
+                    MessageBox.Show(subs[n]);
+                }
+
             }
         }
     }
