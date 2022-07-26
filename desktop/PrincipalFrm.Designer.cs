@@ -56,12 +56,11 @@
             this.testarListaDinamicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.classificaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.apresentaçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.impressõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cantoresToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.notasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.músicasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.apresentaçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -284,36 +283,6 @@
             this.listarToolStripMenuItem.Text = "Listar";
             this.listarToolStripMenuItem.Click += new System.EventHandler(this.listarToolStripMenuItem_Click_1);
             // 
-            // impressõesToolStripMenuItem
-            // 
-            this.impressõesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cantoresToolStripMenuItem1,
-            this.notasToolStripMenuItem1,
-            this.músicasToolStripMenuItem});
-            this.impressõesToolStripMenuItem.Name = "impressõesToolStripMenuItem";
-            this.impressõesToolStripMenuItem.Size = new System.Drawing.Size(78, 20);
-            this.impressõesToolStripMenuItem.Text = "Impressões";
-            // 
-            // cantoresToolStripMenuItem1
-            // 
-            this.cantoresToolStripMenuItem1.Name = "cantoresToolStripMenuItem1";
-            this.cantoresToolStripMenuItem1.Size = new System.Drawing.Size(122, 22);
-            this.cantoresToolStripMenuItem1.Text = "Cantores";
-            this.cantoresToolStripMenuItem1.Click += new System.EventHandler(this.cantoresToolStripMenuItem1_Click);
-            // 
-            // notasToolStripMenuItem1
-            // 
-            this.notasToolStripMenuItem1.Name = "notasToolStripMenuItem1";
-            this.notasToolStripMenuItem1.Size = new System.Drawing.Size(122, 22);
-            this.notasToolStripMenuItem1.Text = "Ficha júri";
-            this.notasToolStripMenuItem1.Click += new System.EventHandler(this.notasToolStripMenuItem1_Click);
-            // 
-            // músicasToolStripMenuItem
-            // 
-            this.músicasToolStripMenuItem.Name = "músicasToolStripMenuItem";
-            this.músicasToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.músicasToolStripMenuItem.Text = "Músicas";
-            // 
             // apresentaçõesToolStripMenuItem
             // 
             this.apresentaçõesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -325,9 +294,32 @@
             // listarToolStripMenuItem1
             // 
             this.listarToolStripMenuItem1.Name = "listarToolStripMenuItem1";
-            this.listarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.listarToolStripMenuItem1.Size = new System.Drawing.Size(102, 22);
             this.listarToolStripMenuItem1.Text = "Listar";
             this.listarToolStripMenuItem1.Click += new System.EventHandler(this.listarToolStripMenuItem1_Click_1);
+            // 
+            // impressõesToolStripMenuItem
+            // 
+            this.impressõesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cantoresToolStripMenuItem1,
+            this.notasToolStripMenuItem1});
+            this.impressõesToolStripMenuItem.Name = "impressõesToolStripMenuItem";
+            this.impressõesToolStripMenuItem.Size = new System.Drawing.Size(78, 20);
+            this.impressõesToolStripMenuItem.Text = "Impressões";
+            // 
+            // cantoresToolStripMenuItem1
+            // 
+            this.cantoresToolStripMenuItem1.Name = "cantoresToolStripMenuItem1";
+            this.cantoresToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.cantoresToolStripMenuItem1.Text = "Apresentações";
+            this.cantoresToolStripMenuItem1.Click += new System.EventHandler(this.cantoresToolStripMenuItem1_Click);
+            // 
+            // notasToolStripMenuItem1
+            // 
+            this.notasToolStripMenuItem1.Name = "notasToolStripMenuItem1";
+            this.notasToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.notasToolStripMenuItem1.Text = "Ficha júri";
+            this.notasToolStripMenuItem1.Click += new System.EventHandler(this.notasToolStripMenuItem1_Click);
             // 
             // PrincipalFrm
             // 
@@ -380,7 +372,6 @@
         private System.Windows.Forms.ToolStripMenuItem impressõesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cantoresToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem notasToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem músicasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem apresentaçõesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listarToolStripMenuItem1;
     }
