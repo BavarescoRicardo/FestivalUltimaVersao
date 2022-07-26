@@ -4,6 +4,7 @@ using Festival.desktop.impressao;
 using Festival.or;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace Festival.desktop.Formularios
@@ -47,7 +48,7 @@ namespace Festival.desktop.Formularios
                         if((apr.categoria.id_categoria == categoria.id_categoria) || (categoria.id_categoria == 0))
                             listaDto.Add(new ApresentacaoDtoReport(apr.id_apresentacao, apr.tom, apr.gravacao, apr.musica, apr.artista, apr.cantor.id_cantor, apr.categoria.id_categoria));
                     }
-                    report.DataSource = listaDto;
+                    report.DataSource = listaDto.OrderBy(x => x.cantor.nome);
                 }
                 catch (Exception)
                 {
