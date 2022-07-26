@@ -29,6 +29,7 @@ namespace Festival.or
         public virtual string gravacao { get; set; }
         public virtual string musica { get; set; }
         public virtual string artista { get; set; }
+        public virtual string nomeartistico { get; set; }
         public virtual Cantor cantor { get; set; }
         public virtual Categoria categoria { get; set; }
 

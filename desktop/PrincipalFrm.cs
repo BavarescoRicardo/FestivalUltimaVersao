@@ -135,5 +135,11 @@ namespace Festival.desktop
                 MessageBox.Show("Não foi possível carregar este relatório");
             }
         }
+
+        private void listarToolStripMenuItem1_Click_1(object sender, EventArgs e)
+        {
+            ListaApresentacoes listar = new ListaApresentacoes();
+            listar.ShowDialog();
+        }
     }
 }

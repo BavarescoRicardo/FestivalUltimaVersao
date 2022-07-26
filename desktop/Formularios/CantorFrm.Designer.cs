@@ -43,7 +43,7 @@
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.bindingSourceApresentacao = new System.Windows.Forms.BindingSource(this.components);
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colCodigo = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNomearts = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colmusica = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colartista = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colcantor = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -227,7 +227,7 @@
             // gridView1
             // 
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colCodigo,
+            this.colNomearts,
             this.colmusica,
             this.colartista,
             this.colcantor,
@@ -238,18 +238,17 @@
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
-            // colCodigo
+            // colNomearts
             // 
-            this.colCodigo.Caption = "Codigo";
-            this.colCodigo.FieldNameSortGroup = "cate";
-            this.colCodigo.Name = "colCodigo";
-            this.colCodigo.OptionsColumn.AllowEdit = false;
-            this.colCodigo.OptionsColumn.AllowFocus = false;
-            this.colCodigo.OptionsColumn.TabStop = false;
-            this.colCodigo.OptionsFilter.AllowFilter = false;
-            this.colCodigo.Visible = true;
-            this.colCodigo.VisibleIndex = 0;
-            this.colCodigo.Width = 56;
+            this.colNomearts.Caption = "Nome Artistico";
+            this.colNomearts.FieldName = "nomeartistico";
+            this.colNomearts.FieldNameSortGroup = "cate";
+            this.colNomearts.Name = "colNomearts";
+            this.colNomearts.OptionsColumn.TabStop = false;
+            this.colNomearts.OptionsFilter.AllowFilter = false;
+            this.colNomearts.Visible = true;
+            this.colNomearts.VisibleIndex = 0;
+            this.colNomearts.Width = 127;
             // 
             // colmusica
             // 
@@ -257,7 +256,7 @@
             this.colmusica.Name = "colmusica";
             this.colmusica.Visible = true;
             this.colmusica.VisibleIndex = 1;
-            this.colmusica.Width = 151;
+            this.colmusica.Width = 143;
             // 
             // colartista
             // 
@@ -265,7 +264,7 @@
             this.colartista.Name = "colartista";
             this.colartista.Visible = true;
             this.colartista.VisibleIndex = 2;
-            this.colartista.Width = 118;
+            this.colartista.Width = 111;
             // 
             // colcantor
             // 
@@ -281,7 +280,7 @@
             this.colcategoria.Name = "colcategoria";
             this.colcategoria.Visible = true;
             this.colcategoria.VisibleIndex = 5;
-            this.colcategoria.Width = 129;
+            this.colcategoria.Width = 95;
             // 
             // cmbCategoriaRepositorioGrid
             // 
@@ -299,7 +298,7 @@
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 3;
-            this.gridColumn1.Width = 144;
+            this.gridColumn1.Width = 135;
             // 
             // gridColumn2
             // 
@@ -308,7 +307,7 @@
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 4;
-            this.gridColumn2.Width = 63;
+            this.gridColumn2.Width = 50;
             // 
             // txtEmail
             // 
@@ -573,7 +572,7 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
         private System.Windows.Forms.BindingSource bindingSourceCantor;
         private System.Windows.Forms.BindingSource bindingSourceApresentacao;
-        private DevExpress.XtraGrid.Columns.GridColumn colCodigo;
+        private DevExpress.XtraGrid.Columns.GridColumn colNomearts;
         private DevExpress.XtraGrid.Columns.GridColumn colmusica;
         private DevExpress.XtraGrid.Columns.GridColumn colartista;
         private DevExpress.XtraGrid.Columns.GridColumn colcantor;

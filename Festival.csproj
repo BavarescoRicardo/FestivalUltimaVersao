@@ -269,6 +269,12 @@
     <Compile Include="desktop\impressao\JuradoNotaReport.Designer.cs">
       <DependentUpon>JuradoNotaReport.cs</DependentUpon>
     </Compile>
+    <Compile Include="desktop\listagens\ListaApresentacoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="desktop\listagens\ListaApresentacoes.Designer.cs">
+      <DependentUpon>ListaApresentacoes.cs</DependentUpon>
+    </Compile>
     <Compile Include="desktop\listagens\ListaCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -409,6 +415,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="desktop\impressao\JuradoNotaReport.resx">
       <DependentUpon>JuradoNotaReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="desktop\listagens\ListaApresentacoes.resx">
+      <DependentUpon>ListaApresentacoes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="desktop\listagens\ListaCategoria.resx">
       <DependentUpon>ListaCategoria.cs</DependentUpon>

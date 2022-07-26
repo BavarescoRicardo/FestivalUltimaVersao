@@ -13,6 +13,7 @@
             Map(c => c.gravacao);
             Map(c => c.musica);
             Map(c => c.artista);
+            Map(c => c.nomeartistico);
             References<Cantor>(x => x.cantor).Column("cantor").ForeignKey("id_cantor");
             References<Categoria>(x => x.categoria).Column("categoria").ForeignKey("id_categoria");
 
