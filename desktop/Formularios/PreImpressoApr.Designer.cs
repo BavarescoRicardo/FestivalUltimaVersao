@@ -30,25 +30,41 @@ namespace Festival.desktop.Formularios
         private void InitializeComponent()
         {
             this.pnlGeral = new System.Windows.Forms.Panel();
+            this.rdGrupo = new DevExpress.XtraEditors.RadioGroup();
             this.button1 = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.cmbCat = new DevExpress.XtraEditors.ComboBoxEdit();
             this.pnlGeral.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rdGrupo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbCat.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlGeral
             // 
             this.pnlGeral.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlGeral.Controls.Add(this.rdGrupo);
             this.pnlGeral.Controls.Add(this.button1);
             this.pnlGeral.Controls.Add(this.btnSair);
             this.pnlGeral.Controls.Add(this.label1);
             this.pnlGeral.Controls.Add(this.cmbCat);
             this.pnlGeral.Location = new System.Drawing.Point(12, 12);
             this.pnlGeral.Name = "pnlGeral";
-            this.pnlGeral.Size = new System.Drawing.Size(337, 157);
+            this.pnlGeral.Size = new System.Drawing.Size(455, 157);
             this.pnlGeral.TabIndex = 0;
+            // 
+            // rdGrupo
+            // 
+            this.rdGrupo.Location = new System.Drawing.Point(310, 34);
+            this.rdGrupo.Name = "rdGrupo";
+            this.rdGrupo.Properties.Appearance.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.rdGrupo.Properties.Appearance.Options.UseBackColor = true;
+            this.rdGrupo.Properties.Columns = 1;
+            this.rdGrupo.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Banda"),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Apresentador")});
+            this.rdGrupo.Size = new System.Drawing.Size(127, 96);
+            this.rdGrupo.TabIndex = 4;
             // 
             // button1
             // 
@@ -94,12 +110,13 @@ namespace Festival.desktop.Formularios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(364, 181);
+            this.ClientSize = new System.Drawing.Size(479, 181);
             this.ControlBox = false;
             this.Controls.Add(this.pnlGeral);
             this.Name = "PreImpressoApr";
             this.Text = "Aprovar";
             this.pnlGeral.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.rdGrupo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbCat.Properties)).EndInit();
             this.ResumeLayout(false);
 
@@ -112,5 +129,6 @@ namespace Festival.desktop.Formularios
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.Button button1;
+        private DevExpress.XtraEditors.RadioGroup rdGrupo;
     }
 }

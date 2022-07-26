@@ -263,6 +263,12 @@
     <Compile Include="desktop\Formularios\AtribuiNotaFrm.Designer.cs">
       <DependentUpon>AtribuiNotaFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="desktop\impressao\ApresentacaoReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="desktop\impressao\ApresentacaoReport.Designer.cs">
+      <DependentUpon>ApresentacaoReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="desktop\impressao\CantorReport.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -418,6 +424,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="desktop\Formularios\NotaFrm.resx">
       <DependentUpon>NotaFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="desktop\impressao\ApresentacaoReport.resx">
+      <DependentUpon>ApresentacaoReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="desktop\impressao\CantorReport.resx">
       <DependentUpon>CantorReport.cs</DependentUpon>

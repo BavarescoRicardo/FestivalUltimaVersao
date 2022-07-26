@@ -709,3 +709,4 @@ C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.desktop.im
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.desktop.Formularios.PreImpressoNota.resources
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.listagens.ListaApresentacoes.resources
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.desktop.Formularios.PreImpressoApr.resources
+C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.desktop.impressao.ApresentacaoReport.resources
