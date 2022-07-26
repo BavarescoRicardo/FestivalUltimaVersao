@@ -60,7 +60,6 @@
             this.cantoresToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.notasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.músicasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fichaJúriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -287,8 +286,7 @@
             this.impressõesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cantoresToolStripMenuItem1,
             this.notasToolStripMenuItem1,
-            this.músicasToolStripMenuItem,
-            this.fichaJúriToolStripMenuItem});
+            this.músicasToolStripMenuItem});
             this.impressõesToolStripMenuItem.Name = "impressõesToolStripMenuItem";
             this.impressõesToolStripMenuItem.Size = new System.Drawing.Size(78, 20);
             this.impressõesToolStripMenuItem.Text = "Impressões";
@@ -304,7 +302,7 @@
             // 
             this.notasToolStripMenuItem1.Name = "notasToolStripMenuItem1";
             this.notasToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.notasToolStripMenuItem1.Text = "Jurados Notas";
+            this.notasToolStripMenuItem1.Text = "Ficha júri";
             this.notasToolStripMenuItem1.Click += new System.EventHandler(this.notasToolStripMenuItem1_Click);
             // 
             // músicasToolStripMenuItem
@@ -312,12 +310,6 @@
             this.músicasToolStripMenuItem.Name = "músicasToolStripMenuItem";
             this.músicasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.músicasToolStripMenuItem.Text = "Músicas";
-            // 
-            // fichaJúriToolStripMenuItem
-            // 
-            this.fichaJúriToolStripMenuItem.Name = "fichaJúriToolStripMenuItem";
-            this.fichaJúriToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.fichaJúriToolStripMenuItem.Text = "Ficha Júri";
             // 
             // PrincipalFrm
             // 
@@ -371,6 +363,5 @@
         private System.Windows.Forms.ToolStripMenuItem cantoresToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem notasToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem músicasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem fichaJúriToolStripMenuItem;
     }
 }

@@ -64,8 +64,12 @@ namespace Festival.desktop.impressao
             this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel13 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel14 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel15 = new DevExpress.XtraReports.UI.XRLabel();
             this.objectDataSource1 = new DevExpress.DataAccess.ObjectBinding.ObjectDataSource(this.components);
             this.objectDataSource2 = new DevExpress.DataAccess.ObjectBinding.ObjectDataSource(this.components);
+            this.xrLabel16 = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
@@ -263,6 +267,10 @@ namespace Festival.desktop.impressao
             // PageHeader
             // 
             this.PageHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrLabel16,
+            this.xrLabel15,
+            this.xrLabel13,
+            this.xrLabel14,
             this.xrLabel12,
             this.xrLabel11,
             this.xrLabel10,
@@ -349,7 +357,7 @@ namespace Festival.desktop.impressao
             // 
             this.xrLabel7.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[categoria].[categoria]")});
-            this.xrLabel7.LocationFloat = new DevExpress.Utils.PointFloat(71.87499F, 62.16676F);
+            this.xrLabel7.LocationFloat = new DevExpress.Utils.PointFloat(505.2083F, 30.83341F);
             this.xrLabel7.Multiline = true;
             this.xrLabel7.Name = "xrLabel7";
             this.xrLabel7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -359,11 +367,11 @@ namespace Festival.desktop.impressao
             // 
             this.xrLabel6.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[apresentacao].[musica]")});
-            this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(376.3889F, 30.83339F);
+            this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(51.38893F, 62.16676F);
             this.xrLabel6.Multiline = true;
             this.xrLabel6.Name = "xrLabel6";
             this.xrLabel6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel6.SizeF = new System.Drawing.SizeF(273.6111F, 31.33335F);
+            this.xrLabel6.SizeF = new System.Drawing.SizeF(259.0277F, 30.62499F);
             // 
             // xrLabel5
             // 
@@ -398,7 +406,7 @@ namespace Festival.desktop.impressao
             // 
             // xrLabel1
             // 
-            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 62.16676F);
+            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(433.3333F, 30.83341F);
             this.xrLabel1.Multiline = true;
             this.xrLabel1.Name = "xrLabel1";
             this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -418,12 +426,42 @@ namespace Festival.desktop.impressao
             // 
             // xrLabel2
             // 
-            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(325F, 30.83339F);
+            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(0F, 62.16676F);
             this.xrLabel2.Multiline = true;
             this.xrLabel2.Name = "xrLabel2";
             this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel2.SizeF = new System.Drawing.SizeF(51.38895F, 31.33335F);
+            this.xrLabel2.SizeF = new System.Drawing.SizeF(51.38892F, 30.62499F);
             this.xrLabel2.Text = "Musica:";
+            // 
+            // xrLabel13
+            // 
+            this.xrLabel13.LocationFloat = new DevExpress.Utils.PointFloat(439.5833F, 62.16676F);
+            this.xrLabel13.Multiline = true;
+            this.xrLabel13.Name = "xrLabel13";
+            this.xrLabel13.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel13.SizeF = new System.Drawing.SizeF(71.87499F, 30.62498F);
+            this.xrLabel13.Text = "Gravação:";
+            // 
+            // xrLabel14
+            // 
+            this.xrLabel14.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[apresentacao].[gravacao]")});
+            this.xrLabel14.LocationFloat = new DevExpress.Utils.PointFloat(511.4583F, 62.16676F);
+            this.xrLabel14.Multiline = true;
+            this.xrLabel14.Name = "xrLabel14";
+            this.xrLabel14.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel14.SizeF = new System.Drawing.SizeF(138.5417F, 30.62498F);
+            // 
+            // xrLabel15
+            // 
+            this.xrLabel15.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Tom:")});
+            this.xrLabel15.LocationFloat = new DevExpress.Utils.PointFloat(310.4167F, 62.16676F);
+            this.xrLabel15.Multiline = true;
+            this.xrLabel15.Name = "xrLabel15";
+            this.xrLabel15.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel15.SizeF = new System.Drawing.SizeF(43.12503F, 30.62498F);
+            this.xrLabel15.Text = "Tom:";
             // 
             // objectDataSource1
             // 
@@ -434,6 +472,16 @@ namespace Festival.desktop.impressao
             // 
             this.objectDataSource2.DataSource = typeof(Festival.or.NotasDtoReport);
             this.objectDataSource2.Name = "objectDataSource2";
+            // 
+            // xrLabel16
+            // 
+            this.xrLabel16.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[apresentacao].[tom]")});
+            this.xrLabel16.LocationFloat = new DevExpress.Utils.PointFloat(353.5417F, 62.16679F);
+            this.xrLabel16.Multiline = true;
+            this.xrLabel16.Name = "xrLabel16";
+            this.xrLabel16.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel16.SizeF = new System.Drawing.SizeF(86.04166F, 30.62498F);
             // 
             // JuradoNotaReport
             // 
@@ -495,5 +543,9 @@ namespace Festival.desktop.impressao
         private DevExpress.XtraReports.UI.XRLabel xrLabel12;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell11;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell10;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel13;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel14;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel15;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel16;
     }
 }
