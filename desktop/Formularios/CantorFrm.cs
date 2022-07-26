@@ -87,26 +87,29 @@ namespace Festival.desktop
 
         private void btnImport_Click(object sender, EventArgs e)
         {
+            int cont = 0;
             using (var reader = new StreamReader(@"C:\Users\Ninguem\Downloads\fimusiirani.csv"))
             {
-                int cont = 0;
-                string[] subs = new string[150];
-
                 while (!reader.EndOfStream)
                 {
                     var line = reader.ReadLine();
                     var values = line.Split(',');
 
-                    subs = line.Split(',');
-                    
+                    // Chama função para insersão
+                    if(cont > 0)
+                        inserirDados(line.Split(','));
                     cont++;
                 }
 
-                for (int n = 0; n < subs.Length; n++)
-                {
-                    MessageBox.Show(subs[n]);
-                }
+            }
+        }
 
+        // função para insersão dos dados lidos do arquivo csv
+        private void inserirDados(string[] csv)
+        {
+            for (int n = 0; n < csv.Length; n++)
+            {
+                MessageBox.Show(csv[n]);
             }
         }
     }
