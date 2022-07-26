@@ -16,7 +16,7 @@ namespace Festival.or
         {
         }
 
-        public Categoria(int id,string categoria,DateTime dia)
+        public Categoria(int id,string categoria)
         {
             this.id_categoria = id;
             this.categoria = categoria;

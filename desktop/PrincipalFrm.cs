@@ -95,29 +95,17 @@ namespace Festival.desktop
 
         private void cantoresToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            CantorReport report = new CantorReport();
-            //report.DataSource = CreateData();
-
             // Carregar dados no relatório
             try
             {
-                ApresentacaoBo bo = new ApresentacaoBo();
-                List<ApresentacaoDtoReport> listaDto = new List<ApresentacaoDtoReport>();
-                foreach (Apresentacao apr in bo.Listar())
-                {
-                    listaDto.Add(new ApresentacaoDtoReport(apr.id_apresentacao, apr.tom, apr.gravacao, apr.musica, apr.artista, apr.cantor.id_cantor, apr.categoria.id_categoria));
-                }
-                report.DataSource = listaDto;
+                PreImpressoApr aprovaForm = new PreImpressoApr();
+                aprovaForm.ShowDialog();
             }
             catch (Exception)
             {
-
                 MessageBox.Show("Não foi possível carregar este relatório");
             }
 
-
-            ReportPrintTool tool = new ReportPrintTool(report);
-            tool.ShowPreview();
         }
 
         private void notasToolStripMenuItem1_Click(object sender, EventArgs e)

@@ -708,3 +708,4 @@ C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.pdb
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.desktop.impressao.JuradoNotaReport.resources
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.desktop.Formularios.PreImpressoNota.resources
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.listagens.ListaApresentacoes.resources
+C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.desktop.Formularios.PreImpressoApr.resources
