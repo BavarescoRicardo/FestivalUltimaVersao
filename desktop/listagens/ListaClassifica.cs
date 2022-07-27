@@ -102,7 +102,7 @@ namespace Festival.listagens
                     catch (Exception)
                     {
 
-                        MessageBox.Show("Não foi possivek remover a classificação ou as notas.. ");
+                        MessageBox.Show("Não foi possivel remover a classificação ou as notas.. ");
                     }
                 }
 

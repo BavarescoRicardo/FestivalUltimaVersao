@@ -1,4 +1,5 @@
 ﻿using Festival.bo;
+using Festival.desktop;
 using Festival.or;
 using System;
 using System.Collections.Generic;
@@ -86,19 +87,15 @@ namespace Festival.listagens
             this.Close();
         }
 
-        /*
-       private void cmbFiltro_SelectedValueChanged(object sender, EventArgs e)
-       {
-           Categoria cat = (Categoria)cmbFiltro.SelectedItem;
-           if (lista.Where(x => x.categoria == cat.id_categoria).Count() > 0)
-           {
-               bindingSource1.DataSource = lista.Where(x => x.categoria == cat.id_categoria);
-           }
-           else
-           {
-               bindingSource1.DataSource = lista;
-           }
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            int[] idApr = this.gridView1.GetSelectedRows();
+            Apresentacao apr = (Apresentacao)this.gridView1.GetRow(idApr[0]);
 
-       }*/
+            EditarCantorFrm editar = new EditarCantorFrm(apr.id_apresentacao, apr.cantor.id_cantor);
+            editar.ShowDialog();
+            this.Close();
+        }
+
     }
 }
