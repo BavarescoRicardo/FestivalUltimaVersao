@@ -89,7 +89,11 @@ namespace Festival.desktop
         {
             try
             {
-                ApresentacaoBo bo = new ApresentacaoBo();
+                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+                DialogResult result = MessageBox.Show("Deseja realmente excluir este cantor e apresentação?", "Confirmar exclusão", buttons);
+                if (result == DialogResult.No)
+                    return;
+                    ApresentacaoBo bo = new ApresentacaoBo();
                 CantorBo cantorBo = new CantorBo();
                 bo.Excluir(bo.RetornePeloId(idApr));
                 cantorBo.Excluir(cantorBo.RetornePeloId(idCantor));
