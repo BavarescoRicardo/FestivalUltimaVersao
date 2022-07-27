@@ -56,7 +56,6 @@
             this.pnliNome = new DevExpress.XtraLayout.LayoutControlItem();
             this.pnliEmail = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.pnliRg = new DevExpress.XtraLayout.LayoutControlItem();
             this.pnliCpf = new DevExpress.XtraLayout.LayoutControlItem();
@@ -68,6 +67,8 @@
             this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem4 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem5 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
@@ -87,7 +88,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pnliNome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnliEmail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnliRg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnliCpf)).BeginInit();
@@ -99,10 +99,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
             // 
+            this.layoutControl1.Controls.Add(this.simpleButton1);
             this.layoutControl1.Controls.Add(this.textEdit3);
             this.layoutControl1.Controls.Add(this.textEdit2);
             this.layoutControl1.Controls.Add(this.textEdit1);
@@ -184,7 +186,7 @@
             // 
             // btnInserir
             // 
-            this.btnInserir.Location = new System.Drawing.Point(357, 415);
+            this.btnInserir.Location = new System.Drawing.Point(12, 415);
             this.btnInserir.Name = "btnInserir";
             this.btnInserir.Size = new System.Drawing.Size(341, 22);
             this.btnInserir.StyleController = this.layoutControl1;
@@ -195,12 +197,12 @@
             // gridControl1
             // 
             this.gridControl1.DataSource = this.bindingSourceApresentacao;
-            this.gridControl1.Location = new System.Drawing.Point(12, 182);
+            this.gridControl1.Location = new System.Drawing.Point(12, 155);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.cmbCategoriaRepositorioGrid});
-            this.gridControl1.Size = new System.Drawing.Size(686, 229);
+            this.gridControl1.Size = new System.Drawing.Size(686, 256);
             this.gridControl1.TabIndex = 7;
             this.gridControl1.UseEmbeddedNavigator = true;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -324,7 +326,6 @@
             this.pnliNome,
             this.pnliEmail,
             this.layoutControlItem4,
-            this.emptySpaceItem1,
             this.layoutControlItem5,
             this.pnliRg,
             this.pnliCpf,
@@ -335,7 +336,8 @@
             this.layoutControlItem6,
             this.emptySpaceItem3,
             this.emptySpaceItem4,
-            this.emptySpaceItem5});
+            this.emptySpaceItem5,
+            this.layoutControlItem1});
             this.Root.Name = "Root";
             this.Root.Size = new System.Drawing.Size(710, 449);
             this.Root.TextVisible = false;
@@ -364,27 +366,16 @@
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.gridControl1;
-            this.layoutControlItem4.Location = new System.Drawing.Point(0, 170);
+            this.layoutControlItem4.Location = new System.Drawing.Point(0, 143);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(690, 233);
+            this.layoutControlItem4.Size = new System.Drawing.Size(690, 260);
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
-            // 
-            // emptySpaceItem1
-            // 
-            this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 403);
-            this.emptySpaceItem1.MaxSize = new System.Drawing.Size(400, 0);
-            this.emptySpaceItem1.MinSize = new System.Drawing.Size(10, 10);
-            this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(345, 26);
-            this.emptySpaceItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem5
             // 
             this.layoutControlItem5.Control = this.btnInserir;
-            this.layoutControlItem5.Location = new System.Drawing.Point(345, 403);
+            this.layoutControlItem5.Location = new System.Drawing.Point(0, 403);
             this.layoutControlItem5.Name = "layoutControlItem5";
             this.layoutControlItem5.Size = new System.Drawing.Size(345, 26);
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
@@ -471,7 +462,7 @@
             this.emptySpaceItem3.AllowHotTrack = false;
             this.emptySpaceItem3.Location = new System.Drawing.Point(0, 120);
             this.emptySpaceItem3.Name = "emptySpaceItem3";
-            this.emptySpaceItem3.Size = new System.Drawing.Size(690, 50);
+            this.emptySpaceItem3.Size = new System.Drawing.Size(690, 23);
             this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
             // 
             // emptySpaceItem4
@@ -489,6 +480,25 @@
             this.emptySpaceItem5.Name = "emptySpaceItem5";
             this.emptySpaceItem5.Size = new System.Drawing.Size(345, 24);
             this.emptySpaceItem5.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Location = new System.Drawing.Point(357, 415);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(341, 22);
+            this.simpleButton1.StyleController = this.layoutControl1;
+            this.simpleButton1.TabIndex = 18;
+            this.simpleButton1.Text = "Remover";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            // 
+            // layoutControlItem1
+            // 
+            this.layoutControlItem1.Control = this.simpleButton1;
+            this.layoutControlItem1.Location = new System.Drawing.Point(345, 403);
+            this.layoutControlItem1.Name = "layoutControlItem1";
+            this.layoutControlItem1.Size = new System.Drawing.Size(345, 26);
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem1.TextVisible = false;
             // 
             // EditarCantorFrm
             // 
@@ -519,7 +529,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pnliNome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnliEmail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnliRg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnliCpf)).EndInit();
@@ -531,6 +540,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -554,7 +564,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn colcantor;
         private DevExpress.XtraGrid.Columns.GridColumn colcategoria;
         private DevExpress.XtraEditors.SimpleButton btnInserir;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
         private DevExpress.XtraEditors.TextEdit txtCpf;
         private DevExpress.XtraEditors.TextEdit txtRg;
@@ -575,5 +584,7 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem3;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem4;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
     }
 }

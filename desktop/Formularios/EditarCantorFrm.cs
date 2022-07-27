@@ -11,10 +11,14 @@ namespace Festival.desktop
     public partial class EditarCantorFrm : Form
     {
         private Categoria categoriaTemp = null;
+        private int idCantor { get; set; }
+        private int idApr { get; set; }
 
         public EditarCantorFrm(int idApr, int idCantor)
         {
             InitializeComponent();
+            this.idApr = idApr;
+            this.idCantor = idCantor;
             ApresentacaoBo bo = new ApresentacaoBo();
             CantorBo cantorBo = new CantorBo();
             bindingSourceApresentacao.Add(bo.RetornePeloId(idApr));
@@ -54,7 +58,8 @@ namespace Festival.desktop
                     Festival.bo.ApresentacaoBo apresentacaoBo = new Festival.bo.ApresentacaoBo();
                     bindingSourceApresentacao.EndEdit();
                     apresentacao.cantor = cantor;
-                    apresentacao.categoria = (Categoria)categoriaTemp;
+                    if (categoriaTemp != null)
+                        apresentacao.categoria = (Categoria)categoriaTemp;
                     apresentacaoBo.Atualizar(apresentacao);
                     MessageBox.Show("Atualizado com sucesso");
                 }
@@ -80,6 +85,23 @@ namespace Festival.desktop
             this.categoriaTemp = (Categoria)cb.EditValue;
         }
 
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ApresentacaoBo bo = new ApresentacaoBo();
+                CantorBo cantorBo = new CantorBo();
+                bo.Excluir(bo.RetornePeloId(idApr));
+                cantorBo.Excluir(cantorBo.RetornePeloId(idCantor));
+
+                MessageBox.Show("Removido com sucesso");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Não foi possível remover este cantor");
+                return;
+            }
+        }
     }
 
 }
