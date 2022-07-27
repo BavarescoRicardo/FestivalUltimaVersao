@@ -14,10 +14,11 @@ namespace Festival.or
 
         }
 
-        public Apresentacao(int id_apresentacao, string tom, string gravacao, string musica, string artista, Cantor cantor, Categoria categoria)
+        public Apresentacao(string tom, string gravacao, string musica, string artista, Cantor cantor, Categoria categoria, string nomeartistico)
         {
             this.id_apresentacao = id_apresentacao;
-
+            this.gravacao = gravacao;
+            this.nomeartistico = nomeartistico;
             this.musica = musica;
             this.artista = artista;
             this.cantor = cantor;

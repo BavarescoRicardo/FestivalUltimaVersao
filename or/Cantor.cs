@@ -25,10 +25,9 @@ namespace Festival.or
 
         }
 
-        public Cantor(int id_cantor, string nome, string email, string contato, string cpf, 
+        public Cantor(string nome, string email, string contato, string cpf, 
                 string rg, string observacao, string cidade, string estado, string idade)
         {
-            this.id_cantor = id_cantor;
             this.nome = nome;
             this.email = email;
             this.contato = contato;
