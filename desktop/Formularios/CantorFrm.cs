@@ -1,17 +1,9 @@
-﻿using DevExpress.Data.Helpers;
-using DevExpress.Utils.Extensions;
-using DevExpress.XtraEditors;
+﻿using DevExpress.XtraEditors;
 using Festival.bo;
 using Festival.or;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Festival.desktop
@@ -170,7 +162,7 @@ namespace Festival.desktop
             try
             {
                 Cantor cantor = new Cantor(
-                        csv[1] + csv[2], csv[5], csv[6], null, csv[4], csv[28], csv[24], csv[25], (string)(DateTime.Now - DateTime.Parse(csv[3])).ToString());
+                        csv[1] + " " + csv[2], csv[5], csv[6], null, csv[4], csv[28], csv[24], csv[25], (string)(DateTime.Now - DateTime.Parse(csv[3])).ToString());
 
                 //  Objeto Apresentacao
                 //      string tom, string gravacao, string musica, string artista, Cantor cantor, Categoria categoria, string nomeartistico
