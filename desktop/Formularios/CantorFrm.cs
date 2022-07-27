@@ -167,22 +167,29 @@ namespace Festival.desktop
             //                string rg, string observacao, string cidade, string estado, string idade
 
             //            csv[1] + csv[2], csv[5], csv[6], null, csv[4], csv[28], csv[24], csv[25], string idade =(date hoje - csv[3])
-            Cantor cantor =
-                new Cantor(csv[1] + csv[2], csv[5], csv[6], null, csv[4], csv[28], csv[24], csv[25], (string)(DateTime.Now - DateTime.Parse(csv[3])).ToString());
+            try
+            {
+                Cantor cantor = new Cantor(
+                        csv[1] + csv[2], csv[5], csv[6], null, csv[4], csv[28], csv[24], csv[25], (string)(DateTime.Now - DateTime.Parse(csv[3])).ToString());
 
-            //  Objeto Apresentacao
-            //      string tom, string gravacao, string musica, string artista, Cantor cantor, Categoria categoria, string nomeartistico
-            //      csv[31], csv[30], csv[29], csv[32], Cantor, Categoria csv[32], csv[0]
+                //  Objeto Apresentacao
+                //      string tom, string gravacao, string musica, string artista, Cantor cantor, Categoria categoria, string nomeartistico
+                //      csv[31], csv[30], csv[29], csv[32], Cantor, Categoria csv[32], csv[0]
 
-            // Seleção categoria csv[32]
-            // opcoes
-            // Infantil 7
-            // Gospel 8
-            // Sertanejo 9
-            // Juvenil 13
-            // Popular 14
-            Apresentacao apresentacao
-                = new Apresentacao(csv[31], csv[30], csv[29], csv[32], cantor, selecionarCategoria(csv[32]), csv[0]);
+                Apresentacao apresentacao = new Apresentacao(
+                    csv[31], csv[30], csv[29], csv[32], cantor, selecionarCategoria(csv[33]), csv[0]);
+
+                CantorBo cantorBo = new CantorBo();
+                cantorBo.Inserir(cantor);
+
+                ApresentacaoBo apresentacaoBo = new ApresentacaoBo();
+                apresentacaoBo.Inserir(apresentacao);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Não foi possível importar dados");
+                return;
+            }
         }
 
         private Categoria selecionarCategoria(string descricaoCat)
