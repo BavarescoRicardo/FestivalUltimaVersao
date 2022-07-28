@@ -163,7 +163,7 @@ namespace Festival.desktop
             try
             {
                 // Conversõees para transformar a data csv para idade em int
-                DateTime nasc = DateTime.ParseExact(csv[3], "MM-dd-yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None);
+                DateTime nasc = DateTime.ParseExact(csv[3], "dd-MM-yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None);
                 // Verifica se nasceu antes do mes atual ai reduz um ano
                 int idade = DateTime.Now.Year - nasc.Year;
                 if (DateTime.Now.Month > nasc.Month)
