@@ -194,7 +194,7 @@ namespace Festival.desktop
                     idade--;
 
                 Cantor cantor = new Cantor(
-                        csv[1] + " " + csv[2], csv[5], csv[6], null, csv[4], csv[28], csv[24], csv[25], idade.ToString(), nasc.ToShortDateString();
+                        csv[1] + " " + csv[2], csv[5], csv[6], null, csv[4], csv[28], csv[24], csv[25], idade.ToString(), nasc.ToShortDateString());
 
                 //  Objeto Apresentacao
                 //      string tom, string gravacao, string musica, string artista, Cantor cantor, Categoria categoria, string nomeartistico
