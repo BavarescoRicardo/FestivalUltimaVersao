@@ -307,6 +307,7 @@
             // 
             this.txtNota1J1.Location = new System.Drawing.Point(129, 48);
             this.txtNota1J1.Name = "txtNota1J1";
+            this.txtNota1J1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota1J1.Size = new System.Drawing.Size(97, 20);
             this.txtNota1J1.TabIndex = 9;
             // 
@@ -314,6 +315,7 @@
             // 
             this.txtNota1J2.Location = new System.Drawing.Point(232, 48);
             this.txtNota1J2.Name = "txtNota1J2";
+            this.txtNota1J2.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota1J2.Size = new System.Drawing.Size(94, 20);
             this.txtNota1J2.TabIndex = 10;
             // 
@@ -321,6 +323,7 @@
             // 
             this.txtNota1J3.Location = new System.Drawing.Point(332, 48);
             this.txtNota1J3.Name = "txtNota1J3";
+            this.txtNota1J3.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota1J3.Size = new System.Drawing.Size(100, 20);
             this.txtNota1J3.TabIndex = 11;
             // 
@@ -328,6 +331,7 @@
             // 
             this.txtNota1J4.Location = new System.Drawing.Point(440, 48);
             this.txtNota1J4.Name = "txtNota1J4";
+            this.txtNota1J4.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota1J4.Size = new System.Drawing.Size(100, 20);
             this.txtNota1J4.TabIndex = 12;
             // 
@@ -335,6 +339,7 @@
             // 
             this.txtNota1J5.Location = new System.Drawing.Point(557, 48);
             this.txtNota1J5.Name = "txtNota1J5";
+            this.txtNota1J5.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota1J5.Size = new System.Drawing.Size(99, 20);
             this.txtNota1J5.TabIndex = 13;
             // 
@@ -342,6 +347,7 @@
             // 
             this.txtNota2J1.Location = new System.Drawing.Point(129, 86);
             this.txtNota2J1.Name = "txtNota2J1";
+            this.txtNota2J1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota2J1.Size = new System.Drawing.Size(97, 20);
             this.txtNota2J1.TabIndex = 14;
             // 
@@ -349,6 +355,7 @@
             // 
             this.txtNota2J2.Location = new System.Drawing.Point(232, 86);
             this.txtNota2J2.Name = "txtNota2J2";
+            this.txtNota2J2.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota2J2.Size = new System.Drawing.Size(94, 20);
             this.txtNota2J2.TabIndex = 15;
             // 
@@ -356,6 +363,7 @@
             // 
             this.txtNota2J3.Location = new System.Drawing.Point(332, 86);
             this.txtNota2J3.Name = "txtNota2J3";
+            this.txtNota2J3.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota2J3.Size = new System.Drawing.Size(100, 20);
             this.txtNota2J3.TabIndex = 16;
             // 
@@ -363,6 +371,7 @@
             // 
             this.txtNota2J4.Location = new System.Drawing.Point(440, 86);
             this.txtNota2J4.Name = "txtNota2J4";
+            this.txtNota2J4.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota2J4.Size = new System.Drawing.Size(100, 20);
             this.txtNota2J4.TabIndex = 17;
             // 
@@ -370,6 +379,7 @@
             // 
             this.txtNota2J5.Location = new System.Drawing.Point(557, 86);
             this.txtNota2J5.Name = "txtNota2J5";
+            this.txtNota2J5.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota2J5.Size = new System.Drawing.Size(99, 20);
             this.txtNota2J5.TabIndex = 18;
             // 
@@ -377,6 +387,7 @@
             // 
             this.txtNota3J1.Location = new System.Drawing.Point(129, 127);
             this.txtNota3J1.Name = "txtNota3J1";
+            this.txtNota3J1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota3J1.Size = new System.Drawing.Size(97, 20);
             this.txtNota3J1.TabIndex = 19;
             // 
@@ -384,6 +395,7 @@
             // 
             this.txtNota3J2.Location = new System.Drawing.Point(232, 127);
             this.txtNota3J2.Name = "txtNota3J2";
+            this.txtNota3J2.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota3J2.Size = new System.Drawing.Size(94, 20);
             this.txtNota3J2.TabIndex = 20;
             // 
@@ -391,6 +403,7 @@
             // 
             this.txtNota3J3.Location = new System.Drawing.Point(332, 127);
             this.txtNota3J3.Name = "txtNota3J3";
+            this.txtNota3J3.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota3J3.Size = new System.Drawing.Size(100, 20);
             this.txtNota3J3.TabIndex = 21;
             // 
@@ -398,6 +411,7 @@
             // 
             this.txtNota3J4.Location = new System.Drawing.Point(440, 127);
             this.txtNota3J4.Name = "txtNota3J4";
+            this.txtNota3J4.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota3J4.Size = new System.Drawing.Size(100, 20);
             this.txtNota3J4.TabIndex = 22;
             // 
@@ -405,6 +419,7 @@
             // 
             this.txtNota3J5.Location = new System.Drawing.Point(557, 127);
             this.txtNota3J5.Name = "txtNota3J5";
+            this.txtNota3J5.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota3J5.Size = new System.Drawing.Size(99, 20);
             this.txtNota3J5.TabIndex = 23;
             // 
@@ -412,6 +427,7 @@
             // 
             this.txtNota4J1.Location = new System.Drawing.Point(129, 162);
             this.txtNota4J1.Name = "txtNota4J1";
+            this.txtNota4J1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota4J1.Size = new System.Drawing.Size(97, 20);
             this.txtNota4J1.TabIndex = 24;
             // 
@@ -419,6 +435,7 @@
             // 
             this.txtNota4J2.Location = new System.Drawing.Point(232, 162);
             this.txtNota4J2.Name = "txtNota4J2";
+            this.txtNota4J2.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota4J2.Size = new System.Drawing.Size(94, 20);
             this.txtNota4J2.TabIndex = 25;
             // 
@@ -426,6 +443,7 @@
             // 
             this.txtNota4J3.Location = new System.Drawing.Point(332, 162);
             this.txtNota4J3.Name = "txtNota4J3";
+            this.txtNota4J3.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota4J3.Size = new System.Drawing.Size(100, 20);
             this.txtNota4J3.TabIndex = 26;
             // 
@@ -433,6 +451,7 @@
             // 
             this.txtNota4J4.Location = new System.Drawing.Point(440, 162);
             this.txtNota4J4.Name = "txtNota4J4";
+            this.txtNota4J4.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota4J4.Size = new System.Drawing.Size(100, 20);
             this.txtNota4J4.TabIndex = 27;
             // 
@@ -440,6 +459,7 @@
             // 
             this.txtNota4J5.Location = new System.Drawing.Point(557, 162);
             this.txtNota4J5.Name = "txtNota4J5";
+            this.txtNota4J5.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota4J5.Size = new System.Drawing.Size(99, 20);
             this.txtNota4J5.TabIndex = 28;
             // 
@@ -450,6 +470,7 @@
             this.cmbCategoria.Name = "cmbCategoria";
             this.cmbCategoria.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbCategoria.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cmbCategoria.Size = new System.Drawing.Size(225, 20);
             this.cmbCategoria.StyleController = this.layoutControl1;
             this.cmbCategoria.TabIndex = 19;
@@ -483,6 +504,7 @@
             this.cmbApresentacao.Name = "cmbApresentacao";
             this.cmbApresentacao.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbApresentacao.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cmbApresentacao.Size = new System.Drawing.Size(225, 20);
             this.cmbApresentacao.StyleController = this.layoutControl1;
             this.cmbApresentacao.TabIndex = 11;
@@ -494,6 +516,7 @@
             this.cmbCantor.Name = "cmbCantor";
             this.cmbCantor.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbCantor.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cmbCantor.Size = new System.Drawing.Size(225, 20);
             this.cmbCantor.StyleController = this.layoutControl1;
             this.cmbCantor.TabIndex = 7;
