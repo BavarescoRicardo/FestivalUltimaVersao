@@ -98,6 +98,7 @@ namespace Festival.desktop
                             montarObjetos(line.Split(','));
                         cont++;
                     }
+                    MessageBox.Show("Importado com sucesso dados dos cantores, total: " cont.ToString());
                 }
                 catch (Exception ex)
                 {
@@ -105,30 +106,8 @@ namespace Festival.desktop
                 }
             }
             
-/*            using (var reader = new StreamReader(@"C:\Users\Ninguem\Downloads\fimusiirani.csv"))
-            {
-                while (!reader.EndOfStream)
-                {
-                    var line = reader.ReadLine();
-                    var values = line.Split(',');
-
-                    // Chama função para insersão
-                    if (cont > 0)
-                        montarObjetos(line.Split(','));
-                    cont++;
-                }
-
-            }*/
         }
 
-        // função para insersão dos dados lidos do arquivo csv
-        private void inserirDados(string[] csv)
-        {
-            for (int n = 0; n < csv.Length; n++)
-            {
-                MessageBox.Show(csv[n]);
-            }
-        }
 
         private void montarObjetos(string[] csv)
         {
