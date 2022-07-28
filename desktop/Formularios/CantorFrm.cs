@@ -98,6 +98,7 @@ namespace Festival.desktop
                             montarObjetos(line.Split(','));
                         cont++;
                     }
+                    cont--;
                     MessageBox.Show("Importado com sucesso dados dos cantores, total: " + cont.ToString());
                 }
                 catch (Exception ex)
