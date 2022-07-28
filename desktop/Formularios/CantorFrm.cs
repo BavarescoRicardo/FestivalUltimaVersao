@@ -3,6 +3,7 @@ using Festival.bo;
 using Festival.or;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Windows.Forms;
 
@@ -24,7 +25,7 @@ namespace Festival.desktop
             foreach (Categoria cat in listaCategoria)
             {
                 this.cmbCategoriaRepositorioGrid.Items.Add(cat);
-            }            
+            }
         }
 
         // Gravar Tudo cantor e apresentação
@@ -33,9 +34,9 @@ namespace Festival.desktop
             try
             {
                 // Montar objeto Cantor
-                Festival.or.Cantor cantor= new Festival.or.Cantor();
+                Festival.or.Cantor cantor = new Festival.or.Cantor();
                 cantor = (Festival.or.Cantor)bindingSourceCantor.Current;
-                
+
                 // Gravar cantor no banco
                 var crud = new RepositorioCrud<Cantor>();
                 bindingSourceCantor.EndEdit();
@@ -43,7 +44,7 @@ namespace Festival.desktop
 
                 // Montar objeto Apresentação
                 Festival.or.Apresentacao apresentacao = new Festival.or.Apresentacao();
-                apresentacao = (Festival.or.Apresentacao)bindingSourceApresentacao.Current;                
+                apresentacao = (Festival.or.Apresentacao)bindingSourceApresentacao.Current;
 
                 // Gravar Apresentação no banco
                 try
@@ -57,7 +58,7 @@ namespace Festival.desktop
                 }
                 catch (Exception eap)
                 {
-                    MessageBox.Show("Erro ao gravar apresentação  "+eap.Message);
+                    MessageBox.Show("Erro ao gravar apresentação  " + eap.Message);
                 }
 
                 // Limpar campos
@@ -161,8 +162,15 @@ namespace Festival.desktop
             //            csv[1] + csv[2], csv[5], csv[6], null, csv[4], csv[28], csv[24], csv[25], string idade =(date hoje - csv[3])
             try
             {
+                // Conversõees para transformar a data csv para idade em int
+                DateTime nasc = DateTime.ParseExact(csv[3], "MM-dd-yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None);
+                // Verifica se nasceu antes do mes atual ai reduz um ano
+                int idade = DateTime.Now.Year - nasc.Year;
+                if (DateTime.Now.Month > nasc.Month)
+                    idade--;
+
                 Cantor cantor = new Cantor(
-                        csv[1] + " " + csv[2], csv[5], csv[6], null, csv[4], csv[28], csv[24], csv[25], (string)(DateTime.Now - DateTime.Parse(csv[3])).ToString());
+                        csv[1] + " " + csv[2], csv[5], csv[6], null, csv[4], csv[28], csv[24], csv[25], idade.ToString(), nasc.ToShortDateString());
 
                 //  Objeto Apresentacao
                 //      string tom, string gravacao, string musica, string artista, Cantor cantor, Categoria categoria, string nomeartistico
