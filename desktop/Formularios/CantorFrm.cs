@@ -81,7 +81,31 @@ namespace Festival.desktop
         private void btnImport_Click(object sender, EventArgs e)
         {
             int cont = 0;
-            using (var reader = new StreamReader(@"C:\Users\Ninguem\Downloads\fimusiirani.csv"))
+            // File import botao
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    var sr = new StreamReader(openFileDialog1.FileName);
+
+                    while (!sr.EndOfStream)
+                    {
+                        var line = sr.ReadLine();
+                        var values = line.Split(',');
+
+                        // Chama função para insersão
+                        if (cont > 0)
+                            montarObjetos(line.Split(','));
+                        cont++;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Não foi possível abrir arquivo");
+                }
+            }
+            
+/*            using (var reader = new StreamReader(@"C:\Users\Ninguem\Downloads\fimusiirani.csv"))
             {
                 while (!reader.EndOfStream)
                 {
@@ -94,7 +118,7 @@ namespace Festival.desktop
                     cont++;
                 }
 
-            }
+            }*/
         }
 
         // função para insersão dos dados lidos do arquivo csv
@@ -170,7 +194,7 @@ namespace Festival.desktop
                     idade--;
 
                 Cantor cantor = new Cantor(
-                        csv[1] + " " + csv[2], csv[5], csv[6], null, csv[4], csv[28], csv[24], csv[25], idade.ToString(), nasc.ToShortDateString());
+                        csv[1] + " " + csv[2], csv[5], csv[6], null, csv[4], csv[28], csv[24], csv[25], idade.ToString(), nasc.ToShortDateString();
 
                 //  Objeto Apresentacao
                 //      string tom, string gravacao, string musica, string artista, Cantor cantor, Categoria categoria, string nomeartistico
