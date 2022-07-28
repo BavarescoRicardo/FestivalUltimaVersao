@@ -18,6 +18,7 @@ namespace Festival.or
         {
             this.id_apresentacao = id_apresentacao;
             this.gravacao = gravacao;
+            this.tom = tom;
             this.nomeartistico = nomeartistico;
             this.musica = musica;
             this.artista = artista;
