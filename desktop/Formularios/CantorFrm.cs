@@ -193,8 +193,10 @@ namespace Festival.desktop
                 if (DateTime.Now.Month > nasc.Month)
                     idade--;
 
+                // MessageBox.Show(nasc.Day.ToString() + " " + nasc.Month.ToString() + " " + nasc.Year.ToString());
                 Cantor cantor = new Cantor(
-                        csv[1] + " " + csv[2], csv[5], csv[6], null, csv[4], csv[28], csv[24], csv[25], idade.ToString(), nasc.ToShortDateString());
+                        csv[1] + " " + csv[2], csv[5], csv[6], null, csv[4], csv[28], csv[24], csv[25], idade.ToString(),
+                            nasc.Day.ToString() + "/" + nasc.Month.ToString() + "/" + nasc.Year.ToString());
 
                 //  Objeto Apresentacao
                 //      string tom, string gravacao, string musica, string artista, Cantor cantor, Categoria categoria, string nomeartistico
