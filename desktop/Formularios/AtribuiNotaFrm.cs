@@ -170,9 +170,12 @@ namespace Festival.desktop
         {
             NotasBo bo = new NotasBo();
             Calculos calc = new Calculos();
+            JuradoBo juradoBo = new JuradoBo();
+            List<Jurado> listaJuri = new List<Jurado>();
+            listaJuri = juradoBo.Listar().ToList();
 
             // Notas do primeiro jurado
-            notas.jurado = 1;
+            notas.jurado = listaJuri[0].id_jurado;
             notas.nota1 = double.Parse(txtNota1J1.Text);
             notas.nota2 = double.Parse(txtNota2J1.Text);
             notas.nota3 = double.Parse(txtNota3J1.Text);
@@ -184,7 +187,7 @@ namespace Festival.desktop
 
 
             // Notas do segundo jurado
-            notas.jurado = 2;
+            notas.jurado = listaJuri[1].id_jurado;
             notas.nota1 = double.Parse(txtNota1J2.Text);
             notas.nota2 = double.Parse(txtNota2J2.Text);
             notas.nota3 = double.Parse(txtNota3J2.Text);
@@ -196,7 +199,7 @@ namespace Festival.desktop
 
 
             // Notas do terceiro jurado
-            notas.jurado = 3;
+            notas.jurado = listaJuri[3].id_jurado;
             notas.nota1 = double.Parse(txtNota1J3.Text);
             notas.nota2 = double.Parse(txtNota2J3.Text);
             notas.nota3 = double.Parse(txtNota3J3.Text);
@@ -208,7 +211,7 @@ namespace Festival.desktop
 
 
             // Notas do quarto jurado
-            notas.jurado = 4;
+            notas.jurado = listaJuri[3].id_jurado;
             notas.nota1 = double.Parse(txtNota1J4.Text);
             notas.nota2 = double.Parse(txtNota2J4.Text);
             notas.nota3 = double.Parse(txtNota3J4.Text);
@@ -220,7 +223,7 @@ namespace Festival.desktop
 
 
             // Notas do quinto jurado
-            notas.jurado = 5;
+            notas.jurado = listaJuri[4].id_jurado;
             notas.nota1 = double.Parse(txtNota1J5.Text);
             notas.nota2 = double.Parse(txtNota2J5.Text);
             notas.nota3 = double.Parse(txtNota3J5.Text);

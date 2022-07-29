@@ -314,7 +314,6 @@ C:\Users\Ninguem\source\repos\FestivalUltimaVersao\bin\Release\Renci.SshNet.dll
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\bin\Release\System.Collections.Immutable.dll
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\bin\Release\System.ComponentModel.Annotations.dll
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\bin\Release\System.Diagnostics.DiagnosticSource.dll
-C:\Users\Ninguem\source\repos\FestivalUltimaVersao\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\bin\Release\Ubiety.Dns.Core.dll
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\bin\Release\Zstandard.Net.dll
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\bin\Release\DevExpress.CodeParser.v19.2.dll
