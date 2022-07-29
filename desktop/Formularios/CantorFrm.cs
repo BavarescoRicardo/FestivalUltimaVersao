@@ -207,19 +207,16 @@ namespace Festival.desktop
                 switch (descricaoCat)
                 {
                     case "Infantil":
-                        idCat = 7;
-                        break;
-                    case "Gospel":
-                        idCat = 8;
-                        break;
-                    case "Sertanejo":
-                        idCat = 9;
+                        idCat = 1;
                         break;
                     case "Juvenil":
-                        idCat = 13;
+                        idCat = 2;
                         break;
                     case "Popular":
-                        idCat = 14;
+                        idCat = 3;
+                        break;
+                    case "Sertanejo":
+                        idCat = 4;
                         break;
 
                     default:
