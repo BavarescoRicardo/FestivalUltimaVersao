@@ -95,7 +95,7 @@ namespace Festival.desktop
 
                         // Chama função para insersão
                         if (cont > 0)
-                            montarObjetos(line.Split(','));
+                            montarObjetos(line.Split(';'));
                         cont++;
                     }
                     cont--;
@@ -186,10 +186,10 @@ namespace Festival.desktop
                     csv[31], csv[30], csv[29], csv[32], cantor, selecionarCategoria(csv[33]), csv[0]);
 
                 CantorBo cantorBo = new CantorBo();
-                cantorBo.Inserir(cantor);
+                // cantorBo.Inserir(cantor);
 
                 ApresentacaoBo apresentacaoBo = new ApresentacaoBo();
-                apresentacaoBo.Inserir(apresentacao);
+                // apresentacaoBo.Inserir(apresentacao);
             }
             catch (Exception)
             {

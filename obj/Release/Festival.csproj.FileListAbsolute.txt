@@ -363,7 +363,6 @@ C:\Users\Ninguem\source\repos\FestivalUltimaVersao\bin\Release\MySql.Data.Entity
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\bin\Release\Renci.SshNet.xml
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\bin\Release\System.Collections.Immutable.xml
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\bin\Release\System.Diagnostics.DiagnosticSource.xml
-C:\Users\Ninguem\source\repos\FestivalUltimaVersao\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\bin\Release\DevExpress.XtraTreeList.v19.2.xml
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\bin\Release\DevExpress.XtraBars.v19.2.xml
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\bin\Release\DevExpress.XtraRichEdit.v19.2.xml
