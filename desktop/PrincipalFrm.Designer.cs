@@ -58,7 +58,6 @@
             this.listarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.apresentaçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.sortearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ensaioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.impressõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cantoresToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -289,7 +288,6 @@
             // 
             this.apresentaçõesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.listarToolStripMenuItem1,
-            this.sortearToolStripMenuItem,
             this.ensaioToolStripMenuItem});
             this.apresentaçõesToolStripMenuItem.Name = "apresentaçõesToolStripMenuItem";
             this.apresentaçõesToolStripMenuItem.Size = new System.Drawing.Size(96, 20);
@@ -301,12 +299,6 @@
             this.listarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.listarToolStripMenuItem1.Text = "Listar";
             this.listarToolStripMenuItem1.Click += new System.EventHandler(this.listarToolStripMenuItem1_Click_1);
-            // 
-            // sortearToolStripMenuItem
-            // 
-            this.sortearToolStripMenuItem.Name = "sortearToolStripMenuItem";
-            this.sortearToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.sortearToolStripMenuItem.Text = "Sortear";
             // 
             // ensaioToolStripMenuItem
             // 
@@ -391,7 +383,6 @@
         private System.Windows.Forms.ToolStripMenuItem notasToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem apresentaçõesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listarToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem sortearToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ensaioToolStripMenuItem;
     }
 }

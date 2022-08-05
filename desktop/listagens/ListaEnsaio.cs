@@ -1,4 +1,5 @@
-﻿using Festival.bo;
+﻿using DevExpress.XtraGrid.Views.Grid;
+using Festival.bo;
 using Festival.or;
 using System;
 using System.Collections.Generic;
@@ -14,13 +15,15 @@ namespace Festival.listagens
 {
     public partial class ListaEnsaio : Form
     {
-        IList<Festival.or.Apresentacao> lista;
+        private int[] IdsSelecionados;
+        private IList<Festival.or.Apresentacao> lista;
         public ListaEnsaio()
         {
             InitializeComponent();
-
+            
             ApresentacaoBo bo = new ApresentacaoBo();
             lista = bo.Listar();
+            IdsSelecionados = new int[lista.Count];
             gridControl.RefreshDataSource();
 
             this.bindingSource1.Clear();
@@ -40,15 +43,6 @@ namespace Festival.listagens
         {
             try
             {
-                if ((e.Column.FieldName == "cantor.id_cantor") && (e.Column.Name == "colCantor"))
-                {
-                    // Inicia objeto do banco caso esteja na coluna certa
-                    CantorBo bo = new CantorBo();
-                    // Localize objeto pelo id e substitui na coluna
-                    e.DisplayText = bo.RetornePeloId((int)e.Value).nome;
-
-                }
-
                 if ((e.Column.FieldName == "cantor.id_cantor") && (e.Column.Name == "colCidade"))
                 {
                     // Inicia objeto do banco caso esteja na coluna certa
@@ -104,7 +98,14 @@ namespace Festival.listagens
 
         private void repositoryItemCheckEdit1_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (IdsSelecionados[gridView1.GetSelectedRows().First()] == 0)
+            {
+                IdsSelecionados[gridView1.GetSelectedRows().First()] = 1;
+            }
+            else
+            {
+                IdsSelecionados[gridView1.GetSelectedRows().First()] = 0;
+            }
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
@@ -114,7 +115,15 @@ namespace Festival.listagens
             //lista = bo.Listar();
             foreach (Apresentacao a in lista.Where(x => x.presenca == true))
             {
-                a.ativo = 'A';
+                if(a.ativo == 'A')
+                {
+                    a.ativo = ' ';
+                }
+                else
+                {
+                    a.ativo = 'A';
+                }
+                
                 MessageBox.Show("Atualizado: " + a.nomeartistico);
                 bo.Atualizar(a);
             }

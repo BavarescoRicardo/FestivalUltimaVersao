@@ -40,15 +40,6 @@ namespace Festival.listagens
         {
             try
             {
-                if ((e.Column.FieldName == "cantor.id_cantor") && (e.Column.Name == "colCantor"))
-                {
-                    // Inicia objeto do banco caso esteja na coluna certa
-                    CantorBo bo = new CantorBo();
-                    // Localize objeto pelo id e substitui na coluna
-                    e.DisplayText = bo.RetornePeloId((int)e.Value).nome;
-
-                }
-
                 if ((e.Column.FieldName == "cantor.id_cantor") && (e.Column.Name == "colCidade"))
                 {
                     // Inicia objeto do banco caso esteja na coluna certa

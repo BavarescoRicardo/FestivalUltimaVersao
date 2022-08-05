@@ -40,6 +40,7 @@
             this.colEstado = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSelecionar = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemCheckEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
+            this.colSenha = new DevExpress.XtraGrid.Columns.GridColumn();
             this.cmbFiltro = new DevExpress.XtraEditors.ComboBoxEdit();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSair = new DevExpress.XtraEditors.SimpleButton();
@@ -59,7 +60,7 @@
             this.gridControl.Name = "gridControl";
             this.gridControl.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemCheckEdit1});
-            this.gridControl.Size = new System.Drawing.Size(1055, 381);
+            this.gridControl.Size = new System.Drawing.Size(1168, 381);
             this.gridControl.TabIndex = 0;
             this.gridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -77,7 +78,8 @@
             this.colEnsaio,
             this.colCidade,
             this.colEstado,
-            this.colSelecionar});
+            this.colSelecionar,
+            this.colSenha});
             this.gridView1.GridControl = this.gridControl;
             this.gridView1.GroupPanelText = "Notas";
             this.gridView1.Name = "gridView1";
@@ -86,14 +88,14 @@
             // colCantor
             // 
             this.colCantor.Caption = "Cantor";
-            this.colCantor.FieldName = "cantor.id_cantor";
+            this.colCantor.FieldName = "nomeartistico";
             this.colCantor.Name = "colCantor";
             this.colCantor.OptionsColumn.AllowEdit = false;
             this.colCantor.OptionsFilter.AllowAutoFilter = false;
             this.colCantor.OptionsFilter.AllowFilter = false;
             this.colCantor.Visible = true;
-            this.colCantor.VisibleIndex = 1;
-            this.colCantor.Width = 295;
+            this.colCantor.VisibleIndex = 2;
+            this.colCantor.Width = 305;
             // 
             // coldia
             // 
@@ -104,48 +106,56 @@
             this.coldia.OptionsFilter.AllowAutoFilter = false;
             this.coldia.OptionsFilter.AllowFilter = false;
             this.coldia.Visible = true;
-            this.coldia.VisibleIndex = 2;
-            this.coldia.Width = 118;
+            this.coldia.VisibleIndex = 3;
+            this.coldia.Width = 122;
             // 
             // colMusica
             // 
             this.colMusica.Caption = "Música";
             this.colMusica.FieldName = "musica";
             this.colMusica.Name = "colMusica";
+            this.colMusica.OptionsColumn.AllowEdit = false;
+            this.colMusica.OptionsColumn.AllowFocus = false;
             this.colMusica.OptionsFilter.AllowAutoFilter = false;
             this.colMusica.OptionsFilter.AllowFilter = false;
             this.colMusica.Visible = true;
-            this.colMusica.VisibleIndex = 3;
-            this.colMusica.Width = 176;
+            this.colMusica.VisibleIndex = 4;
+            this.colMusica.Width = 182;
             // 
             // colEnsaio
             // 
             this.colEnsaio.Caption = "Ensaio";
             this.colEnsaio.FieldName = "ativo";
             this.colEnsaio.Name = "colEnsaio";
+            this.colEnsaio.OptionsColumn.AllowEdit = false;
+            this.colEnsaio.OptionsColumn.AllowFocus = false;
             this.colEnsaio.OptionsFilter.AllowAutoFilter = false;
             this.colEnsaio.OptionsFilter.AllowFilter = false;
             this.colEnsaio.Visible = true;
-            this.colEnsaio.VisibleIndex = 4;
-            this.colEnsaio.Width = 92;
+            this.colEnsaio.VisibleIndex = 5;
+            this.colEnsaio.Width = 94;
             // 
             // colCidade
             // 
             this.colCidade.Caption = "Cidade";
             this.colCidade.FieldName = "cantor.id_cantor";
             this.colCidade.Name = "colCidade";
+            this.colCidade.OptionsColumn.AllowEdit = false;
+            this.colCidade.OptionsColumn.AllowFocus = false;
             this.colCidade.Visible = true;
-            this.colCidade.VisibleIndex = 5;
-            this.colCidade.Width = 126;
+            this.colCidade.VisibleIndex = 6;
+            this.colCidade.Width = 157;
             // 
             // colEstado
             // 
             this.colEstado.Caption = "Estado";
             this.colEstado.FieldName = "cantor.id_cantor";
             this.colEstado.Name = "colEstado";
+            this.colEstado.OptionsColumn.AllowEdit = false;
+            this.colEstado.OptionsColumn.AllowFocus = false;
             this.colEstado.Visible = true;
-            this.colEstado.VisibleIndex = 6;
-            this.colEstado.Width = 148;
+            this.colEstado.VisibleIndex = 7;
+            this.colEstado.Width = 129;
             // 
             // colSelecionar
             // 
@@ -155,12 +165,22 @@
             this.colSelecionar.Name = "colSelecionar";
             this.colSelecionar.Visible = true;
             this.colSelecionar.VisibleIndex = 0;
+            this.colSelecionar.Width = 77;
             // 
             // repositoryItemCheckEdit1
             // 
             this.repositoryItemCheckEdit1.AutoHeight = false;
             this.repositoryItemCheckEdit1.Name = "repositoryItemCheckEdit1";
             this.repositoryItemCheckEdit1.CheckedChanged += new System.EventHandler(this.repositoryItemCheckEdit1_CheckedChanged);
+            // 
+            // colSenha
+            // 
+            this.colSenha.Caption = "Senha";
+            this.colSenha.FieldName = "senha";
+            this.colSenha.Name = "colSenha";
+            this.colSenha.Visible = true;
+            this.colSenha.VisibleIndex = 1;
+            this.colSenha.Width = 77;
             // 
             // cmbFiltro
             // 
@@ -193,7 +213,7 @@
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(924, 394);
+            this.btnSalvar.Location = new System.Drawing.Point(1037, 394);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(144, 22);
             this.btnSalvar.TabIndex = 20;
@@ -204,7 +224,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1080, 431);
+            this.ClientSize = new System.Drawing.Size(1194, 431);
             this.ControlBox = false;
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.btnSair);
@@ -212,7 +232,7 @@
             this.Controls.Add(this.cmbFiltro);
             this.Controls.Add(this.gridControl);
             this.Name = "ListaEnsaio";
-            this.Text = "Cantores";
+            this.Text = "Ensaio";
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
@@ -239,5 +259,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn colSelecionar;
         private DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit repositoryItemCheckEdit1;
         private DevExpress.XtraEditors.SimpleButton btnSalvar;
+        private DevExpress.XtraGrid.Columns.GridColumn colSenha;
     }
 }

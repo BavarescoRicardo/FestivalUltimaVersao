@@ -81,7 +81,7 @@
             // colCantor
             // 
             this.colCantor.Caption = "Cantor";
-            this.colCantor.FieldName = "cantor.id_cantor";
+            this.colCantor.FieldName = "nomeartistico";
             this.colCantor.Name = "colCantor";
             this.colCantor.OptionsColumn.AllowEdit = false;
             this.colCantor.OptionsFilter.AllowAutoFilter = false;
