@@ -20,7 +20,7 @@ namespace Festival.listagens
         public ListaEnsaio()
         {
             InitializeComponent();
-            
+
             ApresentacaoBo bo = new ApresentacaoBo();
             lista = bo.Listar();
             IdsSelecionados = new int[lista.Count];
@@ -36,7 +36,7 @@ namespace Festival.listagens
             {
                 this.cmbFiltro.Properties.Items.Add(cat);
             }
-            this.cmbFiltro.Properties.Items.Add(new Categoria() {categoria = "Todos" });
+            this.cmbFiltro.Properties.Items.Add(new Categoria() { categoria = "Todos" });
         }
 
         private void gridView1_CustomColumnDisplayText(object sender, DevExpress.XtraGrid.Views.Base.CustomColumnDisplayTextEventArgs e)
@@ -88,7 +88,7 @@ namespace Festival.listagens
             {
                 bindingSource1.DataSource = lista;
             }
-            
+
         }
 
         private void btnSair_Click(object sender, EventArgs e)
@@ -115,7 +115,7 @@ namespace Festival.listagens
             //lista = bo.Listar();
             foreach (Apresentacao a in lista.Where(x => x.presenca == true))
             {
-                if(a.ativo == 'A')
+                if (a.ativo == 'A')
                 {
                     a.ativo = ' ';
                 }
@@ -123,7 +123,7 @@ namespace Festival.listagens
                 {
                     a.ativo = 'A';
                 }
-                
+
                 MessageBox.Show("Atualizado: " + a.nomeartistico);
                 bo.Atualizar(a);
             }
@@ -133,6 +133,19 @@ namespace Festival.listagens
             lista = bo.Listar();
             bindingSource1.DataSource = lista;
             gridControl.Refresh();
+        }
+
+        private void gridControl_EditorKeyDown(object sender, KeyEventArgs e)
+        {
+            //intended cols, whose editor I want to block
+            if (IdsSelecionados[gridView1.GetSelectedRows().First()] != 1)
+            {
+               // gridView1.CellValueChanging
+            }
+            else
+            {
+                MessageBox.Show("Cantor esta selecionado");
+            }
         }
     }
 }

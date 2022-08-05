@@ -64,6 +64,7 @@
             this.gridControl.TabIndex = 0;
             this.gridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
+            this.gridControl.EditorKeyDown += new System.Windows.Forms.KeyEventHandler(this.gridControl_EditorKeyDown);
             // 
             // bindingSource1
             // 
