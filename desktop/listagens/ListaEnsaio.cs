@@ -15,15 +15,12 @@ namespace Festival.listagens
     public partial class ListaEnsaio : Form
     {
         IList<Festival.or.Apresentacao> lista;
-        private int[] IdsSelecionados;
-        private int[] idsApresentacao;
         public ListaEnsaio()
         {
             InitializeComponent();
 
             ApresentacaoBo bo = new ApresentacaoBo();
             lista = bo.Listar();
-            IdsSelecionados = new int[lista.Count];
             gridControl.RefreshDataSource();
 
             this.bindingSource1.Clear();
@@ -107,15 +104,26 @@ namespace Festival.listagens
 
         private void repositoryItemCheckEdit1_CheckedChanged(object sender, EventArgs e)
         {
-            if (IdsSelecionados[gridView1.GetSelectedRows().First()] == 0)
-            {
-                IdsSelecionados[gridView1.GetSelectedRows().First()] = 1;
-            }
-            else
-            {
-                IdsSelecionados[gridView1.GetSelectedRows().First()] = 0;
-            }
+
         }
 
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            // Salvar presença para as apresentacoes marcadas
+            ApresentacaoBo bo = new ApresentacaoBo();
+            //lista = bo.Listar();
+            foreach (Apresentacao a in lista.Where(x => x.presenca == true))
+            {
+                a.ativo = 'A';
+                MessageBox.Show("Atualizado: " + a.nomeartistico);
+                bo.Atualizar(a);
+            }
+
+            // Atualizar lista
+            this.bindingSource1.Clear();
+            lista = bo.Listar();
+            bindingSource1.DataSource = lista;
+            gridControl.Refresh();
+        }
     }
 }

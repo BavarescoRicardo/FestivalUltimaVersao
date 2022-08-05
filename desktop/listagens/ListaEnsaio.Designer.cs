@@ -35,7 +35,7 @@
             this.colCantor = new DevExpress.XtraGrid.Columns.GridColumn();
             this.coldia = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colMusica = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colArtista = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colEnsaio = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colCidade = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colEstado = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSelecionar = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -74,7 +74,7 @@
             this.colCantor,
             this.coldia,
             this.colMusica,
-            this.colArtista,
+            this.colEnsaio,
             this.colCidade,
             this.colEstado,
             this.colSelecionar});
@@ -93,7 +93,7 @@
             this.colCantor.OptionsFilter.AllowFilter = false;
             this.colCantor.Visible = true;
             this.colCantor.VisibleIndex = 1;
-            this.colCantor.Width = 184;
+            this.colCantor.Width = 295;
             // 
             // coldia
             // 
@@ -105,7 +105,7 @@
             this.coldia.OptionsFilter.AllowFilter = false;
             this.coldia.Visible = true;
             this.coldia.VisibleIndex = 2;
-            this.coldia.Width = 172;
+            this.coldia.Width = 118;
             // 
             // colMusica
             // 
@@ -116,17 +116,18 @@
             this.colMusica.OptionsFilter.AllowFilter = false;
             this.colMusica.Visible = true;
             this.colMusica.VisibleIndex = 3;
-            this.colMusica.Width = 164;
+            this.colMusica.Width = 176;
             // 
-            // colArtista
+            // colEnsaio
             // 
-            this.colArtista.Caption = "Ensaio";
-            this.colArtista.Name = "colArtista";
-            this.colArtista.OptionsFilter.AllowAutoFilter = false;
-            this.colArtista.OptionsFilter.AllowFilter = false;
-            this.colArtista.Visible = true;
-            this.colArtista.VisibleIndex = 4;
-            this.colArtista.Width = 164;
+            this.colEnsaio.Caption = "Ensaio";
+            this.colEnsaio.FieldName = "ativo";
+            this.colEnsaio.Name = "colEnsaio";
+            this.colEnsaio.OptionsFilter.AllowAutoFilter = false;
+            this.colEnsaio.OptionsFilter.AllowFilter = false;
+            this.colEnsaio.Visible = true;
+            this.colEnsaio.VisibleIndex = 4;
+            this.colEnsaio.Width = 92;
             // 
             // colCidade
             // 
@@ -135,7 +136,7 @@
             this.colCidade.Name = "colCidade";
             this.colCidade.Visible = true;
             this.colCidade.VisibleIndex = 5;
-            this.colCidade.Width = 82;
+            this.colCidade.Width = 126;
             // 
             // colEstado
             // 
@@ -144,7 +145,7 @@
             this.colEstado.Name = "colEstado";
             this.colEstado.Visible = true;
             this.colEstado.VisibleIndex = 6;
-            this.colEstado.Width = 90;
+            this.colEstado.Width = 148;
             // 
             // colSelecionar
             // 
@@ -154,7 +155,6 @@
             this.colSelecionar.Name = "colSelecionar";
             this.colSelecionar.Visible = true;
             this.colSelecionar.VisibleIndex = 0;
-            this.colSelecionar.Width = 68;
             // 
             // repositoryItemCheckEdit1
             // 
@@ -198,6 +198,7 @@
             this.btnSalvar.Size = new System.Drawing.Size(144, 22);
             this.btnSalvar.TabIndex = 20;
             this.btnSalvar.Text = "Salvar Presenças";
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // ListaEnsaio
             // 
@@ -228,7 +229,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn colCantor;
         private DevExpress.XtraGrid.Columns.GridColumn coldia;
         private DevExpress.XtraGrid.Columns.GridColumn colMusica;
-        private DevExpress.XtraGrid.Columns.GridColumn colArtista;
+        private DevExpress.XtraGrid.Columns.GridColumn colEnsaio;
         private DevExpress.XtraEditors.ComboBoxEdit cmbFiltro;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.BindingSource bindingSource1;

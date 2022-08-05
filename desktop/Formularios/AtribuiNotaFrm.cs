@@ -35,7 +35,7 @@ namespace Festival.desktop
                 this.cmbCategoria.Properties.Items.Add(categoria);
             }
 
-            foreach (Apresentacao apresentacao in apresentacaoBo.Listar())
+            foreach (Apresentacao apresentacao in apresentacaoBo.Listar().Where(x => x.ativo == 'A'))
             {
                 listaApresentacao.Add(apresentacao);
                 this.cmbApresentacao.Properties.Items.Add(apresentacao);
