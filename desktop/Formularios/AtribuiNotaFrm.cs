@@ -139,6 +139,7 @@ namespace Festival.desktop
                 this.cmbApresentacao.Properties.Items.Clear();
                 // Reseta as listas para todos os resultados
                 listaApresentacao = (List<Apresentacao>)apresentacaoBo.Listar();
+                listaApresentacao = (List<Apresentacao>)listaApresentacao.Where(x => x.ativo.Equals('A')).ToList();
                 listaCantores = (List<Cantor>)cantorBo.Listar();
                 // Inserir cantor todos
                 this.cmbCantor.Properties.Items.Add(new Cantor() { nome = "Todos", id_cantor = 0 });
