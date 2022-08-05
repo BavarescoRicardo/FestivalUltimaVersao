@@ -129,5 +129,11 @@ namespace Festival.desktop
             ListaApresentacoes listar = new ListaApresentacoes();
             listar.ShowDialog();
         }
+
+        private void ensaioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListaEnsaio listar = new ListaEnsaio();
+            listar.ShowDialog();
+        }
     }
 }

@@ -19,6 +19,7 @@ namespace Festival.or
         public virtual string estado { get; set; }
         public virtual string idade { get; set; }
         public virtual string nascimento { get; set; }
+        public virtual int id_apresentacao { get; set; }
 
 
         public Cantor()

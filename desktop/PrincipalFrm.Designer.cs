@@ -58,6 +58,8 @@
             this.listarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.apresentaçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.sortearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ensaioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.impressõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cantoresToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.notasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -286,7 +288,9 @@
             // apresentaçõesToolStripMenuItem
             // 
             this.apresentaçõesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.listarToolStripMenuItem1});
+            this.listarToolStripMenuItem1,
+            this.sortearToolStripMenuItem,
+            this.ensaioToolStripMenuItem});
             this.apresentaçõesToolStripMenuItem.Name = "apresentaçõesToolStripMenuItem";
             this.apresentaçõesToolStripMenuItem.Size = new System.Drawing.Size(96, 20);
             this.apresentaçõesToolStripMenuItem.Text = "Apresentações";
@@ -294,9 +298,22 @@
             // listarToolStripMenuItem1
             // 
             this.listarToolStripMenuItem1.Name = "listarToolStripMenuItem1";
-            this.listarToolStripMenuItem1.Size = new System.Drawing.Size(102, 22);
+            this.listarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.listarToolStripMenuItem1.Text = "Listar";
             this.listarToolStripMenuItem1.Click += new System.EventHandler(this.listarToolStripMenuItem1_Click_1);
+            // 
+            // sortearToolStripMenuItem
+            // 
+            this.sortearToolStripMenuItem.Name = "sortearToolStripMenuItem";
+            this.sortearToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sortearToolStripMenuItem.Text = "Sortear";
+            // 
+            // ensaioToolStripMenuItem
+            // 
+            this.ensaioToolStripMenuItem.Name = "ensaioToolStripMenuItem";
+            this.ensaioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ensaioToolStripMenuItem.Text = "Ensaio";
+            this.ensaioToolStripMenuItem.Click += new System.EventHandler(this.ensaioToolStripMenuItem_Click);
             // 
             // impressõesToolStripMenuItem
             // 
@@ -310,14 +327,14 @@
             // cantoresToolStripMenuItem1
             // 
             this.cantoresToolStripMenuItem1.Name = "cantoresToolStripMenuItem1";
-            this.cantoresToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.cantoresToolStripMenuItem1.Size = new System.Drawing.Size(151, 22);
             this.cantoresToolStripMenuItem1.Text = "Apresentações";
             this.cantoresToolStripMenuItem1.Click += new System.EventHandler(this.cantoresToolStripMenuItem1_Click);
             // 
             // notasToolStripMenuItem1
             // 
             this.notasToolStripMenuItem1.Name = "notasToolStripMenuItem1";
-            this.notasToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.notasToolStripMenuItem1.Size = new System.Drawing.Size(151, 22);
             this.notasToolStripMenuItem1.Text = "Ficha júri";
             this.notasToolStripMenuItem1.Click += new System.EventHandler(this.notasToolStripMenuItem1_Click);
             // 
@@ -374,5 +391,7 @@
         private System.Windows.Forms.ToolStripMenuItem notasToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem apresentaçõesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listarToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem sortearToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ensaioToolStripMenuItem;
     }
 }

@@ -17,6 +17,7 @@
             Map(c => c.estado);
             Map(c => c.idade);
             Map(c => c.nascimento);
+            Map(c => c.id_apresentacao);
             Table("cantor");
         } 
     }
