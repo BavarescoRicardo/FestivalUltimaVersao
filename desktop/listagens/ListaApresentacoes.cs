@@ -20,7 +20,7 @@ namespace Festival.listagens
             InitializeComponent();
 
             ApresentacaoBo bo = new ApresentacaoBo();
-            lista = bo.Listar();
+            lista = bo.Listar().Where(x => x.ativo == 'A').ToList();
             gridControl.RefreshDataSource();
 
             this.bindingSource1.Clear();

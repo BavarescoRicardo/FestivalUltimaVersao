@@ -135,17 +135,5 @@ namespace Festival.listagens
             gridControl.Refresh();
         }
 
-        private void gridControl_EditorKeyDown(object sender, KeyEventArgs e)
-        {
-            //intended cols, whose editor I want to block
-            if (IdsSelecionados[gridView1.GetSelectedRows().First()] != 1)
-            {
-               // gridView1.CellValueChanging
-            }
-            else
-            {
-                MessageBox.Show("Cantor esta selecionado");
-            }
-        }
     }
 }
