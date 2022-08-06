@@ -18,14 +18,65 @@ USE `evento`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Table structure for table `apresentacao`
+--
+
+DROP TABLE IF EXISTS `apresentacao`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `apresentacao` (
+  `id_apresentacao` int(11) NOT NULL AUTO_INCREMENT,
+  `musica` varchar(250) DEFAULT NULL,
+  `artista` varchar(250) DEFAULT NULL,
+  `cantor` int(11) NOT NULL,
+  `categoria` int(11) NOT NULL,
+  `tom` varchar(45) DEFAULT NULL,
+  `gravacao` varchar(250) DEFAULT NULL,
+  `nomeartistico` varchar(255) DEFAULT NULL,
+  `ativo` varchar(1) DEFAULT NULL,
+  `ordem` varchar(5) DEFAULT NULL,
+  `senha` varchar(5) DEFAULT NULL,
+  PRIMARY KEY (`id_apresentacao`),
+  KEY `cantor` (`cantor`),
+  KEY `categoria` (`categoria`),
+  CONSTRAINT `apresentacao_ibfk_1` FOREIGN KEY (`cantor`) REFERENCES `cantor` (`id_cantor`),
+  CONSTRAINT `apresentacao_ibfk_2` FOREIGN KEY (`categoria`) REFERENCES `categoria` (`id_categoria`)
+) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
 -- Dumping data for table `apresentacao`
 --
 
 LOCK TABLES `apresentacao` WRITE;
 /*!40000 ALTER TABLE `apresentacao` DISABLE KEYS */;
-INSERT INTO `apresentacao` VALUES (115,'Por um minuto','Bruno e Marrone',147,4,'G','Original','Ricardo B','\0',NULL,NULL),(116,'Seu Astral','Jorge',148,1,'E','Original','Mohammed','\0',NULL,NULL),(117,'Desejo','Chiquinho',149,3,'Do','Original','Nega','A',NULL,NULL),(118,'o detento apaixonado','wanderley andrade',150,4,'c','wanderley andrade','Laiza Linda','A',NULL,NULL),(119,'O amor e o poder','',151,1,'Mi maior','Rosanna','Lu','A',NULL,NULL),(120,'Atirei o pau no gato','',152,1,'Dó','Luciane Fátima','Pedro Henrique de Oliveira Franceschina','\0',NULL,NULL),(121,'Parabéns para você','Domínio Publico',153,1,'sei lá','xuxa','Flavio de Melo','\0',NULL,NULL),(122,'SEI LÁ KKK','A',154,3,'JJJ','KKK','Edemila','\0',NULL,NULL),(123,'Fantasma da Ópera','',155,3,'Lá menor','Emílio e a Mulher','Pedro','\0',NULL,NULL),(124,'The Wall','A',156,3,'G','froid','Confirmador Teste','\0',NULL,NULL),(125,'Vamos construir','',157,1,'Mi','Sandy e Junior','Luluzinha','\0',NULL,NULL),(126,'Era uma vez','',158,2,'Ré','Kelly','Lu','A',NULL,NULL),(127,'Back to black','',159,3,'Original','Amy winehoyse','Lu','A',NULL,NULL);
+INSERT INTO `apresentacao` VALUES (115,'Por um minuto','Bruno e Marrone',147,4,'G','Original','Ricardo B','A',NULL,'2'),(116,'Seu Astral','Jorge',148,1,'E','Original','Mohammed','A',NULL,'2'),(117,'Desejo',NULL,149,3,'Do','Original','Nega','A',NULL,NULL),(118,'o detento apaixonado',NULL,150,4,'c','wanderley andrade','Laiza Linda','A',NULL,NULL),(119,'O amor e o poder',NULL,151,1,'Mi maior','Rosanna','Lu',' ',NULL,NULL),(120,'Atirei o pau no gato','',152,1,'Dó','Luciane Fátima','Pedro Henrique de Oliveira Franceschina','A',NULL,NULL),(121,'Parabéns para você','Domínio Publico',153,1,'sei lá','xuxa','Flavio de Melo',' ',NULL,NULL),(122,'SEI LÁ KKK','A',154,3,'JJJ','KKK','Edemila','\0',NULL,NULL),(123,'Fantasma da Ópera','',155,3,'Lá menor','Emílio e a Mulher','Pedro','\0',NULL,NULL),(124,'The Wall','A',156,3,'G','froid','Confirmador Teste','\0',NULL,NULL),(125,'Vamos construir','',157,1,'Mi','Sandy e Junior','Luluzinha','\0',NULL,NULL),(126,'Era uma vez','',158,2,'Ré','Kelly','Lu','A',NULL,NULL),(127,'Back to black','',159,3,'Original','Amy winehoyse','Lu','A',NULL,NULL);
 /*!40000 ALTER TABLE `apresentacao` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Table structure for table `cantor`
+--
+
+DROP TABLE IF EXISTS `cantor`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `cantor` (
+  `id_cantor` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(250) DEFAULT NULL,
+  `email` varchar(250) DEFAULT NULL,
+  `contato` varchar(50) DEFAULT NULL,
+  `cpf` varchar(14) DEFAULT NULL,
+  `rg` varchar(11) DEFAULT NULL,
+  `observacao` text,
+  `cidade` varchar(150) DEFAULT NULL,
+  `estado` varchar(150) DEFAULT NULL,
+  `idade` varchar(45) DEFAULT NULL,
+  `nascimento` varchar(45) DEFAULT NULL,
+  `id_apresentacao` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id_cantor`)
+) ENGINE=InnoDB AUTO_INCREMENT=160 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Dumping data for table `cantor`
@@ -38,6 +89,21 @@ INSERT INTO `cantor` VALUES (147,'Ricardo Bavaresco','ricardo@email.com','(49) 9
 UNLOCK TABLES;
 
 --
+-- Table structure for table `categoria`
+--
+
+DROP TABLE IF EXISTS `categoria`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `categoria` (
+  `id_categoria` int(11) NOT NULL AUTO_INCREMENT,
+  `categoria` varchar(250) NOT NULL,
+  `dia` datetime DEFAULT NULL,
+  PRIMARY KEY (`id_categoria`)
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
 -- Dumping data for table `categoria`
 --
 
@@ -48,6 +114,23 @@ INSERT INTO `categoria` VALUES (1,'Infantil','2022-09-07 00:00:00'),(2,'Juvenil'
 UNLOCK TABLES;
 
 --
+-- Table structure for table `classificacao`
+--
+
+DROP TABLE IF EXISTS `classificacao`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `classificacao` (
+  `id_classificacao` int(11) NOT NULL AUTO_INCREMENT,
+  `notafinal` double DEFAULT '0',
+  `apresentacao` int(11) NOT NULL,
+  `cantor` int(11) NOT NULL,
+  `categoria` int(11) NOT NULL,
+  PRIMARY KEY (`id_classificacao`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
 -- Dumping data for table `classificacao`
 --
 
@@ -55,6 +138,23 @@ LOCK TABLES `classificacao` WRITE;
 /*!40000 ALTER TABLE `classificacao` DISABLE KEYS */;
 /*!40000 ALTER TABLE `classificacao` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Table structure for table `festival`
+--
+
+DROP TABLE IF EXISTS `festival`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `festival` (
+  `id_evento` int(11) NOT NULL AUTO_INCREMENT,
+  `titulo` varchar(250) NOT NULL,
+  `descricao` varchar(250) DEFAULT NULL,
+  `dataInicial` datetime DEFAULT NULL,
+  `dataFinal` datetime NOT NULL,
+  PRIMARY KEY (`id_evento`,`titulo`,`dataFinal`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Dumping data for table `festival`
@@ -67,6 +167,23 @@ INSERT INTO `festival` VALUES (2,'FIMUSI XXXII','Festival de Irani','2022-09-07 
 UNLOCK TABLES;
 
 --
+-- Table structure for table `jurado`
+--
+
+DROP TABLE IF EXISTS `jurado`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `jurado` (
+  `id_jurado` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(255) DEFAULT NULL,
+  `contato` varchar(255) DEFAULT NULL,
+  `documento` varchar(255) DEFAULT NULL,
+  `observacao` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id_jurado`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
 -- Dumping data for table `jurado`
 --
 
@@ -74,6 +191,28 @@ LOCK TABLES `jurado` WRITE;
 /*!40000 ALTER TABLE `jurado` DISABLE KEYS */;
 /*!40000 ALTER TABLE `jurado` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Table structure for table `notas`
+--
+
+DROP TABLE IF EXISTS `notas`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `notas` (
+  `id_notas` int(11) NOT NULL AUTO_INCREMENT,
+  `nota1` double DEFAULT '0',
+  `nota2` double DEFAULT '0',
+  `categoria` int(11) DEFAULT NULL,
+  `cantor` int(11) DEFAULT NULL,
+  `jurado` int(11) DEFAULT NULL,
+  `apresentacao` int(11) DEFAULT NULL,
+  `nota3` double DEFAULT '0',
+  `nota4` double DEFAULT '0',
+  `notafinal` double DEFAULT '0',
+  PRIMARY KEY (`id_notas`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Dumping data for table `notas`
@@ -93,4 +232,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-08-05  2:36:59
+-- Dump completed on 2022-08-06  1:16:52
