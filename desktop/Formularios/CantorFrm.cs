@@ -167,7 +167,7 @@ namespace Festival.desktop
             try
             {
                 // Conversõees para transformar a data csv para idade em int
-                DateTime nasc = DateTime.ParseExact(csv[3], "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None);
+                DateTime nasc = DateTime.ParseExact(csv[3], "dd-MM-yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None);
                 // Verifica se nasceu antes do mes atual ai reduz um ano
                 int idade = DateTime.Now.Year - nasc.Year;
                 if (DateTime.Now.Month > nasc.Month)
@@ -196,7 +196,7 @@ namespace Festival.desktop
                 // Verifica se tem outros cantores e monta objetos dupla
                 if (!string.IsNullOrEmpty(csv[9]))
                 {
-                    nasc = DateTime.ParseExact(csv[11], "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None);
+                    nasc = DateTime.ParseExact(csv[11], "dd-MM-yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None);
                     // Verifica se nasceu antes do mes atual ai reduz um ano
                     idade = DateTime.Now.Year - nasc.Year;
                     if (DateTime.Now.Month > nasc.Month)
@@ -210,12 +210,12 @@ namespace Festival.desktop
                 // Verifica se tem outros cantores e monta objetos trio
                 if (!string.IsNullOrEmpty(csv[14]))
                 {
-                    nasc = DateTime.ParseExact(csv[16], "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None);
+                    nasc = DateTime.ParseExact(csv[18], "dd-MM-yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None);
                     // Verifica se nasceu antes do mes atual ai reduz um ano
                     idade = DateTime.Now.Year - nasc.Year;
                     if (DateTime.Now.Month > nasc.Month)
                         idade--;
-                    cantor = new Cantor(csv[14] + " " + csv[15], csv[17], csv[18], null, null, null, csv[26], csv[27], idade.ToString(),
+                    cantor = new Cantor(csv[14] + " " + csv[15], csv[16], csv[18], null, null, null, csv[26], csv[27], idade.ToString(),
                             nasc.Day.ToString() + "/" + nasc.Month.ToString() + "/" + nasc.Year.ToString());
                     cantor.id_apresentacao = apresentacao.id_apresentacao;
                     cantorBo.Inserir(cantor);
@@ -224,12 +224,12 @@ namespace Festival.desktop
                 // Verifica se tem outros cantores e monta objetos grupo
                 if (!string.IsNullOrEmpty(csv[19]))
                 {
-                    nasc = DateTime.ParseExact(csv[21], "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None);
+                    nasc = DateTime.ParseExact(csv[23], "dd-MM-yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None);
                     // Verifica se nasceu antes do mes atual ai reduz um ano
                     idade = DateTime.Now.Year - nasc.Year;
                     if (DateTime.Now.Month > nasc.Month)
                         idade--;
-                    cantor = new Cantor(csv[19] + " " + csv[20], csv[22], csv[23], null, null, null, csv[26], csv[27], idade.ToString(),
+                    cantor = new Cantor(csv[19] + " " + csv[20], csv[21], csv[23], null, null, null, csv[26], csv[27], idade.ToString(),
                             nasc.Day.ToString() + "/" + nasc.Month.ToString() + "/" + nasc.Year.ToString());
                     cantor.id_apresentacao = apresentacao.id_apresentacao;
                     cantorBo.Inserir(cantor);
@@ -238,7 +238,7 @@ namespace Festival.desktop
             }
             catch (Exception)
             {
-                MessageBox.Show("Não foi possível importar dados");
+                MessageBox.Show("Não foi possível importar dados de: " +csv[0]);
                 return;
             }
         }
