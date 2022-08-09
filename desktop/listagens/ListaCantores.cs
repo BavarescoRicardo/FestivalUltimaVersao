@@ -26,8 +26,7 @@ namespace Festival.listagens
 
             this.bindingSource1.Clear();
             bindingSource1.DataSource = lista;
-            // bindingSource1.DataSource = lista.Where(x => x.categoria == 6);
-            // this.bindingSource1.ResetBindings(true);
+
             gridControl.Refresh();
 
             // Carregar filtro

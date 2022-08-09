@@ -23,7 +23,7 @@ namespace Festival.desktop
             CantorBo cantorBo = new CantorBo();
             bindingSourceApresentacao.Add(bo.RetornePeloId(idApr));
             bindingSourceCantor.Add(cantorBo.RetornePeloId(idCantor));
-            
+
             CategoriaBo catBo = new CategoriaBo();
             IList<Festival.or.Categoria> listaCategoria = catBo.Listar();
 
@@ -31,7 +31,20 @@ namespace Festival.desktop
             foreach (Categoria cat in listaCategoria)
             {
                 this.cmbCategoriaRepositorioGrid.Items.Add(cat);
-            }            
+            }
+
+            // Verifica se existem mais cantores ai então abre novos dialogos
+            if (cantorBo.RetornePeloId(idCantor).id_apresentacao != 0)
+                return;
+            foreach (Cantor c in cantorBo.Listar())
+            {
+                if (c.id_apresentacao == idApr)
+                {
+                    EditarCantorFrm editar = new EditarCantorFrm(idApr, c.id_cantor);
+                    editar.ShowDialog();
+                }
+            }
+
         }
 
         // Gravar Tudo cantor e apresentação
