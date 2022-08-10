@@ -38,6 +38,7 @@
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colParticipantes = new DevExpress.XtraGrid.Columns.GridColumn();
             this.cmbFiltro = new DevExpress.XtraEditors.ComboBoxEdit();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSair = new DevExpress.XtraEditors.SimpleButton();
@@ -54,7 +55,7 @@
             this.gridControl.Location = new System.Drawing.Point(13, 8);
             this.gridControl.MainView = this.gridView1;
             this.gridControl.Name = "gridControl";
-            this.gridControl.Size = new System.Drawing.Size(860, 366);
+            this.gridControl.Size = new System.Drawing.Size(1002, 424);
             this.gridControl.TabIndex = 0;
             this.gridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -71,7 +72,8 @@
             this.coldia,
             this.gridColumn1,
             this.gridColumn2,
-            this.gridColumn3});
+            this.gridColumn3,
+            this.colParticipantes});
             this.gridView1.GridControl = this.gridControl;
             this.gridView1.GroupPanelText = "Notas";
             this.gridView1.Name = "gridView1";
@@ -144,6 +146,14 @@
             this.gridColumn3.VisibleIndex = 5;
             this.gridColumn3.Width = 97;
             // 
+            // colParticipantes
+            // 
+            this.colParticipantes.Caption = "Participantes";
+            this.colParticipantes.FieldName = "participacao";
+            this.colParticipantes.Name = "colParticipantes";
+            this.colParticipantes.Visible = true;
+            this.colParticipantes.VisibleIndex = 6;
+            // 
             // cmbFiltro
             // 
             this.cmbFiltro.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -166,7 +176,7 @@
             // 
             // btnSair
             // 
-            this.btnSair.Location = new System.Drawing.Point(12, 380);
+            this.btnSair.Location = new System.Drawing.Point(12, 438);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(122, 22);
             this.btnSair.TabIndex = 19;
@@ -175,7 +185,7 @@
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(751, 380);
+            this.simpleButton1.Location = new System.Drawing.Point(893, 438);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(122, 22);
             this.simpleButton1.TabIndex = 20;
@@ -186,7 +196,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(881, 404);
+            this.ClientSize = new System.Drawing.Size(1027, 468);
             this.ControlBox = false;
             this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.btnSair);
@@ -218,5 +228,6 @@
         private System.Windows.Forms.BindingSource bindingSource1;
         private DevExpress.XtraEditors.SimpleButton btnSair;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraGrid.Columns.GridColumn colParticipantes;
     }
 }
