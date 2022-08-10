@@ -236,9 +236,9 @@ namespace Festival.desktop
                 }
 
             }
-            catch (Exception)
+            catch (Exception exc)
             {
-                MessageBox.Show("Não foi possível importar dados de: " +csv[0]);
+                MessageBox.Show("Não foi possível importar dados de: " +csv[0] + " motivo: "+ exc.Message);
                 return;
             }
         }
