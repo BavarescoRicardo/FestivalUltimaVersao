@@ -16,6 +16,7 @@
             Map(c => c.nomeartistico);
             Map(c => c.ordem);
             Map(c => c.senha);
+            Map(c => c.participacao);
             Map(c => c.ativo);
             References<Cantor>(x => x.cantor).Column("cantor").ForeignKey("id_cantor");
             References<Categoria>(x => x.categoria).Column("categoria").ForeignKey("id_categoria");

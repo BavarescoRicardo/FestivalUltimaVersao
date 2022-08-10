@@ -185,7 +185,7 @@ namespace Festival.desktop
                 //      csv[33], csv[32], csv[31], csv[34], Cantor, Categoria csv[34], csv[0]
 
                 Apresentacao apresentacao = new Apresentacao(
-                    csv[33], csv[32], csv[31], csv[34], cantor, selecionarCategoria(csv[35]), csv[0]);
+                    csv[33], csv[32], csv[31], csv[34], cantor, selecionarCategoria(csv[35]), csv[0], csv[36]);
 
                 CantorBo cantorBo = new CantorBo();
                 cantorBo.Inserir(cantor);

@@ -9,10 +9,23 @@ namespace Festival.or
 
         }
 
-        public Apresentacao(int id_apresentacao, string tom, string gravacao, string musica, string artista, string nomeartistico,
-             string ordem, string senha, char ativo, Cantor cantor, Categoria categoria)
+
+        public Apresentacao(string tom, string gravacao, string musica, string artista, Cantor cantor, Categoria categoria, string nomeartistico, string participacao)
         {
             this.id_apresentacao = id_apresentacao;
+            this.gravacao = gravacao;
+            this.tom = tom;
+            this.nomeartistico = nomeartistico;
+            this.musica = musica;
+            this.artista = artista;
+            this.cantor = cantor;
+            this.categoria = categoria;
+            this.participacao = participacao;
+        }
+
+        public Apresentacao(string tom, string gravacao, string musica, string artista, string nomeartistico, string ordem, string senha,
+            string participacao, char ativo, bool presenca, Cantor cantor, Categoria categoria)
+        {
             this.tom = tom;
             this.gravacao = gravacao;
             this.musica = musica;
@@ -20,19 +33,9 @@ namespace Festival.or
             this.nomeartistico = nomeartistico;
             this.ordem = ordem;
             this.senha = senha;
+            this.participacao = participacao;
             this.ativo = ativo;
-            this.cantor = cantor;
-            this.categoria = categoria;
-        }
-
-        public Apresentacao(string tom, string gravacao, string musica, string artista, Cantor cantor, Categoria categoria, string nomeartistico)
-        {
-            this.id_apresentacao = id_apresentacao;
-            this.gravacao = gravacao;
-            this.tom = tom;
-            this.nomeartistico = nomeartistico;
-            this.musica = musica;
-            this.artista = artista;
+            this.presenca = presenca;
             this.cantor = cantor;
             this.categoria = categoria;
         }
@@ -45,6 +48,7 @@ namespace Festival.or
         public virtual string nomeartistico { get; set; }
         public virtual string ordem { get; set; }
         public virtual string senha { get; set; }
+        public virtual string participacao { get; set; }
         public virtual char ativo { get; set; }
         public virtual bool presenca { get; set; }
         public virtual Cantor cantor { get; set; }
