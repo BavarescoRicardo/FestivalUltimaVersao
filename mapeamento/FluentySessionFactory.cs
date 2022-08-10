@@ -17,6 +17,16 @@ namespace Festival.mapeamento
         private static ISessionFactory session;
         public static ISessionFactory CriarSessao()
         {
+            // Validade até 2023
+            DateTime dt = Convert.ToDateTime("01-01-2023");
+            // Confere se a data de acesso é anterior a validade
+            if (dt.CompareTo(DateTime.Now) < 0)
+            {
+                Console.WriteLine("Prazo expirado");
+                ConnectionString = null;
+            }
+                
+
             if (session != null)
             {
                 return session;

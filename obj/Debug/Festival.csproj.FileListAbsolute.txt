@@ -603,6 +603,9 @@ C:\Users\Ninguem\source\repos\FestivalUltimaVersao\bin\Debug\de\DevExpress.Diagr
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\bin\Debug\es\DevExpress.Diagram.v19.2.Core.resources.dll
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\bin\Debug\ja\DevExpress.Diagram.v19.2.Core.resources.dll
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\bin\Debug\ru\DevExpress.Diagram.v19.2.Core.resources.dll
+C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.desktop.EditarCantorFrm.resources
+C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.desktop.Formularios.PreImpressoApr.resources
+C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.desktop.Formularios.PreImpressoNota.resources
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.desktop.Formularios.Aprovar.resources
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.desktop.CantorFrm.resources
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.desktop.CategoriaFrm.resources
@@ -610,7 +613,11 @@ C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.EventoFrm.
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.desktop.JuradoFrm.resources
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.desktop.AtribuiNotaFrm.resources
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.desktop.NotaFrm.resources
+C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.desktop.impressao.ApresentacaoReport.resources
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.desktop.impressao.CantorReport.resources
+C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.desktop.impressao.JuradoNotaReport.resources
+C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.listagens.ListaEnsaio.resources
+C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.listagens.ListaApresentacoes.resources
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.listagens.ListaCategoria.resources
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.listagens.ListaCantores.resources
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.listagens.ListaEvento.resources
@@ -628,11 +635,3 @@ C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.csproj.Cor
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.csproj.CopyComplete
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.exe
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.pdb
-C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.desktop.impressao.JuradoNotaReport.resources
-C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.desktop.Formularios.PreImpressoNota.resources
-C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.listagens.ListaApresentacoes.resources
-C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.desktop.Formularios.PreImpressoApr.resources
-C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.desktop.impressao.ApresentacaoReport.resources
-C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.desktop.EditarCantorFrm.resources
-C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.listagens.ListaEnsaio.resources
-C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.csproj.AssemblyReference.cache
