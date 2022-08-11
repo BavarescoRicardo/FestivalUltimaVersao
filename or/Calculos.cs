@@ -20,16 +20,17 @@ namespace Festival.or
             double min = jurN1;
             double soma = 0;
             int indiceMax = 0;
-            int indiceMin = 0;
+            int indiceMin = 1;
 
             List<double> valores = new List<double>();
             valores.Add(jurN1);
             valores.Add(jurN2);
             valores.Add(jurN3);
             valores.Add(jurN4);
+            valores.Add(jurN5);
 
             // Encontra minimo e deixa igual a 0
-            for(int cont = 0; cont < 4; cont++)
+            for(int cont = 0; cont < 5; cont++)
             {
                 if(valores[cont] < min)
                 {
@@ -40,7 +41,7 @@ namespace Festival.or
             valores[indiceMin] = 0;
 
             // Encontra maximo e muda para 0
-            for (int cont = 0; cont < 4; cont++)
+            for (int cont = 0; cont < 5; cont++)
             {
                 if (valores[cont] > max)
                 {
@@ -51,12 +52,12 @@ namespace Festival.or
             valores[indiceMax] = 0;
 
             // Soma todos os valores restantes
-            for (int cont = 0; cont < 4; cont++)
+            for (int cont = 0; cont < 5; cont++)
             {
                 soma += valores[cont];                
             }
 
-            return soma / 2;
+            return soma / 3;
         }
 
         public double mediaNota(double n1, double n2, double n3, double n4)

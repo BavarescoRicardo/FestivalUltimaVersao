@@ -181,7 +181,8 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(659, 193);
-            this.tableLayoutPanel1.TabIndex = 20;
+            this.tableLayoutPanel1.TabIndex = 4;
+            this.tableLayoutPanel1.TabStop = true;
             // 
             // label2
             // 
@@ -309,7 +310,7 @@
             this.txtNota1J1.Name = "txtNota1J1";
             this.txtNota1J1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota1J1.Size = new System.Drawing.Size(97, 20);
-            this.txtNota1J1.TabIndex = 9;
+            this.txtNota1J1.TabIndex = 4;
             // 
             // txtNota1J2
             // 
@@ -317,7 +318,7 @@
             this.txtNota1J2.Name = "txtNota1J2";
             this.txtNota1J2.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota1J2.Size = new System.Drawing.Size(94, 20);
-            this.txtNota1J2.TabIndex = 10;
+            this.txtNota1J2.TabIndex = 8;
             // 
             // txtNota1J3
             // 
@@ -325,7 +326,7 @@
             this.txtNota1J3.Name = "txtNota1J3";
             this.txtNota1J3.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota1J3.Size = new System.Drawing.Size(100, 20);
-            this.txtNota1J3.TabIndex = 11;
+            this.txtNota1J3.TabIndex = 12;
             // 
             // txtNota1J4
             // 
@@ -333,7 +334,7 @@
             this.txtNota1J4.Name = "txtNota1J4";
             this.txtNota1J4.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota1J4.Size = new System.Drawing.Size(100, 20);
-            this.txtNota1J4.TabIndex = 12;
+            this.txtNota1J4.TabIndex = 16;
             // 
             // txtNota1J5
             // 
@@ -341,7 +342,7 @@
             this.txtNota1J5.Name = "txtNota1J5";
             this.txtNota1J5.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota1J5.Size = new System.Drawing.Size(99, 20);
-            this.txtNota1J5.TabIndex = 13;
+            this.txtNota1J5.TabIndex = 20;
             // 
             // txtNota2J1
             // 
@@ -349,7 +350,7 @@
             this.txtNota2J1.Name = "txtNota2J1";
             this.txtNota2J1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota2J1.Size = new System.Drawing.Size(97, 20);
-            this.txtNota2J1.TabIndex = 14;
+            this.txtNota2J1.TabIndex = 5;
             // 
             // txtNota2J2
             // 
@@ -357,7 +358,7 @@
             this.txtNota2J2.Name = "txtNota2J2";
             this.txtNota2J2.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota2J2.Size = new System.Drawing.Size(94, 20);
-            this.txtNota2J2.TabIndex = 15;
+            this.txtNota2J2.TabIndex = 9;
             // 
             // txtNota2J3
             // 
@@ -365,7 +366,7 @@
             this.txtNota2J3.Name = "txtNota2J3";
             this.txtNota2J3.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota2J3.Size = new System.Drawing.Size(100, 20);
-            this.txtNota2J3.TabIndex = 16;
+            this.txtNota2J3.TabIndex = 13;
             // 
             // txtNota2J4
             // 
@@ -381,7 +382,7 @@
             this.txtNota2J5.Name = "txtNota2J5";
             this.txtNota2J5.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota2J5.Size = new System.Drawing.Size(99, 20);
-            this.txtNota2J5.TabIndex = 18;
+            this.txtNota2J5.TabIndex = 21;
             // 
             // txtNota3J1
             // 
@@ -389,7 +390,7 @@
             this.txtNota3J1.Name = "txtNota3J1";
             this.txtNota3J1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota3J1.Size = new System.Drawing.Size(97, 20);
-            this.txtNota3J1.TabIndex = 19;
+            this.txtNota3J1.TabIndex = 6;
             // 
             // txtNota3J2
             // 
@@ -397,7 +398,7 @@
             this.txtNota3J2.Name = "txtNota3J2";
             this.txtNota3J2.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota3J2.Size = new System.Drawing.Size(94, 20);
-            this.txtNota3J2.TabIndex = 20;
+            this.txtNota3J2.TabIndex = 10;
             // 
             // txtNota3J3
             // 
@@ -405,7 +406,7 @@
             this.txtNota3J3.Name = "txtNota3J3";
             this.txtNota3J3.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota3J3.Size = new System.Drawing.Size(100, 20);
-            this.txtNota3J3.TabIndex = 21;
+            this.txtNota3J3.TabIndex = 14;
             // 
             // txtNota3J4
             // 
@@ -413,7 +414,7 @@
             this.txtNota3J4.Name = "txtNota3J4";
             this.txtNota3J4.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota3J4.Size = new System.Drawing.Size(100, 20);
-            this.txtNota3J4.TabIndex = 22;
+            this.txtNota3J4.TabIndex = 18;
             // 
             // txtNota3J5
             // 
@@ -421,7 +422,7 @@
             this.txtNota3J5.Name = "txtNota3J5";
             this.txtNota3J5.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota3J5.Size = new System.Drawing.Size(99, 20);
-            this.txtNota3J5.TabIndex = 23;
+            this.txtNota3J5.TabIndex = 22;
             // 
             // txtNota4J1
             // 
@@ -429,7 +430,7 @@
             this.txtNota4J1.Name = "txtNota4J1";
             this.txtNota4J1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota4J1.Size = new System.Drawing.Size(97, 20);
-            this.txtNota4J1.TabIndex = 24;
+            this.txtNota4J1.TabIndex = 7;
             // 
             // txtNota4J2
             // 
@@ -437,7 +438,7 @@
             this.txtNota4J2.Name = "txtNota4J2";
             this.txtNota4J2.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota4J2.Size = new System.Drawing.Size(94, 20);
-            this.txtNota4J2.TabIndex = 25;
+            this.txtNota4J2.TabIndex = 11;
             // 
             // txtNota4J3
             // 
@@ -445,7 +446,7 @@
             this.txtNota4J3.Name = "txtNota4J3";
             this.txtNota4J3.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota4J3.Size = new System.Drawing.Size(100, 20);
-            this.txtNota4J3.TabIndex = 26;
+            this.txtNota4J3.TabIndex = 15;
             // 
             // txtNota4J4
             // 
@@ -453,7 +454,7 @@
             this.txtNota4J4.Name = "txtNota4J4";
             this.txtNota4J4.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota4J4.Size = new System.Drawing.Size(100, 20);
-            this.txtNota4J4.TabIndex = 27;
+            this.txtNota4J4.TabIndex = 19;
             // 
             // txtNota4J5
             // 
@@ -461,7 +462,7 @@
             this.txtNota4J5.Name = "txtNota4J5";
             this.txtNota4J5.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNota4J5.Size = new System.Drawing.Size(99, 20);
-            this.txtNota4J5.TabIndex = 28;
+            this.txtNota4J5.TabIndex = 23;
             // 
             // cmbCategoria
             // 
@@ -482,7 +483,7 @@
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(122, 22);
             this.btnSair.StyleController = this.layoutControl1;
-            this.btnSair.TabIndex = 18;
+            this.btnSair.TabIndex = 24;
             this.btnSair.Text = "Sair";
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
@@ -530,7 +531,7 @@
             this.btnInserir.Name = "btnInserir";
             this.btnInserir.Size = new System.Drawing.Size(100, 22);
             this.btnInserir.StyleController = this.layoutControl1;
-            this.btnInserir.TabIndex = 4;
+            this.btnInserir.TabIndex = 25;
             this.btnInserir.Text = "Inserir";
             this.btnInserir.Click += new System.EventHandler(this.txtInserir_Click);
             // 
