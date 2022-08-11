@@ -20,7 +20,7 @@ namespace Festival.or
             double min = jurN1;
             double soma = 0;
             int indiceMax = 0;
-            int indiceMin = 1;
+            int indiceMin = 0;
 
             List<double> valores = new List<double>();
             valores.Add(jurN1);
@@ -49,6 +49,9 @@ namespace Festival.or
                     max = valores[cont];
                 }
             }
+            // Caso os valores sejam iguais
+            if (indiceMax == indiceMin)
+                indiceMax++;
             valores[indiceMax] = 0;
 
             // Soma todos os valores restantes
