@@ -90,10 +90,8 @@ namespace Festival.listagens
                         switch (dr)
                         {
                             case DialogResult.Yes:
-                                removerNotas();
-                                bo.Excluir(c);
-                                bindingSource.DataSource = bo.Listar();
-                                gridView1.RefreshData();                                
+                                removerNotas(c);
+                                bo.Excluir(c);                                
                                 break;
                             case DialogResult.No:
                                 break;
@@ -105,9 +103,11 @@ namespace Festival.listagens
                         MessageBox.Show("Não foi possivel remover a classificação ou as notas.. ");
                     }
                 }
-
-
             }
+            
+            // Atualizar lista
+            gridView1.RefreshData();
+            bindingSource.DataSource = bo.Listar();
 
         }
 
@@ -151,22 +151,12 @@ namespace Festival.listagens
             aprovaForm.ShowDialog();
         }
 
-        private void removerNotas()
+        private void removerNotas(Classificacao c)
         {
             NotasBo notabo = new NotasBo();
             List<Notas> listaNotas = new List<Notas>();
             listaNotas = (List<Notas>)notabo.Listar();
-            ClassificacaoBo bo = new ClassificacaoBo();
-            Classificacao c = new Classificacao();
 
-            for (int i = 0; i < gridView1.DataRowCount; i++)
-            {
-                // code when checked
-                if (IdsSelecionados[i] == 1)
-                {
-                    c = (Classificacao)gridView1.GetRow(i);
-                }
-            }
             int antigaContagem = listaNotas.Where(x => x.apresentacao == c.apresentacao.id_apresentacao).ToList().Count;
             for (int i = 0; i < antigaContagem; i++)
             {
