@@ -36,6 +36,8 @@ namespace Festival.desktop.Formularios
             try
             {
                 CantorReport report = new CantorReport();
+                ApresentacaoReport reportApr = new ApresentacaoReport();
+
 
                 // Carregar dados no relatório
                 try
@@ -46,9 +48,10 @@ namespace Festival.desktop.Formularios
                     foreach (Apresentacao apr in bo.Listar())
                     {
                         if((apr.categoria.id_categoria == categoria.id_categoria) || (categoria.id_categoria == 0))
-                            listaDto.Add(new ApresentacaoDtoReport(apr.id_apresentacao, apr.tom, apr.gravacao, apr.musica, apr.artista, apr.cantor.id_cantor, apr.categoria.id_categoria));
+                            listaDto.Add(new ApresentacaoDtoReport(apr.id_apresentacao, apr.tom, apr.gravacao, apr.musica, apr.artista, apr.cantor.id_cantor, apr.categoria.id_categoria, apr.nomeartistico));
                     }
                     report.DataSource = listaDto.OrderBy(x => x.cantor.nome);
+                    reportApr.DataSource = listaDto.OrderBy(x => x.cantor.nome);
                 }
                 catch (Exception)
                 {
@@ -57,7 +60,15 @@ namespace Festival.desktop.Formularios
                 }
 
 
-                ReportPrintTool tool = new ReportPrintTool(report);
+                ReportPrintTool tool;
+                if (rdGrupo.SelectedIndex == 0)
+                {
+                    tool = new ReportPrintTool(report);
+                }
+                else
+                {
+                    tool = new ReportPrintTool(reportApr);
+                }
                 tool.ShowPreview();
 
             }

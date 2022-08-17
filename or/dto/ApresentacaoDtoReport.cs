@@ -9,7 +9,7 @@ namespace Festival.or
 
         }
 
-        public ApresentacaoDtoReport(int id_apresentacao, string tom, string gravacao, string musica, string artista, int id_cantor, int id_categoria)
+        public ApresentacaoDtoReport(int id_apresentacao, string tom, string gravacao, string musica, string artista, int id_cantor, int id_categoria, string nomeartistico)
         {
             CategoriaBo categoriaBo = new CategoriaBo();
             CantorBo cantorBo = new CantorBo();
@@ -21,12 +21,14 @@ namespace Festival.or
             this.artista = artista;
             this.cantor = cantorBo.RetornePeloId(id_cantor);
             this.categoria = categoriaBo.RetornePeloId(id_categoria);
+            this.nomeartistico = nomeartistico;
         }
 
         public virtual int id_apresentacao { get; set; }
         public virtual string tom { get; set; }
         public virtual string gravacao { get; set; }
         public virtual string musica { get; set; }
+        public virtual string nomeartistico { get; set; }
         public virtual string artista { get; set; }
         public virtual Cantor cantor { get; set; }        
         public virtual Categoria categoria { get; set; }
