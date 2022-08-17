@@ -74,13 +74,14 @@ namespace Festival.desktop.impressao
             // 
             // BottomMargin
             // 
-            this.BottomMargin.HeightF = 266.6667F;
+            this.BottomMargin.HeightF = 63.54167F;
             this.BottomMargin.Name = "BottomMargin";
             // 
             // Detail
             // 
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable2});
+            this.Detail.HeightF = 64.99999F;
             this.Detail.Name = "Detail";
             // 
             // xrTable2
@@ -125,7 +126,7 @@ namespace Festival.desktop.impressao
             // xrTableCell4
             // 
             this.xrTableCell4.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[cantor].[nome]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[nomeartistico]")});
             this.xrTableCell4.Multiline = true;
             this.xrTableCell4.Name = "xrTableCell4";
             this.xrTableCell4.Text = "xrTableCell4";
@@ -304,7 +305,7 @@ namespace Festival.desktop.impressao
             this.objectDataSource3});
             this.DataSource = this.objectDataSource3;
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margins = new System.Drawing.Printing.Margins(100, 100, 100, 267);
+            this.Margins = new System.Drawing.Printing.Margins(100, 100, 100, 64);
             this.Version = "19.2";
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();

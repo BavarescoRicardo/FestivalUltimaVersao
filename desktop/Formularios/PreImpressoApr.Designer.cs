@@ -35,14 +35,17 @@ namespace Festival.desktop.Formularios
             this.btnSair = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.cmbCat = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.chkEnsaio = new DevExpress.XtraEditors.CheckEdit();
             this.pnlGeral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rdGrupo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbCat.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkEnsaio.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlGeral
             // 
             this.pnlGeral.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlGeral.Controls.Add(this.chkEnsaio);
             this.pnlGeral.Controls.Add(this.rdGrupo);
             this.pnlGeral.Controls.Add(this.button1);
             this.pnlGeral.Controls.Add(this.btnSair);
@@ -106,6 +109,14 @@ namespace Festival.desktop.Formularios
             this.cmbCat.Size = new System.Drawing.Size(254, 20);
             this.cmbCat.TabIndex = 0;
             // 
+            // chkEnsaio
+            // 
+            this.chkEnsaio.Location = new System.Drawing.Point(36, 76);
+            this.chkEnsaio.Name = "chkEnsaio";
+            this.chkEnsaio.Properties.Caption = "Participaram dos ensaios";
+            this.chkEnsaio.Size = new System.Drawing.Size(147, 20);
+            this.chkEnsaio.TabIndex = 5;
+            // 
             // PreImpressoApr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -118,6 +129,7 @@ namespace Festival.desktop.Formularios
             this.pnlGeral.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.rdGrupo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbCat.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkEnsaio.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -130,5 +142,6 @@ namespace Festival.desktop.Formularios
         private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.Button button1;
         private DevExpress.XtraEditors.RadioGroup rdGrupo;
+        private DevExpress.XtraEditors.CheckEdit chkEnsaio;
     }
 }

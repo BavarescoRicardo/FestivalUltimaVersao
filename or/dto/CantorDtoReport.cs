@@ -15,6 +15,7 @@ namespace Festival.or
         public virtual string cpf { get; set; }
         public virtual string rg { get; set; }
         public virtual string observacao { get; set; }
+        public virtual string nomeartistico { get; set; }
 
 
         public CantorDtoReport()
@@ -22,7 +23,7 @@ namespace Festival.or
 
         }
 
-        public CantorDtoReport(int id_cantor, string nome, string email, string contato, string cpf, string rg, string observacao)
+        public CantorDtoReport(int id_cantor, string nome, string email, string contato, string cpf, string rg, string observacao, string nomeartistico)
         {
             this.id_cantor = id_cantor;
             this.nome = nome;
@@ -31,6 +32,7 @@ namespace Festival.or
             this.cpf = cpf;
             this.rg = rg;
             this.observacao = observacao;
+            this.nomeartistico = nomeartistico;
         }
 
         public override string ToString()

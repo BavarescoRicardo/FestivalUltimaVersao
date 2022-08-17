@@ -11,12 +11,10 @@ namespace Festival.desktop.Formularios
 {
     public partial class PreImpressoApr : Form
     {        
-        private Apresentacao apre = new Apresentacao();
         public PreImpressoApr()
         {
             InitializeComponent();
             CategoriaBo bo = new CategoriaBo();
-            ApresentacaoBo aprBo = new ApresentacaoBo();
             foreach (Categoria cat in bo.Listar())
             {
                 this.cmbCat.Properties.Items.Add(cat);
@@ -45,11 +43,19 @@ namespace Festival.desktop.Formularios
                     ApresentacaoBo bo = new ApresentacaoBo();
                     Categoria categoria = (Categoria)this.cmbCat.SelectedItem;
                     List<ApresentacaoDtoReport> listaDto = new List<ApresentacaoDtoReport>();
-                    foreach (Apresentacao apr in bo.Listar())
+                    List<Apresentacao> listaBo = new List<Apresentacao>();
+                    listaBo = bo.Listar().ToList();
+
+                    // Filtra lista para apenas os que participaram do ensaio
+                    if (chkEnsaio.Checked)
+                        listaBo = listaBo.Where(x => x.presenca == true).ToList();
+
+                    foreach (Apresentacao apr in listaBo)
                     {
                         if((apr.categoria.id_categoria == categoria.id_categoria) || (categoria.id_categoria == 0))
                             listaDto.Add(new ApresentacaoDtoReport(apr.id_apresentacao, apr.tom, apr.gravacao, apr.musica, apr.artista, apr.cantor.id_cantor, apr.categoria.id_categoria, apr.nomeartistico));
                     }
+
                     report.DataSource = listaDto.OrderBy(x => x.cantor.nome);
                     reportApr.DataSource = listaDto.OrderBy(x => x.cantor.nome);
                 }
