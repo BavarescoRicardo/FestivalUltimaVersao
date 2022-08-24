@@ -172,7 +172,7 @@
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(122, 22);
             this.btnSair.TabIndex = 19;
-            this.btnSair.Text = "Sair";
+            this.btnSair.Text = "Continuar";
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // ListaEvento

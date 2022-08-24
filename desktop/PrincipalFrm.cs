@@ -23,8 +23,11 @@ namespace Festival.desktop
             InitializeComponent();
 
             //Maximizar Tela Principal
-
             WindowState = FormWindowState.Maximized;
+
+            // Executar o sistema listando os evento
+            this.listarToolStripMenuItem_Click(null, null);
+
         }
 
         private void cadastrarToolStripMenuItem_Click(object sender, EventArgs e)

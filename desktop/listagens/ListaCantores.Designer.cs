@@ -95,7 +95,7 @@
             // colcategoria
             // 
             this.colcategoria.Caption = "Cantor";
-            this.colcategoria.FieldName = "cantor.id_cantor";
+            this.colcategoria.FieldName = "nomeartistico";
             this.colcategoria.Name = "colcategoria";
             this.colcategoria.OptionsColumn.AllowEdit = false;
             this.colcategoria.OptionsFilter.AllowAutoFilter = false;
