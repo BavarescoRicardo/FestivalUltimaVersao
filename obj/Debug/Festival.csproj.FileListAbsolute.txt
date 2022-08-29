@@ -770,4 +770,5 @@ D:\FestivalApp\FestivalUltimaVersao\obj\Debug\Festival.csproj.CoreCompileInputs.
 D:\FestivalApp\FestivalUltimaVersao\obj\Debug\Festival.csproj.CopyComplete
 D:\FestivalApp\FestivalUltimaVersao\obj\Debug\Festival.exe
 D:\FestivalApp\FestivalUltimaVersao\obj\Debug\Festival.pdb
-C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.csproj.AssemblyReference.cache
+C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.desktop.Formularios.PreImpressoEnsaio.resources
+C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.desktop.impressao.EnsaioReport.resources

@@ -112,10 +112,7 @@ namespace Festival.desktop
         }
 
         private void notasToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            
-
-            // Carregar dados no relatório
+        {            
             try
             {
                 PreImpressoNota aprovaForm = new PreImpressoNota();
@@ -137,6 +134,19 @@ namespace Festival.desktop
         {
             ListaEnsaio listar = new ListaEnsaio();
             listar.ShowDialog();
+        }
+
+        private void ensaioToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                PreImpressoEnsaio aprovaForm = new PreImpressoEnsaio();
+                aprovaForm.ShowDialog();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Não foi possível carregar este relatório");
+            }
         }
     }
 }

@@ -245,6 +245,12 @@
     <Compile Include="desktop\Formularios\EditarCantorFrm.Designer.cs">
       <DependentUpon>EditarCantorFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="desktop\Formularios\PreImpressoEnsaio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="desktop\Formularios\PreImpressoEnsaio.Designer.cs">
+      <DependentUpon>PreImpressoEnsaio.cs</DependentUpon>
+    </Compile>
     <Compile Include="desktop\Formularios\PreImpressoApr.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -268,6 +274,12 @@
     </Compile>
     <Compile Include="desktop\Formularios\AtribuiNotaFrm.Designer.cs">
       <DependentUpon>AtribuiNotaFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="desktop\impressao\EnsaioReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="desktop\impressao\EnsaioReport.Designer.cs">
+      <DependentUpon>EnsaioReport.cs</DependentUpon>
     </Compile>
     <Compile Include="desktop\impressao\ApresentacaoReport.cs">
       <SubType>Component</SubType>
@@ -413,6 +425,9 @@
     <EmbeddedResource Include="desktop\Formularios\EditarCantorFrm.resx">
       <DependentUpon>EditarCantorFrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="desktop\Formularios\PreImpressoEnsaio.resx">
+      <DependentUpon>PreImpressoEnsaio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="desktop\Formularios\PreImpressoApr.resx">
       <DependentUpon>PreImpressoApr.cs</DependentUpon>
     </EmbeddedResource>
@@ -439,6 +454,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="desktop\Formularios\NotaFrm.resx">
       <DependentUpon>NotaFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="desktop\impressao\EnsaioReport.resx">
+      <DependentUpon>EnsaioReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="desktop\impressao\ApresentacaoReport.resx">
       <DependentUpon>ApresentacaoReport.cs</DependentUpon>
