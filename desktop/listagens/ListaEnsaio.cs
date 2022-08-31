@@ -113,13 +113,13 @@ namespace Festival.listagens
             // Salvar presença para as apresentacoes marcadas
             ApresentacaoBo bo = new ApresentacaoBo();
             //lista = bo.Listar();
-            foreach (Apresentacao a in lista.Where(x => x.presenca == true))
+            foreach (Apresentacao a in lista.Where(x => x.presenca == true || (x.ativo == 'A')))
             {
-                if (a.ativo == 'A')
+                if ((a.ativo == 'A') && (a.presenca == true))
                 {
                     a.ativo = ' ';
                 }
-                else
+                else if (a.presenca == true)
                 {
                     a.ativo = 'A';
                 }
