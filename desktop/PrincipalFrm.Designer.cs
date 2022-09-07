@@ -65,6 +65,8 @@
             this.notasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.ensaioToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.classificaçãoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
+            this.atualizarNomeCantorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -93,7 +95,8 @@
             this.notasToolStripMenuItem,
             this.classificaçãoToolStripMenuItem,
             this.apresentaçõesToolStripMenuItem,
-            this.impressõesToolStripMenuItem});
+            this.impressõesToolStripMenuItem,
+            this.toolStripMenuItem8});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.Size = new System.Drawing.Size(800, 24);
@@ -332,30 +335,45 @@
             // cantoresToolStripMenuItem1
             // 
             this.cantoresToolStripMenuItem1.Name = "cantoresToolStripMenuItem1";
-            this.cantoresToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.cantoresToolStripMenuItem1.Size = new System.Drawing.Size(151, 22);
             this.cantoresToolStripMenuItem1.Text = "Apresentações";
             this.cantoresToolStripMenuItem1.Click += new System.EventHandler(this.cantoresToolStripMenuItem1_Click);
             // 
             // notasToolStripMenuItem1
             // 
             this.notasToolStripMenuItem1.Name = "notasToolStripMenuItem1";
-            this.notasToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.notasToolStripMenuItem1.Size = new System.Drawing.Size(151, 22);
             this.notasToolStripMenuItem1.Text = "Ficha júri";
             this.notasToolStripMenuItem1.Click += new System.EventHandler(this.notasToolStripMenuItem1_Click);
             // 
             // ensaioToolStripMenuItem1
             // 
             this.ensaioToolStripMenuItem1.Name = "ensaioToolStripMenuItem1";
-            this.ensaioToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.ensaioToolStripMenuItem1.Size = new System.Drawing.Size(151, 22);
             this.ensaioToolStripMenuItem1.Text = "Ensaio";
             this.ensaioToolStripMenuItem1.Click += new System.EventHandler(this.ensaioToolStripMenuItem1_Click);
             // 
             // classificaçãoToolStripMenuItem1
             // 
             this.classificaçãoToolStripMenuItem1.Name = "classificaçãoToolStripMenuItem1";
-            this.classificaçãoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.classificaçãoToolStripMenuItem1.Size = new System.Drawing.Size(151, 22);
             this.classificaçãoToolStripMenuItem1.Text = "Classificação";
             this.classificaçãoToolStripMenuItem1.Click += new System.EventHandler(this.classificaçãoToolStripMenuItem1_Click);
+            // 
+            // toolStripMenuItem8
+            // 
+            this.toolStripMenuItem8.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.atualizarNomeCantorToolStripMenuItem});
+            this.toolStripMenuItem8.Name = "toolStripMenuItem8";
+            this.toolStripMenuItem8.Size = new System.Drawing.Size(84, 20);
+            this.toolStripMenuItem8.Text = "Ferramentas";
+            // 
+            // atualizarNomeCantorToolStripMenuItem
+            // 
+            this.atualizarNomeCantorToolStripMenuItem.Name = "atualizarNomeCantorToolStripMenuItem";
+            this.atualizarNomeCantorToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.atualizarNomeCantorToolStripMenuItem.Text = "Atualizar nome cantor";
+            this.atualizarNomeCantorToolStripMenuItem.Click += new System.EventHandler(this.atualizarNomeCantorToolStripMenuItem_Click);
             // 
             // PrincipalFrm
             // 
@@ -414,5 +432,7 @@
         private System.Windows.Forms.ToolStripMenuItem ensaioToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem ordemToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem classificaçãoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem8;
+        private System.Windows.Forms.ToolStripMenuItem atualizarNomeCantorToolStripMenuItem;
     }
 }

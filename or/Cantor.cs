@@ -20,6 +20,7 @@ namespace Festival.or
         public virtual string idade { get; set; }
         public virtual string nascimento { get; set; }
         public virtual int id_apresentacao { get; set; }
+        public virtual string nomeartista { get; set; }
 
 
         public Cantor()
@@ -44,7 +45,7 @@ namespace Festival.or
 
         public override string ToString()
         {
-            return string.Format("{0} {1}", this.id_cantor, this.nome);
+            return string.Format("{0} {1}", this.id_cantor, this.nomeartista);
         }
 
     }

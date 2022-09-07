@@ -167,5 +167,20 @@ namespace Festival.desktop
                 MessageBox.Show("Não foi possível carregar este relatório");
             }
         }
+
+        private void atualizarNomeCantorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CantorBo cantorBo = new CantorBo();
+            ApresentacaoBo apresentacaoBo = new ApresentacaoBo();
+
+            foreach (Apresentacao apresentacao in apresentacaoBo.Listar().Where(x => x.ativo == 'A'))
+            {
+
+                Cantor catorTemp = cantorBo.RetornePeloId(apresentacao.cantor.id_cantor);
+                catorTemp.nomeartista = apresentacao.nomeartistico;
+                cantorBo.Atualizar(catorTemp);
+                MessageBox.Show("Nomes atualizados");
+            }
+        }
     }
 }
