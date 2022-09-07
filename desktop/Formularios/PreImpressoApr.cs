@@ -56,8 +56,8 @@ namespace Festival.desktop.Formularios
                             listaDto.Add(new ApresentacaoDtoReport(apr.id_apresentacao, apr.tom, apr.gravacao, apr.musica, apr.artista, apr.cantor.id_cantor, apr.categoria.id_categoria, apr.nomeartistico, apr.ordem));
                     }
 
-                    report.DataSource = listaDto.OrderBy(x => x.cantor.nome);
-                    reportApr.DataSource = listaDto.OrderBy(x => x.cantor.nome);
+                    report.DataSource = listaDto.OrderBy(x => x.ordem);
+                    reportApr.DataSource = listaDto.OrderBy(x => x.ordem);
                 }
                 catch (Exception)
                 {
