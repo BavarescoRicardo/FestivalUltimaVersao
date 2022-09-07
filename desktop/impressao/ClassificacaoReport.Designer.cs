@@ -133,6 +133,7 @@ namespace Festival.desktop.impressao
             this.xrTableCell4.Multiline = true;
             this.xrTableCell4.Name = "xrTableCell4";
             this.xrTableCell4.Text = "xrTableCell4";
+            this.xrTableCell4.TextFormatString = "{0:n2}";
             this.xrTableCell4.Weight = 1D;
             // 
             // xrTableCell5
