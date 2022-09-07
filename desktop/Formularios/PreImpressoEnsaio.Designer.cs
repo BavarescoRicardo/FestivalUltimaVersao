@@ -126,7 +126,7 @@ namespace Festival.desktop.Formularios
             this.ControlBox = false;
             this.Controls.Add(this.pnlGeral);
             this.Name = "PreImpressoEnsaio";
-            this.Text = "Aprovar";
+            this.Text = "Impressão Ensaio";
             this.pnlGeral.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chkEnsaio.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdGrupo.Properties)).EndInit();
