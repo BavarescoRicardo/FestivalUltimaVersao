@@ -48,7 +48,7 @@ namespace Festival.desktop.Formularios
 
                     // Filtra lista para apenas os que participaram do ensaio
                     if (chkEnsaio.Checked)
-                        listaBo = listaBo.Where(x => x.presenca == true).ToList();
+                        listaBo = listaBo.Where(x => x.ativo == 'A').ToList();
 
                     foreach (Apresentacao apr in listaBo)
                     {

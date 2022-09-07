@@ -63,6 +63,7 @@
             this.cantoresToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.notasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.ensaioToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ordemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -289,7 +290,8 @@
             // 
             this.apresentaçõesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.listarToolStripMenuItem1,
-            this.ensaioToolStripMenuItem});
+            this.ensaioToolStripMenuItem,
+            this.ordemToolStripMenuItem});
             this.apresentaçõesToolStripMenuItem.Name = "apresentaçõesToolStripMenuItem";
             this.apresentaçõesToolStripMenuItem.Size = new System.Drawing.Size(96, 20);
             this.apresentaçõesToolStripMenuItem.Text = "Apresentações";
@@ -297,14 +299,14 @@
             // listarToolStripMenuItem1
             // 
             this.listarToolStripMenuItem1.Name = "listarToolStripMenuItem1";
-            this.listarToolStripMenuItem1.Size = new System.Drawing.Size(108, 22);
+            this.listarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.listarToolStripMenuItem1.Text = "Listar";
             this.listarToolStripMenuItem1.Click += new System.EventHandler(this.listarToolStripMenuItem1_Click_1);
             // 
             // ensaioToolStripMenuItem
             // 
             this.ensaioToolStripMenuItem.Name = "ensaioToolStripMenuItem";
-            this.ensaioToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
+            this.ensaioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ensaioToolStripMenuItem.Text = "Ensaio";
             this.ensaioToolStripMenuItem.Click += new System.EventHandler(this.ensaioToolStripMenuItem_Click);
             // 
@@ -321,23 +323,30 @@
             // cantoresToolStripMenuItem1
             // 
             this.cantoresToolStripMenuItem1.Name = "cantoresToolStripMenuItem1";
-            this.cantoresToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.cantoresToolStripMenuItem1.Size = new System.Drawing.Size(151, 22);
             this.cantoresToolStripMenuItem1.Text = "Apresentações";
             this.cantoresToolStripMenuItem1.Click += new System.EventHandler(this.cantoresToolStripMenuItem1_Click);
             // 
             // notasToolStripMenuItem1
             // 
             this.notasToolStripMenuItem1.Name = "notasToolStripMenuItem1";
-            this.notasToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.notasToolStripMenuItem1.Size = new System.Drawing.Size(151, 22);
             this.notasToolStripMenuItem1.Text = "Ficha júri";
             this.notasToolStripMenuItem1.Click += new System.EventHandler(this.notasToolStripMenuItem1_Click);
             // 
             // ensaioToolStripMenuItem1
             // 
             this.ensaioToolStripMenuItem1.Name = "ensaioToolStripMenuItem1";
-            this.ensaioToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.ensaioToolStripMenuItem1.Size = new System.Drawing.Size(151, 22);
             this.ensaioToolStripMenuItem1.Text = "Ensaio";
             this.ensaioToolStripMenuItem1.Click += new System.EventHandler(this.ensaioToolStripMenuItem1_Click);
+            // 
+            // ordemToolStripMenuItem
+            // 
+            this.ordemToolStripMenuItem.Name = "ordemToolStripMenuItem";
+            this.ordemToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ordemToolStripMenuItem.Text = "Ordem";
+            this.ordemToolStripMenuItem.Click += new System.EventHandler(this.ordemToolStripMenuItem_Click);
             // 
             // PrincipalFrm
             // 
@@ -394,5 +403,6 @@
         private System.Windows.Forms.ToolStripMenuItem listarToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem ensaioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ensaioToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem ordemToolStripMenuItem;
     }
 }
