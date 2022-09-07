@@ -88,12 +88,14 @@ namespace Festival.desktop.impressao
             // 
             // xrTable2
             // 
+            this.xrTable2.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
             this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.xrTable2.Name = "xrTable2";
             this.xrTable2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow2});
             this.xrTable2.SizeF = new System.Drawing.SizeF(650F, 25F);
+            this.xrTable2.StylePriority.UseBorders = false;
             // 
             // xrTableRow2
             // 
@@ -111,10 +113,9 @@ namespace Festival.desktop.impressao
             // xrTableCell13
             // 
             this.xrTableCell13.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[id_apresentacao]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[ordem]")});
             this.xrTableCell13.Multiline = true;
             this.xrTableCell13.Name = "xrTableCell13";
-            this.xrTableCell13.Text = "Código";
             this.xrTableCell13.Weight = 1D;
             // 
             // xrTableCell14
@@ -179,12 +180,16 @@ namespace Festival.desktop.impressao
             // 
             // xrTable1
             // 
+            this.xrTable1.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+            | DevExpress.XtraPrinting.BorderSide.Right) 
+            | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.xrTable1.Name = "xrTable1";
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow1});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(650F, 25F);
+            this.xrTable1.SizeF = new System.Drawing.SizeF(650F, 37.91666F);
+            this.xrTable1.StylePriority.UseBorders = false;
             // 
             // xrTableRow1
             // 
@@ -226,12 +231,14 @@ namespace Festival.desktop.impressao
             // 
             // xrTable3
             // 
+            this.xrTable3.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
             this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(0F, 10.00001F);
             this.xrTable3.Name = "xrTable3";
             this.xrTable3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable3.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow3});
             this.xrTable3.SizeF = new System.Drawing.SizeF(650F, 25F);
+            this.xrTable3.StylePriority.UseBorders = false;
             // 
             // xrTableRow3
             // 
@@ -250,7 +257,7 @@ namespace Festival.desktop.impressao
             // 
             this.xrTableCell11.Multiline = true;
             this.xrTableCell11.Name = "xrTableCell11";
-            this.xrTableCell11.Text = "Código";
+            this.xrTableCell11.Text = "Ordem";
             this.xrTableCell11.Weight = 1D;
             // 
             // xrTableCell7

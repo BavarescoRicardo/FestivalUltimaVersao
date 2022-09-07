@@ -53,7 +53,7 @@ namespace Festival.desktop.Formularios
                     foreach (Apresentacao apr in listaBo)
                     {
                         if((apr.categoria.id_categoria == categoria.id_categoria) || (categoria.id_categoria == 0))
-                            listaDto.Add(new ApresentacaoDtoReport(apr.id_apresentacao, apr.tom, apr.gravacao, apr.musica, apr.artista, apr.cantor.id_cantor, apr.categoria.id_categoria, apr.nomeartistico));
+                            listaDto.Add(new ApresentacaoDtoReport(apr.id_apresentacao, apr.tom, apr.gravacao, apr.musica, apr.artista, apr.cantor.id_cantor, apr.categoria.id_categoria, apr.nomeartistico, apr.ordem));
                     }
 
                     report.DataSource = listaDto.OrderBy(x => x.cantor.nome);
