@@ -45,7 +45,7 @@ namespace Festival.or
 
         public override string ToString()
         {
-            return string.Format("{0} {1}", this.id_cantor, this.nomeartista);
+            return string.Format("{0} {1} {2}", this.id_cantor, this.nomeartista, this.nome);
         }
 
     }

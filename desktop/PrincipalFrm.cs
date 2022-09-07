@@ -178,9 +178,10 @@ namespace Festival.desktop
 
                 Cantor catorTemp = cantorBo.RetornePeloId(apresentacao.cantor.id_cantor);
                 catorTemp.nomeartista = apresentacao.nomeartistico;
-                cantorBo.Atualizar(catorTemp);
-                MessageBox.Show("Nomes atualizados");
+                cantorBo.Atualizar(catorTemp);                
             }
+
+            MessageBox.Show("Nomes atualizados");
         }
     }
 }

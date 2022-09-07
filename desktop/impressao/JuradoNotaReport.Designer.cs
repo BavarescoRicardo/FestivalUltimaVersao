@@ -418,7 +418,7 @@ namespace Festival.desktop.impressao
             // xrLabel5
             // 
             this.xrLabel5.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[cantor].[nome]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[apresentacao].[nomeartistico]")});
             this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(106.25F, 30.83339F);
             this.xrLabel5.Multiline = true;
             this.xrLabel5.Name = "xrLabel5";

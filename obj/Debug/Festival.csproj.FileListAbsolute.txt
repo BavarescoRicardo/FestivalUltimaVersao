@@ -776,3 +776,8 @@ C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.listagens.
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.desktop.Formularios.PreImpressoClassificacao.resources
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.desktop.impressao.ClassificacaoReport.resources
 C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.csproj.AssemblyReference.cache
+D:\FestivalApp\FestivalUltimaVersao\obj\Debug\Festival.desktop.Formularios.PreImpressoClassificacao.resources
+D:\FestivalApp\FestivalUltimaVersao\obj\Debug\Festival.desktop.Formularios.PreImpressoEnsaio.resources
+D:\FestivalApp\FestivalUltimaVersao\obj\Debug\Festival.desktop.impressao.ClassificacaoReport.resources
+D:\FestivalApp\FestivalUltimaVersao\obj\Debug\Festival.desktop.impressao.EnsaioReport.resources
+D:\FestivalApp\FestivalUltimaVersao\obj\Debug\Festival.listagens.ListaOrdem.resources
