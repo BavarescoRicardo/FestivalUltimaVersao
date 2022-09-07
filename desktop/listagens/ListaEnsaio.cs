@@ -123,10 +123,10 @@ namespace Festival.listagens
                 {
                     a.ativo = 'A';
                 }
-
-                MessageBox.Show("Atualizado: " + a.nomeartistico);
+                
                 bo.Atualizar(a);
             }
+            MessageBox.Show("Presenças atualizadas: ");
 
             // Atualizar lista
             this.bindingSource1.Clear();

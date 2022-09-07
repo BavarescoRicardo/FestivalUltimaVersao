@@ -245,6 +245,12 @@
     <Compile Include="desktop\Formularios\EditarCantorFrm.Designer.cs">
       <DependentUpon>EditarCantorFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="desktop\Formularios\PreImpressoClassificacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="desktop\Formularios\PreImpressoClassificacao.Designer.cs">
+      <DependentUpon>PreImpressoClassificacao.cs</DependentUpon>
+    </Compile>
     <Compile Include="desktop\Formularios\PreImpressoEnsaio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -274,6 +280,12 @@
     </Compile>
     <Compile Include="desktop\Formularios\AtribuiNotaFrm.Designer.cs">
       <DependentUpon>AtribuiNotaFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="desktop\impressao\ClassificacaoReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="desktop\impressao\ClassificacaoReport.Designer.cs">
+      <DependentUpon>ClassificacaoReport.cs</DependentUpon>
     </Compile>
     <Compile Include="desktop\impressao\EnsaioReport.cs">
       <SubType>Component</SubType>
@@ -421,6 +433,7 @@
     <Compile Include="or\Categoria.cs" />
     <Compile Include="or\Classificacao.cs" />
     <Compile Include="or\dto\ApresentacaoDtoReport.cs" />
+    <Compile Include="or\dto\ClassificacaoDtoReport.cs" />
     <Compile Include="or\dto\NotasDtoReport.cs" />
     <Compile Include="or\Evento.cs" />
     <Compile Include="or\Jurado.cs" />
@@ -430,6 +443,9 @@
     <Compile Include="RepositorioCrud.cs" />
     <EmbeddedResource Include="desktop\Formularios\EditarCantorFrm.resx">
       <DependentUpon>EditarCantorFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="desktop\Formularios\PreImpressoClassificacao.resx">
+      <DependentUpon>PreImpressoClassificacao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="desktop\Formularios\PreImpressoEnsaio.resx">
       <DependentUpon>PreImpressoEnsaio.cs</DependentUpon>
@@ -460,6 +476,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="desktop\Formularios\NotaFrm.resx">
       <DependentUpon>NotaFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="desktop\impressao\ClassificacaoReport.resx">
+      <DependentUpon>ClassificacaoReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="desktop\impressao\EnsaioReport.resx">
       <DependentUpon>EnsaioReport.cs</DependentUpon>

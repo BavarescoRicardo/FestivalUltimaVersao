@@ -154,5 +154,18 @@ namespace Festival.desktop
             ListaOrdem listar = new ListaOrdem();
             listar.ShowDialog();
         }
+
+        private void classificaçãoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                PreImpressoClassificacao impressaoForm = new PreImpressoClassificacao();
+                impressaoForm.ShowDialog();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Não foi possível carregar este relatório");
+            }
+        }
     }
 }

@@ -51,7 +51,7 @@ namespace Festival.listagens
                            categoriaBo.RetornePeloId((int)e.Value).categoria;
                 }
 
-                if (e.Column.FieldName == "apresentacao.id_apresentacao")
+                if (e.Column.Name == "colMusica")
                 {
                     // Inicia objeto do banco caso esteja na coluna certa
                     ApresentacaoBo bo = new ApresentacaoBo();
@@ -59,11 +59,11 @@ namespace Festival.listagens
                     e.DisplayText = bo.RetornePeloId((int)e.Value).musica;
                 }
 
-                if (e.Column.FieldName == "cantor.id_cantor")
+                if (e.Column.Name == "colCantor")
                 {
-                    CantorBo categoriaBo = new CantorBo();
+                    ApresentacaoBo bo = new ApresentacaoBo();
                     e.DisplayText =
-                            categoriaBo.RetornePeloId((int)e.Value).nome;
+                            bo.RetornePeloId((int)e.Value).nomeartistico;
                 }
             }
             catch (Exception)

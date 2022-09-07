@@ -35,8 +35,8 @@
             this.colSequencial = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemCheckEdit4 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.coldia = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMusica = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCantor = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemCheckEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.repositoryItemCheckEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
@@ -81,8 +81,8 @@
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colSequencial,
             this.coldia,
-            this.gridColumn1,
-            this.gridColumn2,
+            this.colMusica,
+            this.colCantor,
             this.gridColumn3});
             this.gridView1.GridControl = this.gridControl;
             this.gridView1.GroupPanelText = "Notas";
@@ -121,29 +121,29 @@
             this.coldia.VisibleIndex = 1;
             this.coldia.Width = 156;
             // 
-            // gridColumn1
+            // colMusica
             // 
-            this.gridColumn1.Caption = "Musica";
-            this.gridColumn1.FieldName = "apresentacao.id_apresentacao";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.OptionsColumn.AllowEdit = false;
-            this.gridColumn1.OptionsFilter.AllowAutoFilter = false;
-            this.gridColumn1.OptionsFilter.AllowFilter = false;
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 2;
-            this.gridColumn1.Width = 149;
+            this.colMusica.Caption = "Musica";
+            this.colMusica.FieldName = "apresentacao.id_apresentacao";
+            this.colMusica.Name = "colMusica";
+            this.colMusica.OptionsColumn.AllowEdit = false;
+            this.colMusica.OptionsFilter.AllowAutoFilter = false;
+            this.colMusica.OptionsFilter.AllowFilter = false;
+            this.colMusica.Visible = true;
+            this.colMusica.VisibleIndex = 2;
+            this.colMusica.Width = 149;
             // 
-            // gridColumn2
+            // colCantor
             // 
-            this.gridColumn2.Caption = "Cantor";
-            this.gridColumn2.FieldName = "cantor.id_cantor";
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.OptionsColumn.AllowEdit = false;
-            this.gridColumn2.OptionsFilter.AllowAutoFilter = false;
-            this.gridColumn2.OptionsFilter.AllowFilter = false;
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 3;
-            this.gridColumn2.Width = 149;
+            this.colCantor.Caption = "Cantor";
+            this.colCantor.FieldName = "apresentacao.id_apresentacao";
+            this.colCantor.Name = "colCantor";
+            this.colCantor.OptionsColumn.AllowEdit = false;
+            this.colCantor.OptionsFilter.AllowAutoFilter = false;
+            this.colCantor.OptionsFilter.AllowFilter = false;
+            this.colCantor.Visible = true;
+            this.colCantor.VisibleIndex = 3;
+            this.colCantor.Width = 149;
             // 
             // gridColumn3
             // 
@@ -258,8 +258,8 @@
         private System.Windows.Forms.BindingSource bindingSource;
         private DevExpress.XtraGrid.Columns.GridColumn colSequencial;
         private DevExpress.XtraGrid.Columns.GridColumn coldia;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
+        private DevExpress.XtraGrid.Columns.GridColumn colMusica;
+        private DevExpress.XtraGrid.Columns.GridColumn colCantor;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
         private DevExpress.XtraEditors.ComboBoxEdit cmbFiltro;
         private System.Windows.Forms.Label label1;
