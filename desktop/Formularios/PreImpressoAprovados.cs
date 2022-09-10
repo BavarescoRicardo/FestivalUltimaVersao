@@ -21,7 +21,6 @@ namespace Festival.desktop.Formularios
             }
             this.cmbCat.Properties.Items.Add(new Categoria(0, "Todos"));
 
-
         }
 
         private void btnSair_Click(object sender, EventArgs e)
