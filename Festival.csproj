@@ -245,6 +245,12 @@
     <Compile Include="desktop\Formularios\EditarCantorFrm.Designer.cs">
       <DependentUpon>EditarCantorFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="desktop\Formularios\PreImpressoAprovados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="desktop\Formularios\PreImpressoAprovados.Designer.cs">
+      <DependentUpon>PreImpressoAprovados.cs</DependentUpon>
+    </Compile>
     <Compile Include="desktop\Formularios\PreImpressoClassificacao.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -280,6 +286,12 @@
     </Compile>
     <Compile Include="desktop\Formularios\AtribuiNotaFrm.Designer.cs">
       <DependentUpon>AtribuiNotaFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="desktop\impressao\AprovadosReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="desktop\impressao\AprovadosReport.Designer.cs">
+      <DependentUpon>AprovadosReport.cs</DependentUpon>
     </Compile>
     <Compile Include="desktop\impressao\ClassificacaoReport.cs">
       <SubType>Component</SubType>
@@ -444,6 +456,9 @@
     <EmbeddedResource Include="desktop\Formularios\EditarCantorFrm.resx">
       <DependentUpon>EditarCantorFrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="desktop\Formularios\PreImpressoAprovados.resx">
+      <DependentUpon>PreImpressoAprovados.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="desktop\Formularios\PreImpressoClassificacao.resx">
       <DependentUpon>PreImpressoClassificacao.cs</DependentUpon>
     </EmbeddedResource>
@@ -476,6 +491,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="desktop\Formularios\NotaFrm.resx">
       <DependentUpon>NotaFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="desktop\impressao\AprovadosReport.resx">
+      <DependentUpon>AprovadosReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="desktop\impressao\ClassificacaoReport.resx">
       <DependentUpon>ClassificacaoReport.cs</DependentUpon>

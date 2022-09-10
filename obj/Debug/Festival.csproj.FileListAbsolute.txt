@@ -781,3 +781,5 @@ D:\FestivalApp\FestivalUltimaVersao\obj\Debug\Festival.desktop.Formularios.PreIm
 D:\FestivalApp\FestivalUltimaVersao\obj\Debug\Festival.desktop.impressao.ClassificacaoReport.resources
 D:\FestivalApp\FestivalUltimaVersao\obj\Debug\Festival.desktop.impressao.EnsaioReport.resources
 D:\FestivalApp\FestivalUltimaVersao\obj\Debug\Festival.listagens.ListaOrdem.resources
+C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.desktop.Formularios.PreImpressoAprovados.resources
+C:\Users\Ninguem\source\repos\FestivalUltimaVersao\obj\Debug\Festival.desktop.impressao.AprovadosReport.resources

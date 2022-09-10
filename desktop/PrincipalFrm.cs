@@ -183,5 +183,18 @@ namespace Festival.desktop
 
             MessageBox.Show("Nomes atualizados");
         }
+
+        private void aprovadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                PreImpressoAprovados impressaoForm = new PreImpressoAprovados();
+                impressaoForm.ShowDialog();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Não foi possível carregar este relatório");
+            }
+        }
     }
 }
